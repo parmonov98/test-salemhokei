@@ -8,7 +8,7 @@
 
   @if ($lang == 'kk')
     <section class="banner">
-      <video class="w-100" loop>
+      <video class="w-100" autoplay loop>
         <source src="/assets/Tech-Hockey-Intro-Video.mp4" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
         Your browser does not support the video tag.
