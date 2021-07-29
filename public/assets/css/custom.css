@@ -1,0 +1,57 @@
+.mobile_logo_img {
+    display: none;
+}
+
+.header .menu ul a span:before {
+    display: none;
+}
+
+.header .menu ul a:hover span {
+    /* display: none; */
+    transform: none;
+    -webkit-transform: none;
+}
+
+.header .menu ul a:hover {
+    color: #009ee0;
+}
+
+.banner {
+    position: relative;
+    max-height: 80vh;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.banner::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.banner>video {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .logo_img {
+        display: none;
+    }
+
+    .header .logo .mobile_logo_img {
+        display: inline-block;
+        width: 6em;
+    }
+
+}
+
+
+.page_section video,
+.page_section iframe {
+    width: 100%;
+}
