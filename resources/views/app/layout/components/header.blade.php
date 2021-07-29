@@ -60,7 +60,7 @@
                     </ul> --}}
 
                     <div class="row">
-                        <a href="/{{ $lang}}/" title="instagram:salem.hokei" class="btn" style="padding-right: 2em;">
+                        <a href="/{{ $lang}}/" title="instagram:salem.hokei" class="btn" style="margin-right: 2em;">
                         SALEM!
                         </a>
 
