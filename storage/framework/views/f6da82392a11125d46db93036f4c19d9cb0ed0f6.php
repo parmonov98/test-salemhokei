@@ -1,2 +1,0 @@
-<?php echo $__env->make("app.partials.modals.request", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-<?php /**PATH /home/botdev/www/salemhokei.botdev.uz/public/resources/views/app/layout/components/modals.blade.php ENDPATH**/ ?>
