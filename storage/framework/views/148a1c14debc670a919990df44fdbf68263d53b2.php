@@ -39,4 +39,4 @@
   }
 
 </style>
-<?php /**PATH /home/dev/Documents/laravel/test.salemhokei.kz/resources/views/app/layout/components/head.blade.php ENDPATH**/ ?>
+<?php /**PATH /home/botdev/www/salemhokei.botdev.uz/public/resources/views/app/layout/components/head.blade.php ENDPATH**/ ?>

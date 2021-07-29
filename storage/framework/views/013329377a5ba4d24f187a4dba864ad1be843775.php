@@ -24,4 +24,4 @@
 </body>
 
 </html>
-<?php /**PATH /home/dev/Documents/laravel/test.salemhokei.kz/resources/views/app/layout/index.blade.php ENDPATH**/ ?>
+<?php /**PATH /home/botdev/www/salemhokei.botdev.uz/public/resources/views/app/layout/index.blade.php ENDPATH**/ ?>

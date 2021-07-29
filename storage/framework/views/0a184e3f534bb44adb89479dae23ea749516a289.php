@@ -25,7 +25,7 @@
                     
 
                     <div class="row">
-                        <a href="/<?php echo e($lang); ?>/" title="instagram:salem.hokei" class="btn">
+                        <a href="/<?php echo e($lang); ?>/" title="instagram:salem.hokei" class="btn" style="margin-right: 2em;">
                         SALEM!
                         </a>
 
@@ -50,4 +50,4 @@
 </header>
 
 
-<?php /**PATH /home/dev/Documents/laravel/test.salemhokei.kz/resources/views/app/layout/components/header.blade.php ENDPATH**/ ?>
+<?php /**PATH /home/botdev/www/salemhokei.botdev.uz/public/resources/views/app/layout/components/header.blade.php ENDPATH**/ ?>

@@ -15,4 +15,4 @@
             </div>
         </div>
     </div>
-</footer><?php /**PATH /home/dev/Documents/laravel/test.salemhokei.kz/resources/views/app/layout/components/footer.blade.php ENDPATH**/ ?>
+</footer><?php /**PATH /home/botdev/www/salemhokei.botdev.uz/public/resources/views/app/layout/components/footer.blade.php ENDPATH**/ ?>

@@ -5,4 +5,4 @@
 <script src="/assets/libs/slick-carousel/slick/slick.js"></script>
 <script src="/assets/libs/chosen/chosen.jquery.js"></script>
 <script src="/assets/js/scripts.js"></script>
-<?php /**PATH /home/dev/Documents/laravel/test.salemhokei.kz/resources/views/app/layout/components/scripts.blade.php ENDPATH**/ ?>
+<?php /**PATH /home/botdev/www/salemhokei.botdev.uz/public/resources/views/app/layout/components/scripts.blade.php ENDPATH**/ ?>
