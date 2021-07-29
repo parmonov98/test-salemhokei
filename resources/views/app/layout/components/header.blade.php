@@ -60,9 +60,9 @@
                     </ul> --}}
 
                     <div class="row">
-                        <a href="/{{ $lang}}/" title="instagram:salem.hokei" class="btn" style="margin-right: 2em;">
-                        SALEM!
-                        </a>
+                        {{-- <a href="/{{ $lang}}/" title="instagram:salem.hokei" class="btn" style="margin-right: 0em;">
+                            SALEM!
+                        </a> --}}
 
                         {!! $MyNavBar->asUl() !!}
 
