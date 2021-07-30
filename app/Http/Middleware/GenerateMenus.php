@@ -24,6 +24,9 @@ class GenerateMenus
             $links = DB::table('admin_menu_items')->where('sort', '!=',  0)->orderByDesc('sort')->get();
             // dd($links);
             $mainMenu = Menus::where('id', 1)->with('items')->first();
+            $menu->options([
+                'active_class' => 'active',
+            ], null);
 
             if ($mainMenu) {
 
@@ -33,18 +36,19 @@ class GenerateMenus
 
                 $menuItems->each(function ($item) use (&$menu){
                     if (app()->getLocale() == 'kk') {
-                        $menu->add($item->label_kk, ['url' => $item->link_kk])->link->secure();
+                        $menu->add($item->label_kk, ['url' => $item->link_kk])
+                                ->append('</span>')
+                                ->prepend('<span data-title="'. $item->label_kk .'">');;
                     }
                     if (app()->getLocale() == 'ru') {
-                        $menu->add($item->label_ru, ['url' => $item->link_ru]);
+                        $menu->add($item->label_ru, ['url' => $item->link_ru])
+                                ->append('</span>')
+                                ->prepend('<span data-title="'. $item->label_ru .'">');
                     }
 
                 });
             }
 
-            // $menu->add('Home');
-            // $menu->add('Services', 'services');
-            // $menu->add('Contact', 'contact');
         });
 
         return $next($request);

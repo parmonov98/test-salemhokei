@@ -63,8 +63,8 @@
                         {{-- <a href="/{{ $lang}}/" title="instagram:salem.hokei" class="btn" style="margin-right: 0em;">
                             SALEM!
                         </a> --}}
-
-                        {!! $MyNavBar->asUl() !!}
+                        {{-- {{$MyNavBar}} --}}
+                        {!! $MyNavBar->asUl( ['class' => 'first_level_list'], ['class' => 'second_level_list']) !!}
 
                         <div class="language" style="padding-left: 2em;">
                             @if ($lang == 'ru')

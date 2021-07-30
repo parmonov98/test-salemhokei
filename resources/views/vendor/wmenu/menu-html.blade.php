@@ -15,7 +15,7 @@ $currentUrl = url()->current();
 
                             <div class="manage-menus">
                                 <form method="get" action="{{ $currentUrl }}">
-                                    <label for="menu" class="selected-menu">Select the menu you want to edit:</label>
+                                    <label for="menu" class="selected-menu">Выберите меню, которое хотите отредактировать:</label>
 
                                     {!! AdminMenu::select('menu', $menulist) !!}
 
@@ -23,8 +23,8 @@ $currentUrl = url()->current();
                                         <input type="submit" class="button-secondary" value="Choose">
                                     </span>
                                     <span class="add-new-menu-action"> or <a
-                                            href="{{ $currentUrl }}?action=edit&menu=0">Create new
-                                            menu</a>. </span>
+                                            href="{{ $currentUrl }}?action=edit&menu=0">Создать новое
+                                             меню</a>. </span>
                                 </form>
                             </div>
                             <div id="nav-menus-frame">
@@ -40,9 +40,9 @@ $currentUrl = url()->current();
                                             <ul class="outer-border">
                                                 <li class="control-section accordion-section  open add-page"
                                                     id="add-page">
-                                                    <h3 class="accordion-section-title hndle" tabindex="0"> Custom Link
-                                                        <span class="screen-reader-text">Press return or enter to
-                                                            expand</span></h3>
+                                                    <h3 class="accordion-section-title hndle" tabindex="0"> Пользовательская ссылка
+                                                        <span class="screen-reader-text">Нажмите Return или Enter, чтобы
+                                                             расширять</span></h3>
                                                     <div class="accordion-section-content ">
                                                         <div class="inside">
                                                             <div class="customlinkdiv" id="customlinkdiv">
@@ -85,8 +85,7 @@ $currentUrl = url()->current();
                                                                 <p class="button-controls">
 
                                                                     <a href="#" onclick="addcustommenu()"
-                                                                        class="button-secondary submit-add-to-menu right">Add
-                                                                        menu item</a>
+                                                                        class="button-secondary submit-add-to-menu right">Добавить</a>
                                                                     <span class="spinner" id="spincustomu"></span>
                                                                 </p>
 
@@ -122,13 +121,13 @@ $currentUrl = url()->current();
                                                         <div class="publishing-action">
                                                             <a onclick="createnewmenu()" name="save_menu"
                                                                 id="save_menu_header"
-                                                                class="button button-primary menu-save">Create menu</a>
+                                                                class="button button-primary menu-save">Создать меню</a>
                                                         </div>
                                                         @elseif(request()->has("menu"))
                                                         <div class="publishing-action">
                                                             <a onclick="getmenus()" name="save_menu"
                                                                 id="save_menu_header"
-                                                                class="button button-primary menu-save">Save menu</a>
+                                                                class="button button-primary menu-save">Сохранить меню</a>
                                                             <span class="spinner" id="spincustomu2"></span>
                                                         </div>
 
@@ -136,7 +135,7 @@ $currentUrl = url()->current();
                                                         <div class="publishing-action">
                                                             <a onclick="createnewmenu()" name="save_menu"
                                                                 id="save_menu_header"
-                                                                class="button button-primary menu-save">Create menu</a>
+                                                                class="button button-primary menu-save">Создать меню</a>
                                                         </div>
                                                         @endif
                                                     </div>
@@ -148,17 +147,17 @@ $currentUrl = url()->current();
                                                         <h3>Menu Structure</h3>
                                                         <div class="drag-instructions post-body-plain" style="">
                                                             <p>
-                                                                Place each item in the order you prefer. Click on the
-                                                                arrow to the right of the item
-                                                                to display more configuration options.
+                                                               Разместите каждый элемент в нужном вам порядке. Нажмите на
+                                                                 стрелка справа от элемента
+                                                                 для отображения дополнительных параметров конфигурации.
                                                             </p>
                                                         </div>
 
                                                         @else
-                                                        <h3>Menu Creation</h3>
+                                                        <h3>Создание меню</h3>
                                                         <div class="drag-instructions post-body-plain" style="">
                                                             <p>
-                                                                Please enter the name and select "Create menu" button
+                                                                Введите имя и нажмите кнопку «Создать меню».
                                                             </p>
                                                         </div>
                                                         @endif
@@ -315,14 +314,14 @@ $currentUrl = url()->current();
 
                                                                     <p
                                                                         class="field-move hide-if-no-js description description-wide">
-                                                                        <label> <span>Move</span> <a
+                                                                        <label> <span>Переместить</span> <a
                                                                                 href="{{ $currentUrl }}"
                                                                                 class="menus-move-up"
-                                                                                style="display: none;">Move up</a> <a
+                                                                                style="display: none;">Поднять</a> <a
                                                                                 href="{{ $currentUrl }}"
                                                                                 class="menus-move-down"
                                                                                 title="Mover uno abajo"
-                                                                                style="display: inline;">Move Down</a>
+                                                                                style="display: inline;">Спускать</a>
                                                                             <a href="{{ $currentUrl }}"
                                                                                 class="menus-move-left"
                                                                                 style="display: none;"></a> <a
@@ -331,7 +330,7 @@ $currentUrl = url()->current();
                                                                                 style="display: none;"></a> <a
                                                                                 href="{{ $currentUrl }}"
                                                                                 class="menus-move-top"
-                                                                                style="display: none;">Top</a> </label>
+                                                                                style="display: none;">Вверх</a> </label>
                                                                     </p>
 
                                                                     <div
@@ -348,7 +347,7 @@ $currentUrl = url()->current();
                                                                         <a onclick="getmenus()"
                                                                             class="button button-primary updatemenu"
                                                                             id="update-{{ $m->id }}"
-                                                                            href="javascript:void(0)">Update item</a>
+                                                                            href="javascript:void(0)">Обновить</a>
 
                                                                     </div>
 
@@ -370,18 +369,17 @@ $currentUrl = url()->current();
                                                         <div class="publishing-action">
                                                             <a onclick="createnewmenu()" name="save_menu"
                                                                 id="save_menu_header"
-                                                                class="button button-primary menu-save">Create menu</a>
+                                                                class="button button-primary menu-save">Создать меню</a>
                                                         </div>
                                                         @elseif(request()->has("menu"))
                                                         <span class="delete-action"> <a
                                                                 class="submitdelete deletion menu-delete"
-                                                                onclick="deletemenu()" href="javascript:void(9)">Delete
-                                                                menu</a> </span>
+                                                                onclick="deletemenu()" href="javascript:void(9)">Удалить меню</a> </span>
                                                         <div class="publishing-action">
 
                                                             <a onclick="getmenus()" name="save_menu"
                                                                 id="save_menu_header"
-                                                                class="button button-primary menu-save">Save menu</a>
+                                                                class="button button-primary menu-save">Сохранить меню</a>
                                                             <span class="spinner" id="spincustomu2"></span>
                                                         </div>
 
@@ -389,7 +387,7 @@ $currentUrl = url()->current();
                                                         <div class="publishing-action">
                                                             <a onclick="createnewmenu()" name="save_menu"
                                                                 id="save_menu_header"
-                                                                class="button button-primary menu-save">Create menu</a>
+                                                                class="button button-primary menu-save">Сохранить меню</a>
                                                         </div>
                                                         @endif
                                                     </div>

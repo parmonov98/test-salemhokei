@@ -22,37 +22,15 @@
             <?php if($lang == 'kk'): ?>
             <nav class="menu menu--kk"><?php else: ?><nav class="menu">
                     <?php endif; ?>
-                    <ul>
-        <li><a href="/<?php echo e($lang . '/about'); ?>" title="<?php echo e(__('default.pages.header.about')); ?>"><span
-                        data-title="<?php echo e(__('default.pages.header.about')); ?>"><?php echo e(__('default.pages.header.about')); ?></span></a>
-                    </li>
-                    <li><a href="/<?php echo e($lang . '/schools'); ?>" title="<?php echo e(__('default.pages.header.schools')); ?>"><span
-                                data-title="<?php echo e(__('default.pages.header.schools')); ?>"><?php echo e(__('default.pages.header.schools')); ?></span></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" title="<?php echo e(__('default.pages.header.to_parents')); ?>">
-                            <span
-                                data-title="<?php echo e(__('default.pages.header.to_parents')); ?>"><?php echo e(__('default.pages.header.to_parents')); ?></span>
-                        </a>
+                    
 
-                    </li>
-                    <li><a href="/<?php echo e($lang . '/equipment'); ?>" title="<?php echo e(__('default.pages.header.equipment')); ?>"><span
-                                data-title="<?php echo e(__('default.pages.header.equipment')); ?>"><?php echo e(__('default.pages.header.equipment')); ?></span></a>
-                    </li>
-                    <li><a href="/<?php echo e($lang . '/faq'); ?>" title="<?php echo e(__('default.pages.header.equipment')); ?>"><span
-                                data-title="<?php echo e(__('default.pages.for_parents.whats_start')); ?>"><?php echo e(__('default.pages.for_parents.whats_start')); ?></span></a>
-                    </li>
-                    <li>
-                        <a href="/<?php echo e($lang . '/news'); ?>" title="<?php echo e(__('default.pages.header.news')); ?>">
-                            <span
-                                data-title="<?php echo e(__('default.pages.header.news')); ?>"><?php echo e(__('default.pages.header.news')); ?></span>
-                        </a>
-                    </li>
-                    <li>
+                    <div class="row">
+                        
+                        
+                        <?php echo $MyNavBar->asUl( ['class' => 'first_level_list'], ['class' => 'second_level_list']); ?>
 
-                    </li>
-                    </ul>
-<div class="language" style="padding-left: 2em;">
+
+                        <div class="language" style="padding-left: 2em;">
                             <?php if($lang == 'ru'): ?>
                             <a href="/kk<?php echo e($uri); ?>" title="KZ">KZ</a><span>|</span><a href="/ru<?php echo e($uri); ?>" title="RU"
                                 class="active">RU</a>
@@ -61,7 +39,8 @@
                                 href="/ru<?php echo e($uri); ?>" title="RU">RU</a>
                             <?php endif; ?>
                         </div>
-                    
+
+                    </div>
 
                 </nav>
         </div>

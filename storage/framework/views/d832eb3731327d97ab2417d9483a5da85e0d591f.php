@@ -23,7 +23,7 @@
                     <path d="M6.75497 17.6928H2C0.89543 17.6928 0 16.7973 0 15.6928V8.30611C0 7.20152 0.895431 6.30611 2 6.30611H6.75504L13.9555 0.237289C14.6058 -0.310807 15.6 0.151473 15.6 1.00191V22.997C15.6 23.8475 14.6058 24.3098 13.9555 23.7617L6.75497 17.6928Z" transform="translate(0 0.000518799)" fill="white"/>
                     <path id="volume-low" d="M0 9.87787C2.87188 9.87787 5.2 7.66663 5.2 4.93893C5.2 2.21124 2.87188 0 0 0V2C1.86563 2 3.2 3.41162 3.2 4.93893C3.2 6.46625 1.86563 7.87787 0 7.87787V9.87787Z" transform="translate(17.3333 7.44955)" fill="white"/>
 
-                    <path id="volume-high" d="M0 16.4631C4.78647 16.4631 8.66667 12.7777 8.66667 8.23157C8.66667 3.68539 4.78647 0 0 0V2C3.78022 2 6.66667 4.88577 6.66667 8.23157C6.66667 11.5773 3.78022 14.4631 0 14.4631V16.4631Z" transform="translate(17.3333 4.15689)" fill="white"/> 
+                    <path id="volume-high" d="M0 16.4631C4.78647 16.4631 8.66667 12.7777 8.66667 8.23157C8.66667 3.68539 4.78647 0 0 0V2C3.78022 2 6.66667 4.88577 6.66667 8.23157C6.66667 11.5773 3.78022 14.4631 0 14.4631V16.4631Z" transform="translate(17.3333 4.15689)" fill="white"/>
                 <path id="volume-off" d="M1.22565 0L0 1.16412L3.06413 4.0744L0 6.98471L1.22565 8.14883L4.28978 5.23853L7.35391 8.14883L8.57956 6.98471L5.51544 4.0744L8.57956 1.16412L7.35391 0L4.28978 2.91031L1.22565 0Z" transform="translate(17.3769 8.31403)" fill="white"/>
                   </svg>
 
@@ -65,7 +65,7 @@
                     <path d="M6.75497 17.6928H2C0.89543 17.6928 0 16.7973 0 15.6928V8.30611C0 7.20152 0.895431 6.30611 2 6.30611H6.75504L13.9555 0.237289C14.6058 -0.310807 15.6 0.151473 15.6 1.00191V22.997C15.6 23.8475 14.6058 24.3098 13.9555 23.7617L6.75497 17.6928Z" transform="translate(0 0.000518799)" fill="white"/>
                     <path id="volume-low" d="M0 9.87787C2.87188 9.87787 5.2 7.66663 5.2 4.93893C5.2 2.21124 2.87188 0 0 0V2C1.86563 2 3.2 3.41162 3.2 4.93893C3.2 6.46625 1.86563 7.87787 0 7.87787V9.87787Z" transform="translate(17.3333 7.44955)" fill="white"/>
 
-                    <path id="volume-high" d="M0 16.4631C4.78647 16.4631 8.66667 12.7777 8.66667 8.23157C8.66667 3.68539 4.78647 0 0 0V2C3.78022 2 6.66667 4.88577 6.66667 8.23157C6.66667 11.5773 3.78022 14.4631 0 14.4631V16.4631Z" transform="translate(17.3333 4.15689)" fill="white"/> 
+                    <path id="volume-high" d="M0 16.4631C4.78647 16.4631 8.66667 12.7777 8.66667 8.23157C8.66667 3.68539 4.78647 0 0 0V2C3.78022 2 6.66667 4.88577 6.66667 8.23157C6.66667 11.5773 3.78022 14.4631 0 14.4631V16.4631Z" transform="translate(17.3333 4.15689)" fill="white"/>
                 <path id="volume-off" d="M1.22565 0L0 1.16412L3.06413 4.0744L0 6.98471L1.22565 8.14883L4.28978 5.23853L7.35391 8.14883L8.57956 6.98471L5.51544 4.0744L8.57956 1.16412L7.35391 0L4.28978 2.91031L1.22565 0Z" transform="translate(17.3769 8.31403)" fill="white"/>
                   </svg>
 
@@ -334,7 +334,7 @@
   var textCurrent = document.querySelector('.time-current');
   var textTotal = document.querySelector('.time-total');
   var speedBtns = document.querySelectorAll('.speed-item');
-  var fullscreenBtn =document.querySelector('.fullscreen'); 
+  var fullscreenBtn =document.querySelector('.fullscreen');
 
   //GLOBAL VARS
   let lastVolume = 1;
@@ -345,7 +345,7 @@
     if (video.paused) {
       video.play();
     } else {
-      video.pause();	
+      video.pause();
     }
     playBtn.classList.toggle('paused');
   }
@@ -368,7 +368,7 @@
   function changeVolume(e) {
       volumeBtn.classList.remove('muted');
       let volume = e.offsetX/volumeSlider.offsetWidth;
-      volume<0.1 ? volume = 0 : volume=volume; 
+      volume<0.1 ? volume = 0 : volume=volume;
       volumeFill.style.width = `${volume*100}%`;
       video.volume = volume;
       if (volume > 0.7) {
@@ -387,12 +387,7 @@
     seconds = seconds>9?seconds:`0${seconds}`;
     return `${minutes}:${seconds}`;
   }
-  function updateProgress(e) {
-    progressFill.style.width = `${video.currentTime/video.duration*100}%`;
-    textCurrent.innerHTML = `${neatTime(video.currentTime)} / ${neatTime(video.duration)}`;
-    // textTotal.innerHTML = neatTime(video.duration);
-    // console.log(progressFill.style.width);
-  }
+
   function setProgress(e) {
     const newTime = e.offsetX/progressSlider.offsetWidth;
     progressFill.style.width = `${newTime*100}%`;
@@ -447,14 +442,13 @@
   video.addEventListener('play', togglePlayBtn);
   video.addEventListener('pause', togglePlayBtn);
   video.addEventListener('ended', togglePlayBtn);
-  video.addEventListener('timeupdate', updateProgress);
-  video.addEventListener('canplay', updateProgress);
+
   volumeBtn.addEventListener('click', toggleMute);
   window.addEventListener('mousedown', () => isMouseDown = true)
   window.addEventListener('mouseup', () => isMouseDown = false)
   // volumeSlider.addEventListener('mouseover', changeVolume);
   volumeSlider.addEventListener('click', changeVolume);
-  progressSlider.addEventListener('click', setProgress);
+  // progressSlider.addEventListener('click', setProgress);
   fullscreenBtn.addEventListener('click', toggleFullscreen);
   speedBtns.forEach(speedBtn => {
     speedBtn.addEventListener('click', setSpeed);

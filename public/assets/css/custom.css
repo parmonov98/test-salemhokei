@@ -2,19 +2,39 @@
     display: none;
 }
 
-.header .menu ul a span:before {
+/* .header .menu ul a span:before {
     display: none;
+} */
+
+.header .menu ul > li:nth-child(1) a:hover > span::before {
+    color: darkcyan;
+}
+.header .menu ul > li:nth-child(even) a:hover > span::before {
+    color: lightseagreen;
+}
+.header .menu ul > li:nth-child(odd) a:hover > span::before {
+    color: firebrick;
+}
+.header .menu ul > li:nth-child(4) a:hover > span::before {
+    color: firebrick;
+}
+.header .menu ul > li:nth-child(5) a:hover > span::before {
+    color: lightseagreen;
+}
+.header .menu ul > li:nth-child(6) a:hover > span::before {
+    color: 	#9f9904;
+}
+.header .menu ul > li:nth-child(7) a:hover > span::before {
+    color: 	#2E2D88;
+}
+.header .menu ul > li:nth-child(8) a:hover > span::before {
+    color: 	#9932CC;
+}
+.header .menu ul > li:nth-child(9) a:hover > span::before {
+    color: 	#56887D;
 }
 
-.header .menu ul a:hover span {
-    /* display: none; */
-    transform: none;
-    -webkit-transform: none;
-}
 
-.header .menu ul a:hover {
-    color: #009ee0;
-}
 
 .banner {
     position: relative;
