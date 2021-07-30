@@ -10,7 +10,7 @@
     <section class="banner">
     <div class='player-container'>
       <div class='player'>
-      <video id='video' src='https://player.vimeo.com/external/271851475.sd.mp4?s=1a5c9b2541b420c133ded968b7c042fda26a8c0e&profile_id=165' autoplay playsinline></video>
+      <video id='video'  src='https://player.vimeo.com/external/271851475.sd.mp4?s=1a5c9b2541b420c133ded968b7c042fda26a8c0e&profile_id=165' autoplay="true" muted="muted" playsinline></video>
         <div class='play-btn-big'></div>
         <div class='controls'>
           <div class="time"><span class="time-current"></span><span class="time-total"></span></div>
@@ -428,8 +428,6 @@
   var volumeBtn = document.querySelector('.volume-btn');
   var volumeSlider = document.querySelector('.volume-slider');
   var volumeFill = document.querySelector('.volume-filled');
-  var progressSlider = document.querySelector('.progress');
-  var progressFill = document.querySelector('.progress-filled');
   var textCurrent = document.querySelector('.time-current');
   var textTotal = document.querySelector('.time-total');
   var speedBtns = document.querySelectorAll('.speed-item');
@@ -487,11 +485,6 @@
     return `${minutes}:${seconds}`;
   }
 
-  function setProgress(e) {
-    const newTime = e.offsetX/progressSlider.offsetWidth;
-    progressFill.style.width = `${newTime*100}%`;
-    video.currentTime = newTime*video.duration;
-  }
   function launchIntoFullscreen(element) {
     if(element.requestFullscreen) {
       element.requestFullscreen();
@@ -549,9 +542,10 @@
   volumeSlider.addEventListener('click', changeVolume);
   // progressSlider.addEventListener('click', setProgress);
   fullscreenBtn.addEventListener('click', toggleFullscreen);
+
   speedBtns.forEach(speedBtn => {
     speedBtn.addEventListener('click', setSpeed);
-  })
+  });
   window.addEventListener('keydown', handleKeypress);
 
     $('.carousel-regular').slick({
@@ -577,8 +571,9 @@
     })
 
     window.onload= function(){
-	    var x = document.getElementById("video").play();
-	  }
+        toggleMute()
+	    togglePlay();
+	}
   </script>
   <!---->
 @endsection
