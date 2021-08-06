@@ -11,6 +11,7 @@ use App\Models\Section;
 use App\Models\Video;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use App\Helpers\EmailHelper;
@@ -73,7 +74,7 @@ class PageController extends Controller
 
         $type = $request->type;
         if (empty($type)) {
-            $schools = Section::where("is_published", "=", 1)->with('regions')->paginate(6);
+            $schools = [];
         } else {
             $schools = Section::where('is_published', '=', 1)->with('regions')->whereHas('regions', function ($query) use ($type) {
                 $query->where('regions.id', '=', $type);
