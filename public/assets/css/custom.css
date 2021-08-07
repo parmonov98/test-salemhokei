@@ -37,7 +37,7 @@
 
 .banner {
     position: relative;
-    max-height: 100vh;
+    height: 100vh;
     z-index: 1;
     overflow: hidden;
 }
