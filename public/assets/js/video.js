@@ -26,7 +26,8 @@ class VideoPlayer {
 
         const video = playerContainer.querySelector('video');
         if (video.paused) {
-            video.play()
+            video.play();
+            video.muted = false;
             playerContainer.querySelector('.play-button').textContent = '❚ ❚'
         } else {
             video.pause()

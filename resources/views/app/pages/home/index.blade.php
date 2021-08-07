@@ -64,7 +64,7 @@
       </div>
     </div>
       {{-- <video class="w-100" autoplay loop controls>
-        <source src="/assets/Tech-Hockey-Intro-Video.mp4" type="video/mp4">
+        <source src="/assets/hockey-video.mp4" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
         Your browser does not support the video tag.
       </video> --}}
@@ -79,7 +79,7 @@
             <ul>
                 <li>
                     <div class="video-player">
-                        <video src="{{asset('assets/videos/Tech-Hockey-Intro-Video.mp4')}}" poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
+                        <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}" poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
                         <div class="player-controls">
                             <button class="play-button" title="Play">►</button>
                         </div>
@@ -87,7 +87,7 @@
                 </li>
                 <li>
                     <div class="video-player">
-                        <video src="{{asset('assets/videos/Tech-Hockey-Intro-Video.mp4')}}" poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
+                        <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}" poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
                         <div class="player-controls">
                             <button class="play-button" title="Play">►</button>
                         </div>
@@ -95,7 +95,7 @@
                 </li>
                 <li>
                     <div class="video-player">
-                        <video src="{{asset('assets/videos/Tech-Hockey-Intro-Video.mp4')}}" poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
+                        <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}" poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
                         <div class="player-controls">
                             <button class="play-button" title="Play">►</button>
                         </div>

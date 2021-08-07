@@ -70,7 +70,7 @@
             <ul>
                 <li>
                     <div class="video-player">
-                        <video src="<?php echo e(asset('assets/videos/Tech-Hockey-Intro-Video.mp4')); ?>" poster="<?php echo e(asset('assets/videos/thumbnail-video.png')); ?>" class="video"></video>
+                        <video muted="false" src="<?php echo e(asset('assets/videos/Tech-Hockey-Intro-Video.mp4')); ?>" poster="<?php echo e(asset('assets/videos/thumbnail-video.png')); ?>" class="video"></video>
                         <div class="player-controls">
                             <button class="play-button" title="Play">►</button>
                         </div>
@@ -78,7 +78,7 @@
                 </li>
                 <li>
                     <div class="video-player">
-                        <video src="<?php echo e(asset('assets/videos/Tech-Hockey-Intro-Video.mp4')); ?>" poster="<?php echo e(asset('assets/videos/thumbnail-video.png')); ?>" class="video"></video>
+                        <video muted="false" src="<?php echo e(asset('assets/videos/Tech-Hockey-Intro-Video.mp4')); ?>" poster="<?php echo e(asset('assets/videos/thumbnail-video.png')); ?>" class="video"></video>
                         <div class="player-controls">
                             <button class="play-button" title="Play">►</button>
                         </div>
@@ -86,7 +86,7 @@
                 </li>
                 <li>
                     <div class="video-player">
-                        <video src="<?php echo e(asset('assets/videos/Tech-Hockey-Intro-Video.mp4')); ?>" poster="<?php echo e(asset('assets/videos/thumbnail-video.png')); ?>" class="video"></video>
+                        <video muted="false" src="<?php echo e(asset('assets/videos/Tech-Hockey-Intro-Video.mp4')); ?>" poster="<?php echo e(asset('assets/videos/thumbnail-video.png')); ?>" class="video"></video>
                         <div class="player-controls">
                             <button class="play-button" title="Play">►</button>
                         </div>
