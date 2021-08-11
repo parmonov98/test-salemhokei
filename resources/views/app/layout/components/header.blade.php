@@ -28,42 +28,10 @@
             @if ($lang == 'kk')
             <nav class="menu menu--kk">@else<nav class="menu">
                     @endif
-                    {{-- <ul>
-        <li><a href="/{{ $lang . '/about' }}" title="{{ __('default.pages.header.about') }}"><span
-                        data-title="{{ __('default.pages.header.about') }}">{{ __('default.pages.header.about') }}</span></a>
-                    </li>
-                    <li><a href="/{{ $lang . '/schools' }}" title="{{ __('default.pages.header.schools') }}"><span
-                                data-title="{{ __('default.pages.header.schools') }}">{{ __('default.pages.header.schools') }}</span></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" title="{{ __('default.pages.header.to_parents') }}">
-                            <span
-                                data-title="{{ __('default.pages.header.to_parents') }}">{{ __('default.pages.header.to_parents') }}</span>
-                        </a>
 
-                    </li>
-                    <li><a href="/{{ $lang . '/equipment' }}" title="{{ __('default.pages.header.equipment') }}"><span
-                                data-title="{{ __('default.pages.header.equipment') }}">{{ __('default.pages.header.equipment') }}</span></a>
-                    </li>
-                    <li><a href="/{{ $lang . '/faq' }}" title="{{ __('default.pages.header.equipment') }}"><span
-                                data-title="{{ __('default.pages.for_parents.whats_start') }}">{{ __('default.pages.for_parents.whats_start') }}</span></a>
-                    </li>
-                    <li>
-                        <a href="/{{ $lang . '/news' }}" title="{{ __('default.pages.header.news') }}">
-                            <span
-                                data-title="{{ __('default.pages.header.news') }}">{{ __('default.pages.header.news') }}</span>
-                        </a>
-                    </li>
-                    <li>
-
-                    </li>
-                    </ul> --}}
 
                     <div class="row">
-                        {{-- <a href="/{{ $lang}}/" title="instagram:salem.hokei" class="btn" style="margin-right: 0em;">
-                            SALEM!
-                        </a> --}}
-                        {{-- {{$MyNavBar}} --}}
+
                         {!! $MyNavBar->asUl( ['class' => 'first_level_list'], ['class' => 'second_level_list']) !!}
 
                         <div class="language" style="padding-left: 2em;">

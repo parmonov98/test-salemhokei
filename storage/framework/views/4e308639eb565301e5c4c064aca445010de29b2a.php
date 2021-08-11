@@ -22,11 +22,10 @@
             <?php if($lang == 'kk'): ?>
             <nav class="menu menu--kk"><?php else: ?><nav class="menu">
                     <?php endif; ?>
-                    
+
 
                     <div class="row">
-                        
-                        
+
                         <?php echo $MyNavBar->asUl( ['class' => 'first_level_list'], ['class' => 'second_level_list']); ?>
 
 

@@ -11,7 +11,7 @@
             </div>
         </div>
     </section>
-    
+
     <?php if($schools == null): ?>
     <section>
         <div class="container">
@@ -205,8 +205,6 @@
                         </g>
         </svg>
                 </div>
-
-
         </div>
     </section>
     <?php endif; ?>

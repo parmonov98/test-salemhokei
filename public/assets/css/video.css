@@ -21,13 +21,17 @@ html {
 
 .player-controls {
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
+    left: 0;
     width: 100%;
-    transform: translateY(100%) translateY(-5px);
+    height: 100%;
+    transform: translate(0px, 0px);
     transition: 0.3s;
     flex-wrap: wrap;
-    background: rgba(0, 0, 0, 0.6);
+    /*background: rgba(0, 0, 0, 0.6);  */
 }
 
 .video-player:hover .player-controls {
@@ -35,11 +39,13 @@ html {
 }
 
 .play-button {
-    width: 10%;
+    width: 64px;
     border: none;
-    background: black;
+    background: #009ee0;
     color: white;
-    padding: 10px;
+    padding: 8px;
+    height: 32px;
+    border-radius: 32px;
 }
 
 .play-button:focus {
