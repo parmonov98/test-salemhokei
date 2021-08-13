@@ -34,6 +34,9 @@ html {
     /*background: rgba(0, 0, 0, 0.6);  */
 }
 
+.video-player:hover .play-button {
+    visibility: visible;
+}
 .video-player:hover .player-controls {
     transform: translateY(0);
 }
@@ -46,6 +49,7 @@ html {
     padding: 8px;
     height: 32px;
     border-radius: 32px;
+    visibility: hidden;
 }
 
 .play-button:focus {
@@ -90,21 +94,9 @@ input[type="range"]::-webkit-slider-thumb {
     cursor: pointer;
 }
 
-.video-progress {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 5px;
-    transition: 0.3s;
-    background: rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-}
-
-.video-progress-filled {
-    width: 0;
-    background: orangered;
-}
 
 .video-player:hover .video-progress {
     height: 20px;
+
 }
+

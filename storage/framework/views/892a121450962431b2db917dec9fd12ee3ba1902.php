@@ -256,4 +256,4 @@
         })
     </script>
 
-<?php endif; ?><?php /**PATH /home/dev/Documents/laravel/test.salemhokei.kz/resources/views/app/partials/modals/request.blade.php ENDPATH**/ ?>
+<?php endif; ?><?php /**PATH /home/dev/www/test.salemhokei.loc/resources/views/app/partials/modals/request.blade.php ENDPATH**/ ?>

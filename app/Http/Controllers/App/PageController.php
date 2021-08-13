@@ -217,16 +217,19 @@ class PageController extends Controller
 
     public function record_to_school(Request $request, $lang = 'ru')
     {
-        $emails = array(env('MAIL_USERNAME'));
 
-        Mail::send('app.pages.emails.record_to_school', ['data' => $request], function ($m) use ($emails) {
+        $emails = array($request->email);
+//        dd($emails);
+        $mailed = Mail::send('app.pages.emails.record_to_school', ['data' => $request], function ($m) use ($emails) {
             foreach ($emails as $email) {
                 $m->from(env('MAIL_USERNAME'), 'Salem Hokei');
                 $m->to($email, 'Receiver')->subject('Запись на пробное занятие');
             }
         });
 
-        return redirect()->back()->with('success', 'message send!');
+
+        dd($mailed);
+//        return redirect()->back()->with('success', 'message send!');
     }
 
     public function show(Request $request, $lang,  $alias)

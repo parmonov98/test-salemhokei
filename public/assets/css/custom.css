@@ -64,13 +64,22 @@
 
     .header .logo .mobile_logo_img {
         display: inline-block;
-        width: 6em;
+        width: 8em;
     }
 
     .banner{
         height: auto;
     }
 }
+
+@media (max-width: 1140px) and (min-width: 769px)  {
+
+    .banner{
+        height: auto;
+    }
+}
+
+
 
 
 .page_section video,

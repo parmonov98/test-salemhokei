@@ -25,4 +25,4 @@
 </body>
 
 </html>
-<?php /**PATH /home/dev/Documents/laravel/test.salemhokei.kz/resources/views/app/layout/index.blade.php ENDPATH**/ ?>
+<?php /**PATH /home/dev/www/test.salemhokei.loc/resources/views/app/layout/index.blade.php ENDPATH**/ ?>
