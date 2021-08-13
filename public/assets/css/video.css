@@ -49,7 +49,7 @@ html {
     padding: 8px;
     height: 32px;
     border-radius: 32px;
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
 .play-button:focus {
