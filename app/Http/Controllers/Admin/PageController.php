@@ -43,6 +43,12 @@ class PageController extends Controller
         return view('admin.pages.menu');
     }
 
+    public function hockey(Request $request)
+    {
+//        dd($request->all());
+        return view('admin.pages.hockey');
+    }
+
     public function edit(Page $item)
     {
         return view('admin.pages.view', [

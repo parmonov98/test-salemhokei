@@ -17,7 +17,17 @@ class CreateSectionsTable extends Migration
             $table->increments("id");
             $table->integer("parent_id")->unsigned()->index()->nullable()->default(null);
             $table->foreign("parent_id")->references("id")->on("sections")->onDelete("SET NULL");
+            $table->string("avatar")->nullable();
             $table->string("name_ru")->nullable();
+            $table->string("open_graph_title_en")->nullable();
+            $table->string("open_graph_title_kk")->nullable();
+            $table->string("open_graph_title_ru")->nullable();
+            $table->string("open_graph_description_en")->nullable();
+            $table->string("open_graph_description_kk")->nullable();
+            $table->string("open_graph_description_ru")->nullable();
+            $table->string("city_en")->nullable();
+            $table->string("city_kk")->nullable();
+            $table->string("city_ru")->nullable();
             $table->string("name_kk")->nullable();
             $table->string("name_en")->nullable();
             $table->longText("description_ru")->nullable();
@@ -39,6 +49,10 @@ class CreateSectionsTable extends Migration
             $table->longText("meta_keywords_kk")->nullable();
             $table->longText("meta_keywords_en")->nullable();
             $table->string("alt")->nullable();
+            $table->string("annotation_en")->nullable();
+            $table->string("annotation_ru")->nullable();
+            $table->string("annotation_kk")->nullable();
+            $table->string("alias")->nullable();
             $table->string("alias_ru")->nullable();
             $table->string("alias_kk")->nullable();
             $table->string("alias_en")->nullable();

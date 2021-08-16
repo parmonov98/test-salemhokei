@@ -1,3 +1,4 @@
+<?php /* /home/dev/www/test.salemhokei.loc/resources/views/app/layout/components/header.blade.php */ ?>
 <header class="header">
     <div class="container">
         <div class="logo">
@@ -24,12 +25,12 @@
                     <?php endif; ?>
 
 
-                    <div class="row">
+                    <div class="d-flex flex-column flex-lg-row justify-content-around">
 
                         <?php echo $MyNavBar->asUl( ['class' => 'first_level_list'], ['class' => 'second_level_list']); ?>
 
 
-                        <div class="language" style="padding-left: 2em;">
+                        <div class="language" style="">
                             <?php if($lang == 'ru'): ?>
                             <a href="/kk<?php echo e($uri); ?>" title="KZ">KZ</a><span>|</span><a href="/ru<?php echo e($uri); ?>" title="RU"
                                 class="active">RU</a>
@@ -47,4 +48,3 @@
 </header>
 
 
-<?php /**PATH /home/dev/www/test.salemhokei.loc/resources/views/app/layout/components/header.blade.php ENDPATH**/ ?>

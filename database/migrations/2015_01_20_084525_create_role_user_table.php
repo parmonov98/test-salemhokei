@@ -16,10 +16,10 @@ class CreateRoleUserTable extends Migration
 
         Schema::create($name, function (Blueprint $table) {
             $table->bigIncrements("id");
-            $table->unsignedBigInteger("role_id")->index();
-            $table->foreign("role_id")->references("id")->on("roles")->onDelete("cascade");
-            $table->unsignedBigInteger("user_id")->index();
-            $table->foreign("user_id")->references("id")->on("users")->onDelete("cascade");
+            $table->unsignedBigInteger("role_id")->nullable();
+//            $table->foreign("role_id")->references("id")->on("roles")->onDelete("set null");
+            $table->unsignedBigInteger("user_id")->nullable();
+//            $table->foreign("user_id")->references("id")->on("users")->onDelete("set null");
             $table->timestamps();
         });
     }

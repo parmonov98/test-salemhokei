@@ -1,3 +1,4 @@
+<?php /* /home/dev/www/test.salemhokei.loc/resources/views/app/layout/index.blade.php */ ?>
 <!DOCTYPE html>
 <html lang="<?php echo e($lang); ?>">
 
@@ -21,8 +22,7 @@
 <div class="scroll-up icon-chevron-up compensate-for-scrollbar"></div>
 <?php echo $__env->make("app.layout.components.scripts", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php echo $__env->make("app.layout.components.modals", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-<?php echo $__env->yieldContent("scripts"); ?>
+
 </body>
 
 </html>
-<?php /**PATH /home/dev/www/test.salemhokei.loc/resources/views/app/layout/index.blade.php ENDPATH**/ ?>

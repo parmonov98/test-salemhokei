@@ -1,3 +1,4 @@
+<?php /* /home/dev/www/test.salemhokei.loc/resources/views/app/layout/components/footer.blade.php */ ?>
 <footer class="footer">
     <div class="container">
         <div class="row row--multiline">
@@ -110,4 +111,3 @@
         </div>
     </div>
 </footer>
-<?php /**PATH /home/dev/www/test.salemhokei.loc/resources/views/app/layout/components/footer.blade.php ENDPATH**/ ?>

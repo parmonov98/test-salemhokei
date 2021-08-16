@@ -126,6 +126,7 @@ Route::group(["namespace" => "Admin"], function () {
         });
 
         Route::group(["middleware" => "has.permission:page.edit"], function () {
+            Route::get("/page/edit/hockey", "PageController@hockey")->name('page.hockey');
             Route::post("/page/{item}", "PageController@update");
         });
         Route::group(["middleware" => "has.permission:page.delete"], function () {

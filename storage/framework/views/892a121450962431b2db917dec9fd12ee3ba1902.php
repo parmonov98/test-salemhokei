@@ -1,3 +1,4 @@
+<?php /* /home/dev/www/test.salemhokei.loc/resources/views/app/partials/modals/request.blade.php */ ?>
 <div id="request" class="form-modal" style="display:none">
     <h3 class="title-primary text-center"><?php echo e(__("default.pages.modals.write_us")); ?></h3>
     <form class="form" method="post" action="/contact_mail">
@@ -256,4 +257,4 @@
         })
     </script>
 
-<?php endif; ?><?php /**PATH /home/dev/www/test.salemhokei.loc/resources/views/app/partials/modals/request.blade.php ENDPATH**/ ?>
+<?php endif; ?>

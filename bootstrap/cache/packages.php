@@ -53,6 +53,13 @@
       'Image' => 'Intervention\\Image\\Facades\\Image',
     ),
   ),
+  'kitloong/laravel-migrations-generator' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'KitLoong\\MigrationsGenerator\\MigrationsGeneratorServiceProvider',
+    ),
+  ),
   'laravel-notification-channels/smsc-ru' => 
   array (
     'providers' => 
@@ -102,6 +109,13 @@
     'providers' => 
     array (
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    ),
+  ),
+  'orangehill/iseed' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Orangehill\\Iseed\\IseedServiceProvider',
     ),
   ),
 );

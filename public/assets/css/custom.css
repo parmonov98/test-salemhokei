@@ -37,7 +37,7 @@
 
 .banner {
     position: relative;
-    height: 100vh;
+    /*height: 100vh;*/
     z-index: 1;
     overflow: hidden;
 }
@@ -55,28 +55,6 @@
 
 .banner>video {
     width: 100%;
-}
-
-@media (max-width: 768px) {
-    .logo_img {
-        display: none;
-    }
-
-    .header .logo .mobile_logo_img {
-        display: inline-block;
-        width: 8em;
-    }
-
-    .banner{
-        height: auto;
-    }
-}
-
-@media (max-width: 1140px) and (min-width: 769px)  {
-
-    .banner{
-        height: auto;
-    }
 }
 
 
@@ -138,3 +116,48 @@ body {
 .footer .footer-socials a svg{
     width: 100%;
 }
+
+.menu > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.language{
+    padding-left: 2em;
+
+}
+
+@media (max-width: 768px) {
+    .header .menu ul > li {
+        margin-right: 0em !important;
+    }
+
+    .language{
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .logo_img {
+        display: none;
+    }
+
+    .header .logo .mobile_logo_img {
+        display: inline-block;
+        width: 8em;
+    }
+
+    .banner{
+        height: auto;
+    }
+}
+
+@media (max-width: 1140px) and (min-width: 769px)  {
+
+    .banner{
+        height: auto;
+    }
+
+
+}
+
+
