@@ -3,7 +3,7 @@ $(".scroll-up").click(function () {
 }), $(window).scroll(function () {
     $(window).scrollTop() > $(window).height() ? $(".scroll-up").fadeIn() : $(".scroll-up").fadeOut();
 }), $(function () {
-    $("[data-fancybox]").fancybox({touch: !1});
+    $("[data-fancybox]").fancybox({touch: !1, keyboard: false});
 });
 
 function chosenInit() {

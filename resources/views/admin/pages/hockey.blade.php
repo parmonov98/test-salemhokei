@@ -1002,4 +1002,33 @@
 @section('scripts')
     <script src="/assets/libs/fancybox/dist/jquery.fancybox.min.js"></script>
     <script src="/assets/admin/js/scripts.js"></script>
+
+
+    <script>
+        window.onunload = function () {
+            alert('You are trying to leave.');
+            return false;
+        }
+        var goal_keeper__content_ru = $( "#goal_keeper__content_ru" ).first();
+        goal_keeper__content_ru.dblclick(function(e) {
+            console.log(e.target.getAttribute('contenteditable'));
+            if (e.target.getAttribute('contenteditable') == "false") {
+                e.target.setAttribute('contenteditable',true);
+            } else {
+                e.target.setAttribute('contenteditable',false);
+            }
+        });
+        // var goal_keeper__content = $( "#goal_keeper__content_kk" ).first();
+        // goal_keeper__content.dblclick(function() {
+        //     var value = goal_keeper__content.attr('contenteditable');
+        //     console.log(value);
+        //
+        //     if (value == 'false') {
+        //         goal_keeper__content.attr('contenteditable','true');
+        //     }
+        //     else {
+        //         goal_keeper__content.attr('contenteditable','false');
+        //     }
+        // });
+    </script>
 @endsection

@@ -4905,3 +4905,13 @@ ul.notifications {
     width: calc(50%);
     max-width: 100%;
 }
+
+[contenteditable="false"]{
+    border: 1px solid transparent;
+    padding: 3px 5px;
+}
+
+[contenteditable="true"]{
+    border: 1px solid #999;
+    padding: 3px 5px;
+}

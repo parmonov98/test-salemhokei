@@ -56,12 +56,12 @@
 
     <div class="tab-content">
         <div id="russian" class="tab-pane fade in active">
-            <h4 class="title-primary text-center">{{ __("default.pages.about.goalkeeper_title") }}</h4>
-            <p>{!! __("default.pages.about.goalkeeper_content") !!}</p>
+            <h4 id="goal_keeper__title_ru" contenteditable="false" class="title-primary text-center">{{ __("default.pages.about.goalkeeper_title") }}</h4>
+            <p id="goal_keeper__content_ru" contenteditable="false">{!! __("default.pages.about.goalkeeper_content") !!}</p>
         </div>
         <div id="kazakh" class="tab-pane fade">
-            <h4 class="title-primary text-center">Қақпашы</h4>
-            <p>Жақсы әрі сенімді қақпашы – команданың жартысы, бұл әр түрлі деңгейдегі хоккей мамандарының жалпы танылған пікірі. Тарих матчтің тағдырын қақпашы жалғыз өзі шешкен мысалдарға толы. Қақпашылардың ең маңызды қасиеті – психологиялық тұрақтылығы, оның сабырлы әрекеттері команда мүшелеріне сенімділік беріп, таралады. Физиологиялық ерекшеліктердің ішінде табиғи икемділікті, тек реакцияны, перифериялық көру қабілетін, физикалық төзімділікті есепке алу қажет.</p>
+            <h4 id="goal_keeper__title_kk" contenteditable="false" class="title-primary text-center">Қақпашы</h4>
+            <p id="goal_keeper__content_kk" contenteditable="false">Жақсы әрі сенімді қақпашы – команданың жартысы, бұл әр түрлі деңгейдегі хоккей мамандарының жалпы танылған пікірі. Тарих матчтің тағдырын қақпашы жалғыз өзі шешкен мысалдарға толы. Қақпашылардың ең маңызды қасиеті – психологиялық тұрақтылығы, оның сабырлы әрекеттері команда мүшелеріне сенімділік беріп, таралады. Физиологиялық ерекшеліктердің ішінде табиғи икемділікті, тек реакцияны, перифериялық көру қабілетін, физикалық төзімділікті есепке алу қажет.</p>
         </div>
 
     </div>
