@@ -34,6 +34,9 @@
     color: 	#56887D;
 }
 
+.header .menu ul li.active a {
+    border-bottom: 1px dashed #b8c7d6;
+}
 
 .banner {
     position: relative;

@@ -20,6 +20,9 @@ Route::group(["namespace" => "Admin"], function () {
 
     Route::group(["prefix" => "admin"], function () {
 
+        //
+        Route::get("/static-page/{item}", "PageController@editStaticPage");
+
         Route::get("/login", "LoginController@showLoginForm");
         Route::post("/login", "LoginController@login");
         Route::get("/", "ProfileController@show");
@@ -114,9 +117,10 @@ Route::group(["namespace" => "Admin"], function () {
         Route::group(["middleware" => "has.permission:event.delete"], function () {
             Route::delete("/event/{item}", "EventController@delete");
         });
-        //
+
         // Страницы
         Route::group(["middleware" => "has.permission:page.view"], function () {
+
             Route::get("/pages", "PageController@index");
             Route::get("/page/{item}", "PageController@edit");
         });

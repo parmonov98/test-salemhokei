@@ -17,6 +17,8 @@
             @include('admin.partials.footer')
         </div>
     </div>
+{{--    @include("app.layout.components.scripts")--}}
+
     @include('admin.partials.scripts')
     @yield('scripts')
 </body>

@@ -6,13 +6,7 @@
     <div style="background-image: url(/assets/img/pattern1.png);
     background-size: 1440px; opacity: .5;" class="main-wrapper__bg"></div>
 
-    <section class="blue-title">
-        <div class="container">
-            <div class="title-block text-center">
-                <h1 class="title-primary">{{ __("default.pages.schools.title") }}</h1>
-            </div>
-        </div>
-    </section>
+    @include('app.layout.components.page-title')
 
     @if($schools == null)
     <section>

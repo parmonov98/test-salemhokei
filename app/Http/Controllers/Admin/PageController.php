@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\MenuItem;
 use App\Models\Page;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -20,7 +21,16 @@ class PageController extends Controller
         if ($term) {
             $query = $query->where('name_ru', 'like', '%' . $term . '%');
         }
-        $items = $query->paginate();
+        $items = $query->get();
+        $menuItems = MenuItem::select('id', 'label_kk as name_kk', 'label_ru as name_ru', 'link_ru as link_ru', 'link_kk as link_kk')->get();
+        $menuItems->each(function ($item) {
+            $item->is_published = 1;
+            $item->created_at = now();
+        });
+
+        $items = $items->merge($menuItems);
+
+//        dd($items);
 
         return view('admin.pages.index', [
             'items' => $items,
@@ -43,17 +53,29 @@ class PageController extends Controller
         return view('admin.pages.menu');
     }
 
-    public function hockey(Request $request)
+    public function hockey(Request $request, MenuItem $item)
     {
-//        dd($request->all());
-        return view('admin.pages.hockey');
-    }
-
-    public function edit(Page $item)
-    {
-        return view('admin.pages.view', [
+//        dd($item);
+        return view('admin.pages.hockey', [
             'item' => $item
         ]);
+
+    }
+
+    public function editStaticPage(Request $request, MenuItem $item)
+    {
+        switch ($item->link){
+            case 'hockey':
+
+                return $this->hockey($request, $item);
+                die;
+                break;
+
+        }
+        dd($item);
+//        return view('admin.pages.view', [
+//            'item' => $item
+//        ]);
     }
 
     public function save(Request $request)

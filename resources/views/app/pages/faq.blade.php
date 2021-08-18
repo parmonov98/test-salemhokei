@@ -6,13 +6,7 @@
     <div style="background: url(/assets/img/pattern4.png);
     background-size: 1440px; opacity: .75;" class="main-wrapper__bg"></div>
 
-    <section class="blue-title">
-        <div class="container">
-            <div class="title-block text-center">
-                <h1 class="title-primary">{{ __("default.pages.for_parents.whats_start") }}</h1>
-            </div>
-        </div>
-    </section>
+    @include('app.layout.components.page-title')
 
     <section>
         <div class="container">

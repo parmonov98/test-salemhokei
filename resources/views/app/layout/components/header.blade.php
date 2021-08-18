@@ -32,6 +32,7 @@
 
                     <div class="d-flex flex-column flex-lg-row justify-content-around">
 
+{{--                        {{ AppMenu::get('MyNavBar')->active() }}--}}
                         {!! $MyNavBar->asUl( ['class' => 'first_level_list'], ['class' => 'second_level_list']) !!}
 
                         <div class="language" style="">

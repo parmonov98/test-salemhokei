@@ -1,21 +1,11 @@
-
 @extends("admin.layout")
 
 @section('head')
-
-{{--    <link rel="stylesheet"--}}
+    <link rel="stylesheet"
           href="/assets/admin/vendors/plupload-2.3.6/js/jquery.plupload.queue/css/jquery.plupload.queue.css"/>
     <link rel="stylesheet" href="/assets/admin/vendors/nprogress/nprogress.css"/>
     <link rel="stylesheet" href="/assets/admin/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.css"/>
-
-<link rel="stylesheet" href="/assets/libs/fancybox/dist/jquery.fancybox.min.css" type="text/css" media="screen" />
-{{--<link rel="stylesheet" href="/assets/css/style.css?v=1629082442" type="text/css" media="screen" />--}}
-<link rel="stylesheet" href="/assets/libs/slick-carousel/slick/slick.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="/assets/libs/chosen/chosen.css" type="text/css" media="screen" />
-{{--<link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="screen" />--}}
-{{--<link rel="stylesheet" href="/assets/css/custom.css" type="text/css" />--}}
-
-{{--    <link rel="stylesheet" href="/assets/admin/vendors/bootstrap-daterangepicker/daterangepicker.css">--}}
+    <link rel="stylesheet" href="/assets/admin/vendors/bootstrap-daterangepicker/daterangepicker.css">
 
     <link rel="stylesheet" href="/assets/admin/css/main.css"/>
 
@@ -25,14 +15,8 @@
             float: none;
         }
     </style>
-@endsection
-{{--@section('scripts')--}}
 
-{{--@endsection--}}
-
-
-@section('title')
-{{--    Страница: {{ $item->name_ru }}--}}
+    <link rel="stylesheet" href="/assets/libs/fancybox/dist/jquery.fancybox.min.css" type="text/css" media="screen" />
 @endsection
 
 @section('content')
@@ -42,7 +26,7 @@
                 <div class="title_left">
                     <ol class="breadcrumb">
                         <li><a href="/admin/pages/">Все страницы</a></li>
-{{--                        <li class="active">{{ $item->name_ru }}</li>--}}
+                        <li class="active">{{ $item->name_ru }}</li>
                     </ol>
                 </div>
 
@@ -72,8 +56,7 @@
                 @endif
 
 
-
-                    <section>
+                    <section class="col-10">
                         <div class="container">
                             <h2 class="title-primary">{!! __('default.pages.about.block_title_4') !!}</h2>
                             <div class="plain-text plain-text__18">
@@ -99,7 +82,8 @@
                     </section>
 
 
-                    <section>
+
+                    <section class="col-10">
                         <div class="container">
                             <div class="kit-plan">
                                 <div class="row row--multiline">
@@ -560,7 +544,7 @@
                     </section>
 
 
-                    <section class="field-plan">
+                    <section class="col-10 field-plan">
                         <div class="container">
                             <h2 class="title-primary text-center">{!! __('default.pages.about.hockey_infrastructure_title') !!}</h2>
                             <div class="row row--multiline">
@@ -1007,325 +991,15 @@
                         </div>
                     </section>
 
-
             </div>
         </div>
     </div>
 
+    @include("admin.components.modals")
 @endsection
 
 
 @section('scripts')
-    <div class="scroll-up icon-chevron-up"></div>
-{{--    <script src="/assets/libs/jquery/dist/jquery.js"></script>--}}
-{{--    <script src="/assets/libs/maskedinput/maskedinput.js"></script>--}}
     <script src="/assets/libs/fancybox/dist/jquery.fancybox.min.js"></script>
-{{--    <script src="/assets/libs/slick-carousel/slick/slick.js"></script>--}}
-{{--    <script src="/assets/libs/chosen/chosen.jquery.js"></script>--}}
-{{--    <script src="/assets/js/scripts.js"></script>--}}
-
-{{--    <script src="/assets/admin/vendors/tinymce/tinymce.min.js?apiKey=hn939jagzy31qbhyi2bwcnw3dn5l44sft7wylapoxgu10nuk">--}}
-{{--    </script>--}}
-{{--    <script type="text/javascript">--}}
-{{--        function init_editor(id, language) {--}}
-{{--            tinymce.init({--}}
-{{--                selector: 'textarea',--}}
-{{--                language: language,--}}
-{{--                branding: false,--}}
-{{--                images_upload_url: "/ajax_upload_image?_token={{ csrf_token() }}",--}}
-{{--                files_upload_url: "/ajax_upload_file?_token={{ csrf_token() }}",--}}
-{{--                automatic_uploads: false,--}}
-{{--                min_height: 200,--}}
-{{--                max_height: 600,--}}
-{{--                relative_urls: false,--}}
-{{--                remove_script_host: false,--}}
-{{--                browser_spellcheck: true,--}}
-{{--                convert_urls: true,--}}
-{{--                plugins: "hr lists link image imagetools textcolor fileupload code",--}}
-{{--                menubar: "",--}}
-{{--                toolbar: "newdocument undo redo | bold italic underline strikethrough | " +--}}
-{{--                    "alignleft aligncenter alignright alignjustify alignnone | " +--}}
-{{--                    "formatselect | fontsizeselect | " +--}}
-{{--                    "cut copy paste | outdent indent | blockquote | removeformat | hr | table | forecolor backcolor | code fullscreen" +--}}
-{{--                    "bullist numlist | link unlink | image styleselect rotateleft rotateright flipv fliph editimage imageoptions | fileupload",--}}
-{{--                link_context_toolbar: true,--}}
-{{--                file_browser_callback_types: "file image media",--}}
-{{--                style_formats: [{--}}
-{{--                    title: "Изображение слева",--}}
-{{--                    selector: "img",--}}
-{{--                    styles: {--}}
-{{--                        "float": "left",--}}
-{{--                        "margin": "0 10px 0 10px"--}}
-{{--                    }--}}
-{{--                },--}}
-{{--                    {--}}
-{{--                        title: "Изображение справа",--}}
-{{--                        selector: "img",--}}
-{{--                        styles: {--}}
-{{--                            "float": "right",--}}
-{{--                            "margin": "0 0 10px 10px"--}}
-{{--                        }--}}
-{{--                    }--}}
-{{--                ]--}}
-{{--            });--}}
-{{--        }--}}
-{{--    </script>--}}
-
-{{--    <script src="/assets/admin/vendors/moment/min/moment.min.js"></script>--}}
-
-{{--    <script src="/assets/admin/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>--}}
-
-{{--    <script src="/assets/admin/vendors/plupload-2.3.6/js/plupload.full.min.js"></script>--}}
-{{--    <script type="text/javascript">--}}
-{{--        function initial_plupload(object_id) {--}}
-{{--            var object = $("#" + object_id);--}}
-
-{{--            var image = new plupload.Uploader({--}}
-{{--                runtimes: "html5,flash,silverlight,gears",--}}
-{{--                browse_button: object.attr("data-drop-element-id"),--}}
-{{--                drop_element: object.attr("data-drop-element-id"),--}}
-{{--                max_file_size: "10mb",--}}
-{{--                url: "/ajax_upload_image?_token={{ csrf_token() }}",--}}
-{{--                flash_swf_url: "/assets/libs/plupload-2.3.6/js/Moxie.swf",--}}
-{{--                silverlight_xap_url: "/assets/libs/plupload-2.3.6/js/Moxie.xap",--}}
-{{--                filters: [{--}}
-{{--                    title: "Image files",--}}
-{{--                    extensions: "jpg,png,jpe,jpeg"--}}
-{{--                },],--}}
-{{--                resize: {--}}
-{{--                    width: 2000,--}}
-{{--                    height: 2000,--}}
-{{--                    quality: 90,--}}
-{{--                    crop: false--}}
-{{--                },--}}
-{{--                unique_names: true,--}}
-{{--                multiple_queues: false,--}}
-{{--                multi_selection: false,--}}
-{{--            });--}}
-
-{{--            var progressbar = $("#" + object.attr("data-progressbar-id"));--}}
-
-{{--            $("#" + object.attr("data-drop-element-id"))[0].ondragover = function () {--}}
-{{--                $(this).find(".drop-zone").addClass("over").children("strong").text("Бросьте изображение сюда");--}}
-{{--            };--}}
-{{--            $("#" + object.attr("data-drop-element-id"))[0].ondragleave = function () {--}}
-{{--                $(this).find(".drop-zone").removeClass("over").children("strong").text("Выберите изображение");--}}
-{{--            };--}}
-
-{{--            image.bind("FilesAdded", function (up, files) {--}}
-{{--                progressbar.find(".progress-bar").css({--}}
-{{--                    width: 0--}}
-{{--                });--}}
-{{--                progressbar.show();--}}
-{{--                up.refresh(); // Reposition Flash/Silverlight--}}
-{{--                $("#" + object.attr("data-drop-element-id") + " > .drop-zone").hide();--}}
-{{--                setTimeout(function () {--}}
-{{--                    up.start();--}}
-{{--                }, 200);--}}
-{{--            });--}}
-
-{{--            image.bind("UploadProgress", function (up, file) {--}}
-{{--                //$("#" + file.id).html(file.name + " - " + file.percent + "%");--}}
-{{--                progressbar.find(".progress-bar").css({--}}
-{{--                    width: file.percent + "%"--}}
-{{--                });--}}
-{{--            });--}}
-
-{{--            image.bind("Error", function (up, err) {--}}
-{{--                progressbar.hide();--}}
-{{--                $("#" + object.attr("data-drop-element-id"))[0].ondragleave();--}}
-{{--                $("#" + object.attr("data-drop-element-id") + " > .drop-zone").show();--}}
-{{--                up.refresh(); // Reposition Flash/Silverlight--}}
-{{--            });--}}
-
-{{--            image.bind("FileUploaded", function (up, file, response) {--}}
-{{--                $("#" + file.id).remove();--}}
-{{--                var obj = $.parseJSON(response.response.replace(/^.*?({.*}).*?$/gi, "$1"));--}}
-{{--                console.log(obj);--}}
-
-{{--                $("#" + object.attr("data-drop-element-id")).parent()--}}
-{{--                    .find("img")--}}
-{{--                    .attr("src", obj.location)--}}
-{{--                    .parent()--}}
-{{--                    .attr("href", obj.location);--}}
-
-{{--                $("#" + object_id).val(obj.location);--}}
-{{--            });--}}
-
-{{--            image.bind("UploadComplete", function (up) {--}}
-{{--                progressbar.hide();--}}
-{{--                $("#" + object.attr("data-drop-element-id"))[0].ondragleave();--}}
-{{--                $("#" + object.attr("data-drop-element-id") + " > .drop-zone").show();--}}
-{{--                up.refresh();--}}
-{{--            });--}}
-
-{{--            image.init();--}}
-{{--        }--}}
-{{--    </script>--}}
-
-{{--    <script type="text/javascript">--}}
-{{--        $(document).ready(function () {--}}
-{{--            init_editor("#description_ru", "ru");--}}
-{{--            init_editor("#description_en", "en");--}}
-{{--            init_editor("#description_kk", "kk");--}}
-{{--            init_editor("#acc_ru", "ru");--}}
-{{--            init_editor("#acc_en", "en");--}}
-{{--            init_editor("#acc_kk", "kk");--}}
-
-{{--            $("select").select2();--}}
-{{--        });--}}
-{{--    </script>--}}
-{{--    <script type="text/javascript">--}}
-{{--        $(document).ready(function () {--}}
-{{--            $("#published_at").daterangepicker({--}}
-{{--                singleDatePicker: true,--}}
-{{--                timePicker: true,--}}
-{{--                use24hours: true,--}}
-{{--                locale: {--}}
-{{--                    format: "YYYY-MM-DD HH:mm",--}}
-{{--                    separator: " - ",--}}
-{{--                    applyLabel: "Подтвердить",--}}
-{{--                    cancelLabel: "Отмена",--}}
-{{--                    daysOfWeek: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],--}}
-{{--                    monthNames: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь",--}}
-{{--                        "Октябрь", "Ноябрь", "Декабрь"--}}
-{{--                    ],--}}
-{{--                    firstDay: 1--}}
-{{--                }--}}
-{{--            });--}}
-{{--        });--}}
-{{--    </script>--}}
-{{--    <script type="text/javascript">--}}
-{{--        $(document).ready(function () {--}}
-{{--            initial_plupload("avatar");--}}
-{{--        })--}}
-{{--    </script>--}}
-{{--    <script type="text/javascript">--}}
-{{--        function copyToClipboard(id) {--}}
-{{--            // var copyText = document.getElementById(id);--}}
-{{--            // copyText.select();--}}
-{{--            // document.execCommand("copy");--}}
-{{--        }--}}
-{{--    </script>--}}
-{{--    <script>--}}
-{{--        @php($languages = ['ru', 'en', 'kk'])--}}
-{{--        @foreach ($languages as $lang)--}}
-{{--        $('#accordion_{{ $lang }} .add_dynamic_field').click(function (e) {--}}
-{{--            e.preventDefault();--}}
-{{--            var count = $('#accordion_{{ $lang }} .fields .dynamic_field').length;--}}
-{{--            $('#accordion_{{ $lang }} .fields').append(--}}
-{{--                '<div class="dynamic_field">' +--}}
-{{--                '<div class="form-group">' +--}}
-{{--                '<label for="accordions_{!! $lang !!}[number][]">Порядковый номер</label>' +--}}
-{{--                '<input type="number" min="0" step="1" name="accordions_{!! $lang !!}[' + (count + 1) + '][number]"' +--}}
-{{--                ' class="form-control"' +--}}
-{{--                ' placeholder="Введите порядковый номер">' +--}}
-{{--                '</div>' +--}}
-{{--                '<div class="form-group">' +--}}
-{{--                '<label for="accordions_{!! $lang !!}[title][]">Название</label>' +--}}
-{{--                '<input type="text" name="accordions_{!! $lang !!}[' + (count + 1) + '][title]"' +--}}
-{{--                ' class="form-control"' +--}}
-{{--                ' placeholder="Введите название">' +--}}
-{{--                '</div>' +--}}
-
-{{--                '<div class="form-group">' +--}}
-{{--                '<label for="accordions_{!! $lang !!}[description][]">Описание</label>' +--}}
-{{--                '<input type="text" name="accordions_{!! $lang !!}[' + (count + 1) + '][description]"' +--}}
-{{--                ' class="form-control"' +--}}
-{{--                ' placeholder="Введите описание">' +--}}
-{{--                '</div>' +--}}
-{{--                '</div>' +--}}
-{{--                '<div class="form-group {{ $errors->has('description_en') ? ' has-error' : '' }}">' +--}}
-{{--                '<label for="accordions_{!! $lang !!}[description][]">Описание</label>' +--}}
-{{--                '<textarea name="accordions_{{ $lang }}[' + (count + 1) + '][description]"--}}
-{{--            id = "description_{{ $lang }}_' + (count + 1) + '"--}}
-{{--            cols = "30"--}}
-{{--            rows = "3"--}}
-
-{{--            class--}}
-
-{{--            = "form-control" > < /textarea>'--}}
-{{--                +--}}
-{{--                '</div>' +--}}
-{{--                '</div>' +--}}
-{{--                '--}}
-{{--                < hr > ');--}}
-
-{{--            init_editor();--}}
-
-{{--            $('#employees_{{ $lang }} .add_dynamic_field').click(function (e) {--}}
-{{--                e.preventDefault();--}}
-{{--                var count = $('#employees_{{ $lang }} .fields .dynamic_field').length;--}}
-{{--                $('#employees_{{ $lang }} .fields').append(--}}
-{{--                    '<div class="dynamic_field">' +--}}
-{{--                    '<input type="hidden" name="employees_{{ $lang }}[' + (count + 1) + '][old_img]" value="">' +--}}
-{{--                    '<div class="form-group">' +--}}
-{{--                    '<label for="employees_{{ $lang }}[' + (count + 1) + '][img]">Изображение</label>' +--}}
-{{--                    '<div>' +--}}
-{{--                    '<label class="btn btn-default btn-file" style="margin: 10px 0 0;">' +--}}
-{{--                    '<span>Загрузить изображение</span>' +--}}
-{{--                    '<input type="file" id="employees_{{ $lang }}[' + (count + 1) + '][img]"--}}
-{{--                name = "employees_{{ $lang }}[' + (count + 1) + '][img]"--}}
-{{--                style = "display: none;" > ' +--}}
-{{--                '</label>' +--}}
-{{--                '</div>' +--}}
-{{--                '</div>' +--}}
-{{--                '<div class="form-group">' +--}}
-{{--                '<label for="employees_{{ $lang }}[title][]">ФИО</label>' +--}}
-{{--                '<input type="text" name="employees_{{ $lang }}[' + (count + 1) + '][title]"' +--}}
-{{--                ' class="form-control"' +--}}
-{{--                ' placeholder="Введите ФИО">' +--}}
-{{--                '</div>' +--}}
-{{--                '<div class="form-group">' +--}}
-{{--                '<label for="employees_{{ $lang }}[description][]">Описание</label>' +--}}
-{{--                '<textarea name="employees_{{ $lang }}[' + (count + 1) + '][description]"' +--}}
-{{--                '--}}
-{{--                id = "employees_{{ $lang }}_' + (count + 1) + '"--}}
-{{--                cols = "30"--}}
-{{--                ' +--}}
-{{--                ' rows="3"' +--}}
-{{--                ' class="form-control"></textarea>' +--}}
-{{--                '</div>' +--}}
-{{--                '</div>' +--}}
-{{--                '--}}
-{{--                < hr > ');--}}
-{{--                init_editor();--}}
-{{--            });--}}
-
-{{--        });--}}
-{{--        @endforeach--}}
-{{--    </script>--}}
-{{--    <script>--}}
-{{--        @php($languages = ['ru', 'en', 'kk'])--}}
-{{--        @foreach ($languages as $lang)--}}
-{{--        $('#staff_{{ $lang }} .add_dynamic_field').click(function (e) {--}}
-{{--            e.preventDefault();--}}
-{{--            var count = $('#staff_{{ $lang }} .fields .dynamic_field').length;--}}
-{{--            $('#staff_{{ $lang }} .fields').append(--}}
-{{--                '<div class="dynamic_field">' +--}}
-{{--                '<div class="form-group">' +--}}
-{{--                '<label for="staff_{!! $lang !!}[number][]">Порядковый номер</label>' +--}}
-{{--                '<input type="number" min="0" step="1" name="staff_{!! $lang !!}[' + (count + 1) + '][number]"' +--}}
-{{--                ' class="form-control"' +--}}
-{{--                ' placeholder="Введите порядковый номер">' +--}}
-{{--                '</div>' +--}}
-{{--                '<div class="form-group">' +--}}
-{{--                '<label for="staff_{!! $lang !!}[title][]">ФИО</label>' +--}}
-{{--                '<input type="text" name="staff_{!! $lang !!}[' + (count + 1) + '][title]"' +--}}
-{{--                ' class="form-control"' +--}}
-{{--                ' placeholder="Введите ФИО сотрудника">' +--}}
-{{--                '</div>' +--}}
-{{--                '<div class="form-group">' +--}}
-{{--                '<label for="staff_{!! $lang !!}[description][]">Должность</label>' +--}}
-{{--                '<input type="text" name="staff_{!! $lang !!}[' + (count + 1) + '][description]"' +--}}
-{{--                ' class="form-control"' +--}}
-{{--                ' placeholder="Введите должность сотрудника">' +--}}
-{{--                '</div>' +--}}
-{{--                '</div>' +      '< hr > ');--}}
-
-{{--            init_editor();--}}
-{{--        });--}}
-{{--        @endforeach--}}
-    </script>
-
+    <script src="/assets/admin/js/scripts.js"></script>
 @endsection

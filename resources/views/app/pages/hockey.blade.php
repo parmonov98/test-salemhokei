@@ -7,14 +7,7 @@
   <div style="background: url(/assets/img/pattern1-blue.png), #E8F7FE;background-size: 1440px;"
     class="main-wrapper__bg page_hockey"></div>
 
-  <section class="blue-title">
-    <div class="container">
-      <div class="title-block text-center">
-        <h1 class="title-primary">{{ __('default.pages.hockey.title') }}</h1>
-      </div>
-    </div>
-  </section>
-
+  @include('app.layout.components.page-title')
 
   <section>
     <div class="container">

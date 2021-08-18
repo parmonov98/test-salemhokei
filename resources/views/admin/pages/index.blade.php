@@ -60,25 +60,51 @@
                                     <tbody>
                                     @foreach($items as $item)
                                         <tr>
-                                            <th scope="row">{{ $item->id }}</th>
+                                            <th scope="row">{{ $loop->index +1  }}</th>
                                             <td>
-                                                <a href="/admin/page/{{$item->id}}">
+
                                                     @if( $item->name_ru != "")
-                                                        {{ $item->name_ru }}
+                                                        @if(isset($item->link_ru))
+                                                        <a href="/admin/static-page/{{$item->id}}?url={{ $item->link_ru }}">
+                                                            {{ $item->name_ru }}
+                                                        </a>
+                                                        @else
+                                                        <a href="/admin/page/{{ $item->id }}">
+                                                            {{ $item->name_ru }}
+                                                        </a>
+                                                        @endif
+
                                                     @elseif($item->name_kk != "")
-                                                        {{ $item->name_kk }}
+                                                        @if(isset($item->link_ru))
+                                                            <a href="/admin/static-page/{{$item->id}}?url={{ $item->link_kk }}">
+                                                                {{ $item->name_kk }}
+                                                            </a>
+                                                        @else
+                                                            <a href="/admin/page/{{ $item->id }}">
+                                                                {{ $item->name_kk }}
+                                                            </a>
+                                                        @endif
                                                     @elseif($item->name_en != "")
-                                                        {{ $item->name_en }}
+                                                        @if(isset($item->link_en))
+                                                            <a href="/admin/page/{{$item->id}}?url{{ $item->link_en }}">
+                                                                {{ $item->name_ru }}
+                                                            </a>
+                                                        @else
+                                                            <a href="/admin/page/{{ $item->id }}">
+                                                                {{ $item->name_en }}
+                                                            </a>
+                                                        @endif
                                                     @else
                                                         Название: -
                                                     @endif
-                                                </a>
+
                                             </td>
                                             <td>{{ $item->is_published ? "Да" : "Нет" }}</td>
                                             <td>{{ $item->created_at }}</td>
                                             <td class="hidden">{{ $item->updated_at }}</td>
                                         </tr>
                                     @endforeach
+
                                     </tbody>
                                 </table>
                             @else
@@ -87,9 +113,9 @@
                                 </center>
                             @endif
                         </div>
-                        <div class="text-center">
-                            {{ $items->appends(["term" => $term])->links("vendor.pagination.bootstrap") }}
-                        </div>
+{{--                        <div class="text-center">--}}
+{{--                            {{ $items->appends(["term" => $term])->links("vendor.pagination.bootstrap") }}--}}
+{{--                        </div>--}}
                     </div>
                 </div>
             </div>

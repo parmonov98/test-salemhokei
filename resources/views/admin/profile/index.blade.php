@@ -25,7 +25,7 @@
 							<div class="x_content">
 								<div class="input-group {{ $errors->has('name') ? ' has-error' : '' }}" style="margin:0 0 20px">
 									<label class="input-group-addon" for="name">ФИО:</label>
-									<input autocomplete="off" type="text" id="name" name="name" class="form-control" max-length="200" lang="ru" speech="" x-webkit-speech="">
+									<input autocomplete="off" type="text" value="{{auth()->user()->name}}" id="name" name="name" class="form-control" max-length="200" lang="ru" speech="" x-webkit-speech="">
 								</div>
 								@if ($errors->has('name'))
 									<div class="alert alert-danger" role="alert">
@@ -34,7 +34,7 @@
 								@endif
 								<div class="input-group {{ $errors->has('email') ? ' has-error' : '' }}" style="margin:20px 0">
 									<label class="input-group-addon" for="email">Email:</label>
-									<input autocomplete="off" aria-autocomplete="none" type="email" id="email" name="email" class="form-control" max-length="200" lang="ru" speech="" x-webkit-speech="">
+									<input autocomplete="off" aria-autocomplete="none" value="{{auth()->user()->email}}" type="email" id="email" name="email" class="form-control" max-length="200" lang="ru" speech="" x-webkit-speech="">
 								</div>
 								@if ($errors->has('email'))
 									<div class="alert alert-danger" role="alert">

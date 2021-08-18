@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\DB;
 use Harimayco\Menu\Models\Menus;
-use Harimayco\Menu\Models\MenuItems;
+use Illuminate\Support\Facades\Route;
 
 
 class GenerateMenus
@@ -19,7 +19,7 @@ class GenerateMenus
      */
     public function handle($request, Closure $next)
     {
-        \AppMenu::make('MyNavBar', function ($menu) {
+        \AppMenu::make('MyNavBar', function ($menu) use($request) {
 
             $links = DB::table('admin_menu_items')->where('sort', '!=',  0)->orderByDesc('sort')->get();
             // dd($links);
@@ -34,22 +34,44 @@ class GenerateMenus
                 $menuItems = $menuItems->sortBy('sort');
                 // dd($menuItems, $mainMenu);
 
-                $menuItems->each(function ($item) use (&$menu){
+                $menuItems->each(function ($item) use (&$menu, $request){
+
                     if (app()->getLocale() == 'kk') {
-                        $menu->add($item->label_kk, ['url' => $item->link_kk])
+
+                        if($item->link_ru == \Request::fullUrl()){
+
+                            $menu->add($item->label_kk, ['url' => $item->link_kk])
                                 ->append('</span>')
-                                ->prepend('<span data-title="'. $item->label_kk .'">');;
+                                ->prepend('<span data-title="'. $item->label_kk .'">')
+                                ->active();
+                        }else{
+                            $menu->add($item->label_kk, ['url' => $item->link_kk])
+                                ->append('</span>')
+                                ->prepend('<span data-title="'. $item->label_kk .'">');
+
+                        }
                     }
                     if (app()->getLocale() == 'ru') {
-                        $menu->add($item->label_ru, ['url' => $item->link_ru])
+                        if($item->link_ru == \Request::fullUrl()){
+                            $menu->add($item->label_ru, ['url' => $item->link_ru])
+                                ->append('</span>')
+                                ->prepend('<span data-title="'. $item->label_ru .'">')
+                                ->active();
+                        }else{
+                            $menu->add($item->label_ru, ['url' => $item->link_ru])
                                 ->append('</span>')
                                 ->prepend('<span data-title="'. $item->label_ru .'">');
+                        }
+
                     }
 
                 });
             }
 
         });
+
+
+//        dd(Menus::get('name', 'Главный меню')->all());
 
         return $next($request);
     }

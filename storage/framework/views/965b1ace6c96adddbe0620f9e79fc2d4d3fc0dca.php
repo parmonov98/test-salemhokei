@@ -1,4 +1,3 @@
-<?php /* /home/dev/www/test.salemhokei.loc/resources/views/app/pages/hockey.blade.php */ ?>
 <?php $__env->startSection('title', __('default.site_name') . ' | ' . __('default.pages.hockey.title')); ?>
 
 <?php $__env->startSection('content'); ?>
@@ -6,14 +5,7 @@
   <div style="background: url(/assets/img/pattern1-blue.png), #E8F7FE;background-size: 1440px;"
     class="main-wrapper__bg page_hockey"></div>
 
-  <section class="blue-title">
-    <div class="container">
-      <div class="title-block text-center">
-        <h1 class="title-primary"><?php echo e(__('default.pages.hockey.title')); ?></h1>
-      </div>
-    </div>
-  </section>
-
+  <?php echo $__env->make('app.layout.components.page-title', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
   <section>
     <div class="container">
@@ -956,4 +948,4 @@
 
 
 
-<?php echo $__env->make("app.layout.index", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php echo $__env->make("app.layout.index", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/dev/www/test.salemhokei.loc/resources/views/app/pages/hockey.blade.php ENDPATH**/ ?>

@@ -9,6 +9,7 @@ use App\Models\Article;
 use App\Models\Region;
 use App\Models\Section;
 use App\Models\Video;
+use Harimayco\Menu\Facades\Menu;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Collection;
@@ -68,6 +69,7 @@ class PageController extends Controller
 
     public function schools(Request $request, $lang = "ru")
     {
+
         $regions = Region::all();
         $schools = Section::where("is_published", "=", 1)->with('regions')->paginate(6);
 //        $schools = Section::where("is_published", "=", 1)->with('regions')->get();
@@ -81,6 +83,9 @@ class PageController extends Controller
             })->paginate(6);
         }
 
+//        dd(Menu::get('school'));
+        $schools = Menu::get('MyNavBar');
+//        dd($schools);
         return view("app.pages.schools", [
             "schools" => $schools,
             "regions" => $regions,
@@ -90,6 +95,7 @@ class PageController extends Controller
 
     public function school(Request $request, $lang = 'ru', $alias)
     {
+
         $item = Section::whereAlias($alias)
             ->with('regions')
             ->whereIsPublished(true)

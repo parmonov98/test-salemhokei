@@ -1,19 +1,9 @@
-<?php /* /home/dev/www/test.salemhokei.loc/resources/views/admin/pages/hockey.blade.php */ ?>
 <?php $__env->startSection('head'); ?>
-
-
+    <link rel="stylesheet"
           href="/assets/admin/vendors/plupload-2.3.6/js/jquery.plupload.queue/css/jquery.plupload.queue.css"/>
     <link rel="stylesheet" href="/assets/admin/vendors/nprogress/nprogress.css"/>
     <link rel="stylesheet" href="/assets/admin/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.css"/>
-
-<link rel="stylesheet" href="/assets/libs/fancybox/dist/jquery.fancybox.min.css" type="text/css" media="screen" />
-
-<link rel="stylesheet" href="/assets/libs/slick-carousel/slick/slick.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="/assets/libs/chosen/chosen.css" type="text/css" media="screen" />
-
-
-
-
+    <link rel="stylesheet" href="/assets/admin/vendors/bootstrap-daterangepicker/daterangepicker.css">
 
     <link rel="stylesheet" href="/assets/admin/css/main.css"/>
 
@@ -23,14 +13,8 @@
             float: none;
         }
     </style>
-<?php $__env->stopSection(); ?>
 
-
-
-
-
-<?php $__env->startSection('title'); ?>
-
+    <link rel="stylesheet" href="/assets/libs/fancybox/dist/jquery.fancybox.min.css" type="text/css" media="screen" />
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>
@@ -40,7 +24,7 @@
                 <div class="title_left">
                     <ol class="breadcrumb">
                         <li><a href="/admin/pages/">Все страницы</a></li>
-
+                        <li class="active"><?php echo e($item->name_ru); ?></li>
                     </ol>
                 </div>
 
@@ -70,8 +54,7 @@
                 <?php endif; ?>
 
 
-
-                    <section>
+                    <section class="col-10">
                         <div class="container">
                             <h2 class="title-primary"><?php echo __('default.pages.about.block_title_4'); ?></h2>
                             <div class="plain-text plain-text__18">
@@ -98,7 +81,8 @@
                     </section>
 
 
-                    <section>
+
+                    <section class="col-10">
                         <div class="container">
                             <div class="kit-plan">
                                 <div class="row row--multiline">
@@ -559,7 +543,7 @@
                     </section>
 
 
-                    <section class="field-plan">
+                    <section class="col-10 field-plan">
                         <div class="container">
                             <h2 class="title-primary text-center"><?php echo __('default.pages.about.hockey_infrastructure_title'); ?></h2>
                             <div class="row row--multiline">
@@ -1006,327 +990,17 @@
                         </div>
                     </section>
 
-
             </div>
         </div>
     </div>
 
+    <?php echo $__env->make("admin.components.modals", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php $__env->stopSection(); ?>
 
 
 <?php $__env->startSection('scripts'); ?>
-    <div class="scroll-up icon-chevron-up"></div>
-
-
     <script src="/assets/libs/fancybox/dist/jquery.fancybox.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
-
+    <script src="/assets/admin/js/scripts.js"></script>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make("admin.layout", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php echo $__env->make("admin.layout", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/dev/www/test.salemhokei.loc/resources/views/admin/pages/hockey.blade.php ENDPATH**/ ?>

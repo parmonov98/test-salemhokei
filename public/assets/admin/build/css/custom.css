@@ -4662,3 +4662,246 @@ ul.notifications {
 .dataTables_wrapper > .row {
     overflow: auto !important
 }
+
+
+ /*hockey page*/
+
+.field-plan {
+    background: url(/assets/img/field/field-outline.svg) no-repeat center center, rgba(0, 158, 224, .75);
+    background-size: 90%;
+    padding: 3em 0
+}
+
+.field-plan .title-primary {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .4)
+}
+
+.field-plan a img {
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+.field-plan a:hover img {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05)
+}
+
+@media screen and (max-width: 1024px) {
+    .field-plan .row > [class^=col]:nth-of-type(1) {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2
+    }
+
+    .field-plan .row > [class^=col]:nth-of-type(3) {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3
+    }
+}
+
+.field-item {
+    display: table;
+    margin: 0 auto 3rem
+}
+
+.field-item:hover img {
+    background: #fff
+}
+
+.field-item img {
+    width: 12em;
+    border-radius: 50%;
+    -webkit-transition: .3s background;
+    -o-transition: .3s background;
+    transition: .3s background
+}
+
+.field-item-main {
+    display: table;
+    margin: 5rem auto
+}
+
+@media screen and (max-width: 767px) {
+    .field-item-main {
+        margin: 0 auto 3rem
+    }
+}
+
+.field-item-main img, .field-item-main svg {
+    width: 25em;
+    height: auto;
+    max-width: 100%
+}
+
+.field-item-main a {
+    opacity: 0;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+.field-item-main a:hover {
+    opacity: .8
+}
+
+.roles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-bottom: 3.125em
+}
+
+@media screen and (max-width: 767px) {
+    .roles {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+}
+
+.roles img {
+    height: 13em
+}
+
+.roles-item {
+    position: relative;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+@media screen and (max-width: 1200px) {
+    .roles-item {
+        font-size: .75em
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .roles-item:not(:last-child) {
+        margin-bottom: 2rem
+    }
+}
+
+.roles-item:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05)
+}
+
+.roles-item span {
+    position: absolute;
+    top: 20%;
+    left: 100%;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: -3em
+}
+
+.kit-plan a img {
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+.kit-plan a:hover img {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05)
+}
+
+.kit-plan a:hover span {
+    color: #003467
+}
+
+@media screen and (max-width: 1024px) {
+    .kit-plan .row > [class^=col]:nth-of-type(1) {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2
+    }
+
+    .kit-plan .row > [class^=col]:nth-of-type(3) {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3
+    }
+}
+
+.kit-item {
+    display: table;
+    margin: 0 auto 3rem;
+    text-align: center
+}
+
+.kit-item img {
+    width: 12em;
+    border-radius: 50%
+}
+
+.kit-item:hover img {
+    background: #fff
+}
+
+.kit-item span {
+    font-size: 1.25em;
+    font-weight: 500;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    display: block
+}
+
+@media screen and (max-width: 767px) {
+    .kit-item span {
+        min-height: 2.4em
+    }
+}
+
+.kit-item-main {
+    display: table;
+    margin: 2.5rem auto
+}
+
+@media screen and (max-width: 767px) {
+    .kit-item-main {
+        margin-top: 0
+    }
+}
+
+.kit-item-main a {
+    -webkit-transition: .3s opacity;
+    -o-transition: .3s opacity;
+    transition: .3s opacity;
+    opacity: 0
+}
+
+.kit-item-main a:hover {
+    opacity: .4
+}
+
+.kit-item-main img, .kit-item-main svg {
+    max-width: 100%;
+    width: 17em;
+    height: auto
+}
+
+@media screen and (max-width: 767px) {
+    .kit-item-main img, .kit-item-main svg {
+        width: 12em
+    }
+}
+
+.form-modal {
+    width: calc(50%);
+    max-width: 100%;
+}
