@@ -21,9 +21,9 @@ class AdminMenusTableSeeder extends Seeder
         \DB::table('admin_menus')->insert(array (
             0 => 
             array (
-                'created_at' => '2021-07-29 06:58:03',
                 'id' => 1,
                 'name' => 'Главный меню',
+                'created_at' => '2021-07-29 06:58:03',
                 'updated_at' => '2021-07-29 06:58:03',
             ),
         ));

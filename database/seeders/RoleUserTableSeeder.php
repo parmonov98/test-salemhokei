@@ -21,67 +21,43 @@ class RoleUserTableSeeder extends Seeder
         \DB::table('role_user')->insert(array (
             0 => 
             array (
-                'created_at' => NULL,
-                'id' => 1,
-                'role_id' => 1,
-                'updated_at' => NULL,
-                'user_id' => 1,
+                'id' => 4,
+                'role_id' => 2,
+                'user_id' => 3,
+                'created_at' => '2020-03-26 14:28:45',
+                'updated_at' => '2020-03-26 14:28:45',
             ),
             1 => 
             array (
-                'created_at' => '2020-03-26 14:28:45',
-                'id' => 4,
+                'id' => 5,
                 'role_id' => 2,
-                'updated_at' => '2020-03-26 14:28:45',
-                'user_id' => 3,
+                'user_id' => 9,
+                'created_at' => '2020-03-26 14:33:11',
+                'updated_at' => '2020-03-26 14:33:11',
             ),
             2 => 
             array (
-                'created_at' => '2020-03-26 14:33:11',
-                'id' => 5,
-                'role_id' => 2,
-                'updated_at' => '2020-03-26 14:33:11',
-                'user_id' => 9,
+                'id' => 9,
+                'role_id' => 1,
+                'user_id' => 13,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
             3 => 
             array (
-                'created_at' => '2020-03-26 14:38:53',
-                'id' => 7,
-                'role_id' => 2,
-                'updated_at' => '2020-03-26 14:38:53',
-                'user_id' => 11,
+                'id' => 10,
+                'role_id' => 1,
+                'user_id' => 14,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
             4 => 
             array (
-                'created_at' => NULL,
-                'id' => 8,
-                'role_id' => 2,
-                'updated_at' => NULL,
-                'user_id' => 12,
-            ),
-            5 => 
-            array (
-                'created_at' => NULL,
-                'id' => 9,
-                'role_id' => 1,
-                'updated_at' => NULL,
-                'user_id' => 13,
-            ),
-            6 => 
-            array (
-                'created_at' => NULL,
-                'id' => 10,
-                'role_id' => 1,
-                'updated_at' => NULL,
-                'user_id' => 14,
-            ),
-            7 => 
-            array (
-                'created_at' => NULL,
                 'id' => 11,
                 'role_id' => 1,
-                'updated_at' => NULL,
                 'user_id' => 15,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
         ));
         

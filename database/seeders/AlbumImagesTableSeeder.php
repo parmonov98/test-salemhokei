@@ -21,11 +21,11 @@ class AlbumImagesTableSeeder extends Seeder
         \DB::table('album_images')->insert(array (
             0 => 
             array (
+                'id' => 4,
                 'album_id' => 1,
                 'avatar' => '/img/gallery/1591596418.png',
-                'created_at' => '2020-06-08 11:06:58',
-                'id' => 4,
                 'is_published' => 0,
+                'created_at' => '2020-06-08 11:06:58',
                 'updated_at' => '2020-06-08 11:06:58',
             ),
         ));

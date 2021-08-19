@@ -21,17 +21,17 @@ class VideosTableSeeder extends Seeder
         \DB::table('videos')->insert(array (
             0 => 
             array (
-                'created_at' => '2020-05-05 16:17:14',
                 'id' => 1,
-                'is_published' => 1,
-                'link_en' => NULL,
-                'link_kk' => NULL,
-                'link_ru' => 'https://www.youtube.com/watch?v=cbe1x1Eh1Ds',
-                'name_en' => NULL,
-                'name_kk' => NULL,
                 'name_ru' => 'Видео 1',
-                'published_at' => '2020-05-05 16:17:14',
+                'name_kk' => NULL,
+                'name_en' => NULL,
+                'link_ru' => 'https://www.youtube.com/watch?v=cbe1x1Eh1Ds',
+                'link_kk' => NULL,
+                'link_en' => NULL,
                 'type' => 2,
+                'published_at' => '2020-05-05 16:17:14',
+                'is_published' => 1,
+                'created_at' => '2020-05-05 16:17:14',
                 'updated_at' => '2020-05-04 17:26:47',
             ),
         ));

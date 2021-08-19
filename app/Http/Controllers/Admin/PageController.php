@@ -56,11 +56,20 @@ class PageController extends Controller
 
     public function hockey(Request $request, MenuItem $item)
     {
-//        dd($item);
         $textItems = Text::where('page', 'hockey')->get();
-//        dd($textItems);
-//        dd($goal_keeper__content_ru);
+
         return view('admin.pages.hockey', [
+            'item' => $item,
+            'textItems' => $textItems
+        ]);
+
+    }
+
+    public function schools(Request $request, MenuItem $item)
+    {
+        $textItems = Text::where('page', 'schools')->get();
+
+        return view('admin.pages.schools', [
             'item' => $item,
             'textItems' => $textItems
         ]);
@@ -73,6 +82,10 @@ class PageController extends Controller
             case 'hockey':
 
                 return $this->hockey($request, $item);
+                die;
+            case 'school':
+
+                return $this->schools($request, $item);
                 die;
                 break;
 

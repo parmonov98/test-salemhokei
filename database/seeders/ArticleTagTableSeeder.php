@@ -21,258 +21,258 @@ class ArticleTagTableSeeder extends Seeder
         \DB::table('article_tag')->insert(array (
             0 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 25,
+                'article_id' => NULL,
                 'tag_id' => 3,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             1 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 26,
+                'article_id' => NULL,
                 'tag_id' => 3,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             2 => 
             array (
-                'article_id' => 3,
-                'created_at' => NULL,
                 'id' => 27,
+                'article_id' => 3,
                 'tag_id' => 3,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             3 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 28,
+                'article_id' => NULL,
                 'tag_id' => 3,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             4 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 41,
+                'article_id' => NULL,
                 'tag_id' => 3,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             5 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 42,
+                'article_id' => NULL,
                 'tag_id' => 3,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             6 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 43,
+                'article_id' => NULL,
                 'tag_id' => 2,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             7 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 44,
+                'article_id' => NULL,
                 'tag_id' => 1,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             8 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 45,
+                'article_id' => NULL,
                 'tag_id' => 2,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             9 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 46,
+                'article_id' => NULL,
                 'tag_id' => 5,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             10 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 47,
+                'article_id' => NULL,
                 'tag_id' => 6,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             11 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 48,
+                'article_id' => NULL,
                 'tag_id' => 7,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             12 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 49,
+                'article_id' => NULL,
                 'tag_id' => 8,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             13 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 50,
+                'article_id' => NULL,
                 'tag_id' => 9,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             14 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 51,
+                'article_id' => NULL,
                 'tag_id' => 10,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             15 => 
             array (
-                'article_id' => 38,
-                'created_at' => NULL,
                 'id' => 52,
+                'article_id' => 38,
                 'tag_id' => 9,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             16 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 25,
+                'article_id' => NULL,
                 'tag_id' => 3,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             17 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 26,
+                'article_id' => NULL,
                 'tag_id' => 3,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             18 => 
             array (
-                'article_id' => 3,
-                'created_at' => NULL,
                 'id' => 27,
+                'article_id' => 3,
                 'tag_id' => 3,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             19 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 28,
+                'article_id' => NULL,
                 'tag_id' => 3,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             20 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 41,
+                'article_id' => NULL,
                 'tag_id' => 3,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             21 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 42,
+                'article_id' => NULL,
                 'tag_id' => 3,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             22 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 43,
+                'article_id' => NULL,
                 'tag_id' => 2,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             23 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 44,
+                'article_id' => NULL,
                 'tag_id' => 1,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             24 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 45,
+                'article_id' => NULL,
                 'tag_id' => 2,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             25 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 46,
+                'article_id' => NULL,
                 'tag_id' => 5,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             26 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 47,
+                'article_id' => NULL,
                 'tag_id' => 6,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             27 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 48,
+                'article_id' => NULL,
                 'tag_id' => 7,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             28 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 49,
+                'article_id' => NULL,
                 'tag_id' => 8,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             29 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 50,
+                'article_id' => NULL,
                 'tag_id' => 9,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             30 => 
             array (
-                'article_id' => NULL,
-                'created_at' => NULL,
                 'id' => 51,
+                'article_id' => NULL,
                 'tag_id' => 10,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             31 => 
             array (
-                'article_id' => 38,
-                'created_at' => NULL,
                 'id' => 52,
+                'article_id' => 38,
                 'tag_id' => 9,
+                'created_at' => NULL,
                 'updated_at' => NULL,
             ),
         ));

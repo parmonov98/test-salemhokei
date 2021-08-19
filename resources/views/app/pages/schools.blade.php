@@ -11,7 +11,9 @@
     @if($schools == null)
     <section>
         <div class="container">
-            <h2 class="title-primary">{{ __('default.pages.main.map_title') }}</h2>
+            <h2 class="title-primary">
+                {!! $textItems->firstWhere('element_id', 'schools_page__desc_' . app()->getLocale())->content !!}
+            </h2>
 
                 <div class="map">
                     <svg version="1.1" id="map" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"

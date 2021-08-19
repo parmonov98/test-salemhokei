@@ -56,15 +56,16 @@ class PageController extends Controller
 
     public function equipment(Request $request, $lang = "ru")
     {
+        $textItems = Text::where('page', 'hockey')->get();
         return view("app.pages.equipment", [
             "items" => [],
+            "textItems" => $textItems,
             "lang" => $lang
         ]);
     }
     public function hockey(Request $request, $lang = "ru")
     {
         $textItems = Text::where('page', 'hockey')->get();
-//        dd($textItems);
         return view("app.pages.hockey", [
             "items" => [],
             "textItems" => $textItems,
@@ -88,12 +89,15 @@ class PageController extends Controller
             })->paginate(6);
         }
 
+        $textItems = Text::where('page', 'schools')->get();
+//        dd($textItems);
 //        dd(Menu::get('school'));
-        $schools = Menu::get('MyNavBar');
+//        $schools = Menu::get('MyNavBar');
 //        dd($schools);
         return view("app.pages.schools", [
             "schools" => $schools,
             "regions" => $regions,
+            'textItems' => $textItems,
             "lang" => $lang
         ]);
     }
