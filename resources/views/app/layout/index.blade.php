@@ -21,7 +21,7 @@
 <div class="scroll-up icon-chevron-up compensate-for-scrollbar"></div>
 @include("app.layout.components.scripts")
 @include("app.layout.components.modals")
-{{--@yield("scripts")--}}
+@yield("scripts")
 </body>
 
 </html>

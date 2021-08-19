@@ -59,8 +59,8 @@
                     <section class="col-10">
                         <div class="container">
                             <h2 class="title-primary">{!! __('default.pages.about.block_title_4') !!}</h2>
-                            <div class="plain-text plain-text__18">
-                                {!! __('default.pages.about.block_desc_4') !!}
+                            <div class="plain-text plain-text__18"  href="#hockey_block_desc_4" data-fancybox="text_desc" class="text_desc-item">
+                                {!! $textItems->firstWhere('element_id', 'hockey_block_desc_4_ru')->content !!}
                             </div>
 
                             <div class="roles">
@@ -546,7 +546,9 @@
 
                     <section class="col-10 field-plan">
                         <div class="container">
-                            <h2 class="title-primary text-center">{!! __('default.pages.about.hockey_infrastructure_title') !!}</h2>
+                            <h2 class="title-primary text-center" id="hockey_infrastructure_title">
+                                {!! $textItems->firstWhere('element_id', 'hockey_infrastructure_title_' . app()->getLocale())->content !!}
+                            </h2>
                             <div class="row row--multiline">
                                 <div class="col-sm-6 col-md-3 col-xs-6">
                                     <a href="#hockey_goal" title="{{ __('default.pages.main.hockey_goal_title') }}" data-fancybox=""
@@ -1005,30 +1007,165 @@
 
 
     <script>
-        window.onunload = function () {
-            alert('You are trying to leave.');
-            return false;
-        }
-        var goal_keeper__content_ru = $( "#goal_keeper__content_ru" ).first();
-        goal_keeper__content_ru.dblclick(function(e) {
-            console.log(e.target.getAttribute('contenteditable'));
+        var saveText = function(e){
+            console.log(e.target);
             if (e.target.getAttribute('contenteditable') == "false") {
                 e.target.setAttribute('contenteditable',true);
             } else {
-                e.target.setAttribute('contenteditable',false);
+
+                var contextText = e.target.textContent;
+                // send request
+                $.ajax({
+                    dataType: 'json',
+                    type: 'PUT',
+                    url: e.target.getAttribute('data-url'),
+                    headers: {'X-CSRF-TOKEN': '{{ csrf_token() }}'},
+                    data: JSON.stringify({content: contextText}),
+                    contentType: 'application/json; charset=utf-8',
+                    success: function(data) { //change spelling here
+                        console.log(data);
+                        e.target.setAttribute('contenteditable',false);
+                    },
+                    error: function() {
+                        console.log("error again!");
+                        alert('Пожалуйста, введите только текст!');
+                    }
+
+                });
             }
-        });
-        // var goal_keeper__content = $( "#goal_keeper__content_kk" ).first();
-        // goal_keeper__content.dblclick(function() {
-        //     var value = goal_keeper__content.attr('contenteditable');
-        //     console.log(value);
-        //
-        //     if (value == 'false') {
-        //         goal_keeper__content.attr('contenteditable','true');
-        //     }
-        //     else {
-        //         goal_keeper__content.attr('contenteditable','false');
-        //     }
-        // });
+        }
+
+        $( "#goal_keeper__content_ru" ).first().dblclick(saveText);
+        $( "#goal_keeper__content_kk" ).first().dblclick(saveText);
+        $( "#goal_keeper__title_kk" ).first().dblclick(saveText);
+        $( "#goal_keeper__title_ru" ).first().dblclick(saveText);
+
+        $( "#forwarder__title_ru" ).first().dblclick(saveText);
+        $( "#forwarder__title_kk" ).first().dblclick(saveText);
+        $( "#forwarder__content_ru" ).first().dblclick(saveText);
+        $( "#forwarder__content_kk" ).first().dblclick(saveText);
+
+        $( "#defender__title_ru" ).first().dblclick(saveText);
+        $( "#defender__title_kk" ).first().dblclick(saveText);
+        $( "#defender__content_ru" ).first().dblclick(saveText);
+        $( "#defender__content_kk" ).first().dblclick(saveText);
+
+        $( "#equipment_bib__title_ru" ).first().dblclick(saveText);
+        $( "#equipment_bib__title_kk" ).first().dblclick(saveText);
+        $( "#equipment_bib__content_ru" ).first().dblclick(saveText);
+        $( "#equipment_bib__content_kk" ).first().dblclick(saveText);
+
+        $( "#equipment_pads__title_ru" ).first().dblclick(saveText);
+        $( "#equipment_pads__title_kk" ).first().dblclick(saveText);
+        $( "#equipment_pads__content_ru" ).first().dblclick(saveText);
+        $( "#equipment_pads__content_kk" ).first().dblclick(saveText);
+
+        $( "#equipment_shields__title_ru" ).first().dblclick(saveText);
+        $( "#equipment_shields__title_kk" ).first().dblclick(saveText);
+        $( "#equipment_shields__content_ru" ).first().dblclick(saveText);
+        $( "#equipment_shields__content_kk" ).first().dblclick(saveText);
+
+        $( "#neck_protection__title_ru" ).first().dblclick(saveText);
+        $( "#neck_protection__title_kk" ).first().dblclick(saveText);
+        $( "#neck_protection__content_ru" ).first().dblclick(saveText);
+        $( "#neck_protection__content_kk" ).first().dblclick(saveText);
+
+        $( "#equipment_jersey__title_ru" ).first().dblclick(saveText);
+        $( "#equipment_jersey__title_kk" ).first().dblclick(saveText);
+        $( "#equipment_jersey__content_ru" ).first().dblclick(saveText);
+        $( "#equipment_jersey__content_kk" ).first().dblclick(saveText);
+
+        $( "#equipment_gaiters__title_ru" ).first().dblclick(saveText);
+        $( "#equipment_gaiters__title_kk" ).first().dblclick(saveText);
+        $( "#equipment_gaiters__content_ru" ).first().dblclick(saveText);
+        $( "#equipment_gaiters__content_kk" ).first().dblclick(saveText);
+
+        $( "#equipment_helmet__title_ru" ).first().dblclick(saveText);
+        $( "#equipment_helmet__title_kk" ).first().dblclick(saveText);
+        $( "#equipment_helmet__content_ru" ).first().dblclick(saveText);
+        $( "#equipment_helmet__content_kk" ).first().dblclick(saveText);
+
+        $( "#equipment_gloves__title_ru" ).first().dblclick(saveText);
+        $( "#equipment_gloves__title_kk" ).first().dblclick(saveText);
+        $( "#equipment_gloves__content_ru" ).first().dblclick(saveText);
+        $( "#equipment_gloves__content_kk" ).first().dblclick(saveText);
+
+        $( "#equipment_stick__title_ru" ).first().dblclick(saveText);
+        $( "#equipment_stick__title_kk" ).first().dblclick(saveText);
+        $( "#equipment_stick__content_ru" ).first().dblclick(saveText);
+        $( "#equipment_stick__content_kk" ).first().dblclick(saveText);
+
+        $( "#equipment_shorts__title_ru" ).first().dblclick(saveText);
+        $( "#equipment_shorts__title_kk" ).first().dblclick(saveText);
+        $( "#equipment_shorts__content_ru" ).first().dblclick(saveText);
+        $( "#equipment_shorts__content_kk" ).first().dblclick(saveText);
+
+        $( "#equipment_skates__title_ru" ).first().dblclick(saveText);
+        $( "#equipment_skates__title_kk" ).first().dblclick(saveText);
+        $( "#equipment_skates__content_ru" ).first().dblclick(saveText);
+        $( "#equipment_skates__content_kk" ).first().dblclick(saveText);
+
+        $( "#hockey_goal__title_ru" ).first().dblclick(saveText);
+        $( "#hockey_goal__title_kk" ).first().dblclick(saveText);
+        $( "#hockey_goal__content_ru" ).first().dblclick(saveText);
+        $( "#hockey_goal__content_kk" ).first().dblclick(saveText);
+
+        $( "#referee_field__title_ru" ).first().dblclick(saveText);
+        $( "#referee_field__title_kk" ).first().dblclick(saveText);
+        $( "#referee_field__content_ru" ).first().dblclick(saveText);
+        $( "#referee_field__content_kk" ).first().dblclick(saveText);
+
+        $( "#washer_field__title_ru" ).first().dblclick(saveText);
+        $( "#washer_field__title_kk" ).first().dblclick(saveText);
+        $( "#washer_field__content_ru" ).first().dblclick(saveText);
+        $( "#washer_field__content_kk" ).first().dblclick(saveText);
+
+        $( "#scoreboard__title_ru" ).first().dblclick(saveText);
+        $( "#scoreboard__title_kk" ).first().dblclick(saveText);
+        $( "#scoreboard__content_ru" ).first().dblclick(saveText);
+        $( "#scoreboard__content_kk" ).first().dblclick(saveText);
+
+        $( "#ice_machine__title_ru" ).first().dblclick(saveText);
+        $( "#ice_machine__title_kk" ).first().dblclick(saveText);
+        $( "#ice_machine__content_ru" ).first().dblclick(saveText);
+        $( "#ice_machine__content_kk" ).first().dblclick(saveText);
+
+        $( "#tribune__title_ru" ).first().dblclick(saveText);
+        $( "#tribune__title_kk" ).first().dblclick(saveText);
+        $( "#tribune__content_ru" ).first().dblclick(saveText);
+        $( "#tribune__content_kk" ).first().dblclick(saveText);
+
+        $( "#bench__title_ru" ).first().dblclick(saveText);
+        $( "#bench__title_kk" ).first().dblclick(saveText);
+        $( "#bench__content_ru" ).first().dblclick(saveText);
+        $( "#bench__content_kk" ).first().dblclick(saveText);
+
+        $( "#penalty_box__title_ru" ).first().dblclick(saveText);
+        $( "#penalty_box__title_kk" ).first().dblclick(saveText);
+        $( "#penalty_box__content_ru" ).first().dblclick(saveText);
+        $( "#penalty_box__content_kk" ).first().dblclick(saveText);
+
+        $( "#zone_a__title_ru" ).first().dblclick(saveText);
+        $( "#zone_a__title_kk" ).first().dblclick(saveText);
+        $( "#zone_a__content_ru" ).first().dblclick(saveText);
+        $( "#zone_a__content_kk" ).first().dblclick(saveText);
+
+        $( "#zone_c__title_ru" ).first().dblclick(saveText);
+        $( "#zone_c__title_kk" ).first().dblclick(saveText);
+        $( "#zone_c__content_ru" ).first().dblclick(saveText);
+        $( "#zone_c__content_kk" ).first().dblclick(saveText);
+
+        $( "#zone_b__title_ru" ).first().dblclick(saveText);
+        $( "#zone_b__title_kk" ).first().dblclick(saveText);
+        $( "#zone_b__content_ru" ).first().dblclick(saveText);
+        $( "#zone_b__content_kk" ).first().dblclick(saveText);
+
+        $( "#hockey_block_desc_4_kk" ).first().dblclick(saveText);
+        $( "#hockey_block_desc_4_ru" ).first().dblclick(saveText);
+
+
+        $( "#hockey_infrastructure_title_kk" ).first().dblclick(saveText);
+        $( "#hockey_infrastructure_title_ru" ).first().dblclick(saveText);
+
     </script>
 @endsection

@@ -4525,27 +4525,27 @@ ul.verticle_bars li {
 }
 
 /*.alert-success {*/
-    /*color: #fff;*/
-    /*background-color: rgba(38, 185, 154, .88);*/
-    /*border-color: rgba(38, 185, 154, .88)*/
+/*color: #fff;*/
+/*background-color: rgba(38, 185, 154, .88);*/
+/*border-color: rgba(38, 185, 154, .88)*/
 /*}*/
 
 /*.alert-info {*/
-    /*color: #E9EDEF;*/
-    /*background-color: rgba(52, 152, 219, .88);*/
-    /*border-color: rgba(52, 152, 219, .88)*/
+/*color: #E9EDEF;*/
+/*background-color: rgba(52, 152, 219, .88);*/
+/*border-color: rgba(52, 152, 219, .88)*/
 /*}*/
 
 /*.alert-warning {*/
-    /*color: #E9EDEF;*/
-    /*background-color: rgba(243, 156, 18, .88);*/
-    /*border-color: rgba(243, 156, 18, .88)*/
+/*color: #E9EDEF;*/
+/*background-color: rgba(243, 156, 18, .88);*/
+/*border-color: rgba(243, 156, 18, .88)*/
 /*}*/
 
 /*.alert-danger, .alert-error {*/
-    /*color: #E9EDEF;*/
-    /*background-color: rgba(231, 76, 60, .88);*/
-    /*border-color: rgba(231, 76, 60, .88)*/
+/*color: #E9EDEF;*/
+/*background-color: rgba(231, 76, 60, .88);*/
+/*border-color: rgba(231, 76, 60, .88)*/
 /*}*/
 
 .ui-pnotify.dark .ui-pnotify-container {
@@ -4664,7 +4664,7 @@ ul.notifications {
 }
 
 
- /*hockey page*/
+/*hockey page*/
 
 .field-plan {
     background: url(/assets/img/field/field-outline.svg) no-repeat center center, rgba(0, 158, 224, .75);
@@ -4906,12 +4906,27 @@ ul.notifications {
     max-width: 100%;
 }
 
-[contenteditable="false"]{
+[contenteditable="false"] {
     border: 1px solid transparent;
+    padding: 3px 5px;
+    transition: 0.3s;
+}
+
+[contenteditable="true"] {
+    border: 1px solid #999;
     padding: 3px 5px;
 }
 
-[contenteditable="true"]{
-    border: 1px solid #999;
-    padding: 3px 5px;
+
+[contenteditable="true"] .save-button {
+    background: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMjAgMjAiIHdpZHRoPSIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxjaXJjbGUgY3g9IjEwIiBjeT0iMTAiIGZpbGw9IiNmZmYiIHI9IjgiLz48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiBmaWxsPSIjNDVhOGZjIiByPSIxMCIvPjxwYXRoIGQ9Im04Ljk3MTE1MDI3IDExLjU1NjkzNjcgNS4yOTQwNDYzMy01LjczNTIxNjggMS40Njk2MDY4IDEuMzU2NTYwMi02LjcwNTk1MzY3IDcuMjY0NzgzMi0zLjczNTk1NjUxLTMuNzM1OTU2NSAxLjQxNDIxMzU2LTEuNDE0MjEzNTh6IiBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L2c+PC9zdmc+) center center no-repeat transparent !important;
+    border-width: 0px !important;
+    border-style: initial !important;
+    border-color: initial !important;
+    border-image: initial !important;
+    width: 20px !important;
+    height: 20px !important;
+    cursor: pointer !important;
+    font-size: 14px;
+    line-height: 16px;
 }

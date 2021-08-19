@@ -22,6 +22,7 @@ Route::group(["namespace" => "Admin"], function () {
 
         //
         Route::get("/static-page/{item}", "PageController@editStaticPage");
+        Route::put("/text/{text}", "TextController@update")->name('text.update');
 
         Route::get("/login", "LoginController@showLoginForm");
         Route::post("/login", "LoginController@login");
@@ -130,7 +131,6 @@ Route::group(["namespace" => "Admin"], function () {
         });
 
         Route::group(["middleware" => "has.permission:page.edit"], function () {
-            Route::get("/page/edit/hockey", "PageController@hockey")->name('page.hockey');
             Route::post("/page/{item}", "PageController@update");
         });
         Route::group(["middleware" => "has.permission:page.delete"], function () {

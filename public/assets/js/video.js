@@ -26,6 +26,8 @@ class VideoPlayer {
     toggle = (e) => {
         const playerContainer = e.target.closest(`${this.options['selector']}`);
 
+        console.log(playerContainer)
+
         this.playerContainerElements.forEach((item) => {
             if (!item.isSameNode(playerContainer) && !item.querySelector('video').paused) {
                 item.querySelector('video').pause();

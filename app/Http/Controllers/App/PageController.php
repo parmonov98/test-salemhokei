@@ -8,11 +8,13 @@ use App\Models\AlbumImage;
 use App\Models\Article;
 use App\Models\Region;
 use App\Models\Section;
+use App\Models\Text;
 use App\Models\Video;
 use Harimayco\Menu\Facades\Menu;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use App\Helpers\EmailHelper;
@@ -61,8 +63,11 @@ class PageController extends Controller
     }
     public function hockey(Request $request, $lang = "ru")
     {
+        $textItems = Text::where('page', 'hockey')->get();
+//        dd($textItems);
         return view("app.pages.hockey", [
             "items" => [],
+            "textItems" => $textItems,
             "lang" => $lang
         ]);
     }

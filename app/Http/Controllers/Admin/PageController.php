@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\MenuItem;
+use App\Models\MenuItem;
 use App\Models\Page;
+use App\Models\Text;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Log;
@@ -56,8 +57,12 @@ class PageController extends Controller
     public function hockey(Request $request, MenuItem $item)
     {
 //        dd($item);
+        $textItems = Text::where('page', 'hockey')->get();
+//        dd($textItems);
+//        dd($goal_keeper__content_ru);
         return view('admin.pages.hockey', [
-            'item' => $item
+            'item' => $item,
+            'textItems' => $textItems
         ]);
 
     }

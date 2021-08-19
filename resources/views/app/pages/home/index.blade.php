@@ -781,21 +781,8 @@
     </script>
     <script src="{{asset('assets/js/video.js')}}"></script>
 
-{{--    <script>--}}
-{{--        $(window).load(function () {--}}
-{{--            $('#JiSlider').JiSlider({--}}
-{{--                auto: false,--}}
-{{--                color: '#fff',--}}
-{{--                start: 3,--}}
-{{--                stay: 5000,--}}
-{{--                reverse: true,--}}
-{{--                easing: 'ease',--}}
-{{--                time: 500--}}
-{{--            }).addClass('ff')--}}
-{{--        })--}}
-{{--    </script>--}}
-
     <script>
-        new VideoPlayer({'selector': '.video-player'});
+        var players = new VideoPlayer({'selector': '.video-player'});
+        // console.log(players)
     </script>
 @endsection
