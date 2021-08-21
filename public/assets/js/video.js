@@ -11,7 +11,8 @@ class VideoPlayer {
             this.playerContainerElements = document.querySelectorAll(`${options['selector']}`);
             this.playerContainerElements.forEach((item, index, elements) => {
                 console.log(item.querySelector('.fullscreen'));
-                item.querySelector('.fullscreen').addEventListener('click', this.toggleFullscreen);
+                if (item.querySelector('.fullscreen'))
+                    item.querySelector('.fullscreen').addEventListener('click', this.toggleFullscreen);
                 item.querySelector(`.play-button`).addEventListener('click', this.toggle);
                 item.querySelector(`video`).addEventListener('click', this.toggle);
                 if (this.options.autoplay == false){
