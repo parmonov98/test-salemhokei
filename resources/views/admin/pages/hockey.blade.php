@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/assets/admin/vendors/bootstrap-daterangepicker/daterangepicker.css">
 
     <link rel="stylesheet" href="/assets/admin/css/main.css"/>
-
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <style>
         .daterangepicker.single.ltr .ranges,
         .daterangepicker.single.ltr .calendar {
@@ -997,16 +997,50 @@
         </div>
     </div>
 
-    @include("admin.components.modals")
+    @include("admin.components.modals.hockey")
 @endsection
 
 
 @section('scripts')
     <script src="/assets/libs/fancybox/dist/jquery.fancybox.min.js"></script>
     <script src="/assets/admin/js/scripts.js"></script>
+    <script src="/assets/admin/js/upload.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 
     <script>
+        $(document).ready(function() {
+            // $(".video-upload-input").select2({
+            //     tags: true
+            // });
+
+            // We can attach the `fileselect` event to all file inputs on the page
+            $(document).on('change', ':file', function(e) {
+                var inputTarget = e.target;
+                var input = $(this),
+                    numFiles = input.get(0).files ? input.get(0).files.length : 1,
+                    label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                input.trigger('fileselect', [numFiles, label]);
+
+                var file = $(this)[0].files[0];
+                var upload = new Upload(file, '{{route('video.store')}}', input );
+
+                // maby check size or type here with upload.getSize() and upload.getType()
+
+                // execute upload
+                upload.doUpload();
+
+
+
+            });
+
+            $(':file').on('fileselect', function(event, numFiles, label) {
+                console.log(event, numFiles, label)
+                $(".progress-wrp").css({visibility: 'visible'});
+            });
+
+        });
+
         var saveText = function(e){
             console.log(e.target);
             if (e.target.getAttribute('contenteditable') == "false") {
@@ -1014,6 +1048,7 @@
             } else {
 
                 var contextText = e.target.textContent;
+
                 // send request
                 $.ajax({
                     dataType: 'json',

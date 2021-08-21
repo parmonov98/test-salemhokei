@@ -20,6 +20,7 @@ Route::group(["namespace" => "Admin"], function () {
 
     Route::group(["prefix" => "admin"], function () {
 
+        Route::post("/upload/video", "UploadController@store")->name('video.store');
         //
         Route::get("/static-page/{item}", "PageController@editStaticPage");
         Route::put("/text/{text}", "TextController@update")->name('text.update');
@@ -78,6 +79,7 @@ Route::group(["namespace" => "Admin"], function () {
 //        Route::group(["middleware" => "has.permission:access.view"], function () {
         // Секции
         Route::group(["middleware" => "has.permission:section.view"], function () {
+            Route::get("/notifications", "SectionController@notifications");
             Route::get("/sections", "SectionController@index");
             Route::get("/section/{item}", "SectionController@edit");
 
@@ -184,7 +186,6 @@ Route::group(["namespace" => "Admin"], function () {
         //
 
         //  Пользователи
-
         Route::group(["middleware" => "has.permission:user.edit"], function () {
 //            Route::get("/user/{item}", "UserController@edit");
             Route::post("/user/{item}", "UserController@update");

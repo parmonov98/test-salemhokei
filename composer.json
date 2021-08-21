@@ -20,7 +20,8 @@
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.8",
         "lavary/laravel-menu": "^1.8",
-        "orangehill/iseed": "^3.0"
+        "orangehill/iseed": "^3.0",
+        "qoraiche/laravel-mail-editor": "^2.2"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.6",

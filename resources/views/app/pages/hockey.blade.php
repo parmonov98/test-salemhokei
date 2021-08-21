@@ -2,6 +2,10 @@
 
 @section('title', __('default.site_name') . ' | ' . __('default.pages.hockey.title'))
 
+@section('styles')
+    <link rel="stylesheet" href="{{asset('assets/css/video.css')}}">
+@endsection
+
 @section('content')
 
     <div style="background: url(/assets/img/pattern1-blue.png), #E8F7FE;background-size: 1440px;"
@@ -1092,6 +1096,11 @@
 
 @endsection
 
-{{--@section('scripts')--}}
+@section('scripts')
+    <script src="{{asset('assets/js/video.js')}}"></script>
 
-{{--@endsection--}}
+    <script>
+        var players = new VideoPlayer({'selector': '.video-player', autoplay: false});
+        // console.log(players)
+    </script>
+@endsection

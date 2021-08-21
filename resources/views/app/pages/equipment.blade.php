@@ -1,7 +1,9 @@
 @extends("app.layout.index")
 
 @section("title",__("default.site_name").' | '. __("default.pages.equipment.title"))
-
+@section('styles')
+    <link rel="stylesheet" href="{{asset('assets/css/video.css')}}">
+@endsection
 @section("content")
     <div style="background: url(/assets/img/pattern1-blue.png), #E8F7FE;
     background-size: 1440px;" class="main-wrapper__bg"></div>
@@ -496,6 +498,11 @@
 
 @endsection
 
-@section("scripts")
+@section('scripts')
+    <script src="{{asset('assets/js/video.js')}}"></script>
 
+    <script>
+        var players = new VideoPlayer({'selector': '.video-player', autoplay: false});
+        // console.log(players)
+    </script>
 @endsection

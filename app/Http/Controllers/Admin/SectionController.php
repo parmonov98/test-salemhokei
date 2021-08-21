@@ -31,6 +31,16 @@ class SectionController extends Controller
         ]);
     }
 
+
+
+    public function notifications()
+    {
+//dd(1);
+        return view('admin.sections.notifications', [
+            'item' => []
+        ]);
+    }
+
     public function add()
     {
         $item = new Section;

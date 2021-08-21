@@ -65,7 +65,7 @@ class PageController extends Controller
     }
     public function hockey(Request $request, $lang = "ru")
     {
-        $textItems = Text::where('page', 'hockey')->get();
+        $textItems = Text::with('video')->where('page', 'hockey')->get();
         return view("app.pages.hockey", [
             "items" => [],
             "textItems" => $textItems,

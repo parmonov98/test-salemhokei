@@ -9,29 +9,37 @@
 .header .menu ul > li:nth-child(1) a:hover > span::before {
     color: darkcyan;
 }
+
 .header .menu ul > li:nth-child(even) a:hover > span::before {
     color: lightseagreen;
 }
+
 .header .menu ul > li:nth-child(odd) a:hover > span::before {
     color: firebrick;
 }
+
 .header .menu ul > li:nth-child(4) a:hover > span::before {
     color: firebrick;
 }
+
 .header .menu ul > li:nth-child(5) a:hover > span::before {
     color: lightseagreen;
 }
+
 .header .menu ul > li:nth-child(6) a:hover > span::before {
-    color: 	#9f9904;
+    color: #9f9904;
 }
+
 .header .menu ul > li:nth-child(7) a:hover > span::before {
-    color: 	#2E2D88;
+    color: #2E2D88;
 }
+
 .header .menu ul > li:nth-child(8) a:hover > span::before {
-    color: 	#9932CC;
+    color: #9932CC;
 }
+
 .header .menu ul > li:nth-child(9) a:hover > span::before {
-    color: 	#56887D;
+    color: #56887D;
 }
 
 .header .menu ul li.active a {
@@ -56,11 +64,9 @@
     background-color: rgba(0, 0, 0, 0.1);
 } */
 
-.banner>video {
+.banner > video {
     width: 100%;
 }
-
-
 
 
 .page_section video,
@@ -68,55 +74,60 @@
     width: 100%;
 }
 
-.header .menu ul li:not(:last-child){
+.header .menu ul li:not(:last-child) {
     margin-right: 2em;
 }
 
 
 :root {
-	--accent: #00C6F2;
-/* 	--accent: #d7577e; */
+    --accent: #00C6F2;
+    /* 	--accent: #d7577e; */
 
-	--main: #ffffff;
+    --main: #ffffff;
 }
+
 body {
-	width: 100%;
-	height: 100%;
-	/* background: #ff578e; */
+    width: 100%;
+    height: 100%;
+    /* background: #ff578e; */
 }
 
-.starting_area_section div > a{
+.starting_area_section div > a {
     display: block;
     width: 100%;
     height: 600px;
 }
-.starting_area_section div > a > svg{
+
+.starting_area_section div > a > svg {
     width: 100%;
     height: 100%;
 }
 
-.starting_area_section div > a > svg:hover path[fill="#DCF0FA"]{
+.starting_area_section div > a > svg:hover path[fill="#DCF0FA"] {
     transition: fill 0.3s;
 }
-.starting_area_section div > a > svg:hover path[fill="#DCF0FA"]{
+
+.starting_area_section div > a > svg:hover path[fill="#DCF0FA"] {
     fill: rgb(16 168 245);
 }
 
-.header .menu ul a{
+.header .menu ul a {
     color: #000;
     font-family: "Exo 2", sans-serif;
 }
 
 
-.footer .footer-socials{
+.footer .footer-socials {
     display: inline-flex;
     justify-content: space-between;
 }
-.footer .footer-socials a{
+
+.footer .footer-socials a {
     width: 32px;
     display: inline-block;
 }
-.footer .footer-socials a svg{
+
+.footer .footer-socials a svg {
     width: 100%;
 }
 
@@ -125,7 +136,7 @@ body {
     flex-direction: row;
 }
 
-.language{
+.language {
     padding-left: 2em;
 
 }
@@ -135,7 +146,7 @@ body {
         margin-right: 0em !important;
     }
 
-    .language{
+    .language {
         padding-left: 0;
         justify-content: center;
     }
@@ -149,18 +160,24 @@ body {
         width: 8em;
     }
 
-    .banner{
+    .banner {
         height: auto;
     }
 }
 
-@media (max-width: 1140px) and (min-width: 769px)  {
+@media (max-width: 1140px) and (min-width: 769px) {
 
-    .banner{
+    .banner {
         height: auto;
     }
 
 
 }
 
+.ytp-chrome-top {
+    display: none !important;
+}
 
+.ytp-contextmenu {
+    display: none;
+}

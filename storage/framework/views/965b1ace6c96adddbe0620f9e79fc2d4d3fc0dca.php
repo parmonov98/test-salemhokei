@@ -1,5 +1,9 @@
 <?php $__env->startSection('title', __('default.site_name') . ' | ' . __('default.pages.hockey.title')); ?>
 
+<?php $__env->startSection('styles'); ?>
+    <link rel="stylesheet" href="<?php echo e(asset('assets/css/video.css')); ?>">
+<?php $__env->stopSection(); ?>
+
 <?php $__env->startSection('content'); ?>
 
     <div style="background: url(/assets/img/pattern1-blue.png), #E8F7FE;background-size: 1440px;"
@@ -1092,8 +1096,13 @@
 
 <?php $__env->stopSection(); ?>
 
+<?php $__env->startSection('scripts'); ?>
+    <script src="<?php echo e(asset('assets/js/video.js')); ?>"></script>
 
-
-
+    <script>
+        var players = new VideoPlayer({'selector': '.video-player', autoplay: false});
+        // console.log(players)
+    </script>
+<?php $__env->stopSection(); ?>
 
 <?php echo $__env->make("app.layout.index", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/dev/www/test.salemhokei.loc/resources/views/app/pages/hockey.blade.php ENDPATH**/ ?>

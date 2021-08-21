@@ -51,6 +51,29 @@ class VideoController extends Controller
         }
     }
 
+    public function store(Request $request)
+    {
+        $this->validate($request, [
+            "upload_id" => "required|unique:uploads,id",
+        ]);
+
+        $item = new Video;
+        $item->name_ru = $request->name_ru;
+        $item->name_kk = $request->name_kk;
+        $item->name_en = $request->name_en;
+        $item->link_ru = $request->link_ru;
+        $item->link_kk = $request->link_kk;
+        $item->link_en = $request->link_en;
+        $item->is_published = $request->get("is_published");
+        $item->published_at = Carbon::createFromTimestamp(strtotime($request->get("published_at")));
+        $item->save();
+
+        $logger = new Log;
+        $logger->log('add', 'videos', $item->id, $item->name_ru);
+
+        return redirect('/admin/video/' . $item->id)->with('status', 'Новая статья успешно добавлена');
+    }
+
     public function save(Request $request)
     {
         $this->validate($request, [

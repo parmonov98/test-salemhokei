@@ -56,7 +56,7 @@ class PageController extends Controller
 
     public function hockey(Request $request, MenuItem $item)
     {
-        $textItems = Text::where('page', 'hockey')->get();
+        $textItems = Text::with('video')->where('page', 'hockey')->orderBy('id')->get();
 
         return view('admin.pages.hockey', [
             'item' => $item,
@@ -67,7 +67,9 @@ class PageController extends Controller
 
     public function schools(Request $request, MenuItem $item)
     {
-        $textItems = Text::where('page', 'schools')->get();
+        $textItems = Text::with('video')->where('page', 'schools')->orderByDesc('id')->get();
+
+
 
         return view('admin.pages.schools', [
             'item' => $item,

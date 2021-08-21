@@ -41,6 +41,27 @@ html {
     transform: translateY(0);
 }
 
+.video-player:fullscreen{
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+.video-player:-ms-fullscreen{
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+.video-player:-moz-full-screen{
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+.video-player:-webkit-full-screen{
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
 .play-button {
     width: 64px;
     border: none;
@@ -100,3 +121,15 @@ input[type="range"]::-webkit-slider-thumb {
 
 }
 
+.video-player .fullscreen svg{
+    pointer-events: none;
+}
+.video-player .fullscreen svg path{
+    fill: #6c757d;
+}
+.video-player .fullscreen{
+    position: absolute;
+    right: 5px;
+    bottom: 2px;
+    cursor: pointer;
+}

@@ -116,6 +116,9 @@
               @can('section.view')
                 <li><a href="/admin/sections">Список школ</a></li>
               @endcan
+
+              <li><a href="/admin/notifications">Настройки уведомлений </a></li>
+
             </ul>
           </li>
           {{-- @endcan --}}

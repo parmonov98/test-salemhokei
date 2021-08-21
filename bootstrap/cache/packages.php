@@ -118,4 +118,15 @@
       0 => 'Orangehill\\Iseed\\IseedServiceProvider',
     ),
   ),
+  'qoraiche/laravel-mail-editor' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Qoraiche\\MailEclipse\\MailEclipseServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'MailEclipse' => 'Qoraiche\\MailEclipse\\Facades\\MailEclipse',
+    ),
+  ),
 );

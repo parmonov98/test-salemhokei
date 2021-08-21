@@ -7,12 +7,9 @@
         rel="stylesheet"
         href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    {{--    <link rel="stylesheet" href="{{asset('assets/css/JiSlider.css')}}">--}}
+
     <style>
-        /*#JiSlider {*/
-        /*    width: 100%;*/
-        /*    height: 100%;*/
-        /*}*/
+
         .swiper-container {
             width: 100%;
             height: 100%;

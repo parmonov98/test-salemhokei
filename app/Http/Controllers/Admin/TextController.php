@@ -70,7 +70,14 @@ class TextController extends Controller
      */
     public function update(Request $request, Text $text)
     {
-        $text->content = $request->content;
+
+        if ($request->has('upload_id')){
+            $text->video_id = $request->upload_id;
+        }
+        if ($request->has('content')){
+            $text->content = $request->content;
+        }
+
         $text->save();
         return response()->json(['status' => 'OK']);
     }
