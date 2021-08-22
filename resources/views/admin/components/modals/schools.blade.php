@@ -31,7 +31,7 @@
 
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#russian-{{$textItems->firstWhere('element_id', 'schools_count_title_ru')->element_id}}">Русский</a></li>
-        <li><a data-toggle="tab" href="#kazakh-{{$textItems->firstWhere('element_id', 'schools_count_title_ru')->element_id}}">Қазақша</a></li>
+        <li><a data-toggle="tab" href="#kazakh-{{$textItems->firstWhere('element_id', 'schools_count_title_kk')->element_id}}">Қазақша</a></li>
     </ul>
 
     <div class="tab-content">
@@ -70,7 +70,7 @@
 
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#russian-{{$textItems->firstWhere('element_id', 'children_count_title_ru')->element_id}}">Русский</a></li>
-        <li><a data-toggle="tab" href="#kazakh-{{$textItems->firstWhere('element_id', 'children_count_title_ru')->element_id}}">Қазақша</a></li>
+        <li><a data-toggle="tab" href="#kazakh-{{$textItems->firstWhere('element_id', 'children_count_title_kk')->element_id}}">Қазақша</a></li>
     </ul>
 
     <div class="tab-content">
