@@ -103,12 +103,25 @@ body {
     height: 100%;
 }
 
-.starting_area_section div > a > svg:hover path[fill="#DCF0FA"] {
+.starting_area_section div > a > svg:hover *[fill="#DCF0FA"],
+.starting_area_section div > a > svg:hover *[fill="#e8eff7"]
+
+{
     transition: fill 0.3s;
 }
-
-.starting_area_section div > a > svg:hover path[fill="#DCF0FA"] {
+.starting_area_section div > a > svg:hover *[fill="#DCF0FA"],
+.starting_area_section div > a > svg:hover *[fill="#e8eff7"]
+{
     fill: rgb(16 168 245);
+}
+
+.starting_area_section div > a > svg:hover *[fill="#00adee"]
+{
+    fill: #e8eff7;
+}
+.starting_area_section div > a > svg:hover *[fill="#fff"]
+{
+    fill:  rgb(16 168 245);
 }
 
 .header .menu ul a {
@@ -146,6 +159,11 @@ body {
         margin-right: 0em !important;
     }
 
+
+    .menu > div {
+        flex-direction: column;
+    }
+
     .language {
         padding-left: 0;
         justify-content: center;
@@ -162,6 +180,11 @@ body {
 
     .banner {
         height: auto;
+    }
+
+    .starting_area_section div > a {
+        height: auto;
+        padding: 1rem 0;
     }
 }
 

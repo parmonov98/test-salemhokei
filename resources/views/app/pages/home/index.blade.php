@@ -56,7 +56,8 @@
                     <div class="swiper-slide">
                         <!-- Required swiper-lazy class and image source specified in data-src attribute -->
                         <div class="video-player">
-                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}" poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
+                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}"
+                                   poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
                             <div class="player-controls">
                                 <button class="play-button" title="Play">►</button>
                             </div>
@@ -65,7 +66,8 @@
                     <div class="swiper-slide">
                         <!-- Required swiper-lazy class and image source specified in data-src attribute -->
                         <div class="video-player">
-                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}" poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
+                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}"
+                                   poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
                             <div class="player-controls">
                                 <button class="play-button" title="Play">►</button>
                             </div>
@@ -74,28 +76,31 @@
                     <div class="swiper-slide">
                         <!-- Required swiper-lazy class and image source specified in data-src attribute -->
                         <div class="video-player">
-                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}" poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
-                            <div class="player-controls">
-                                <button class="play-button" title="Play">►</button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slide">
-                        <!-- Required swiper-lazy class and image source specified in data-src attribute -->
-                        <div class="video-player">
-                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}" poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
+                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}"
+                                   poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
                             <div class="player-controls">
                                 <button class="play-button" title="Play">►</button>
                             </div>
                         </div>
 
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Required swiper-lazy class and image source specified in data-src attribute -->
+                        <div class="video-player">
+                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}"
+                                   poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
+                            <div class="player-controls">
+                                <button class="play-button" title="Play">►</button>
+                            </div>
+                        </div>
+
 
                     </div>
                     <div class="swiper-slide">
                         <!-- Required swiper-lazy class and image source specified in data-src attribute -->
                         <div class="video-player">
-                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}" poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
+                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}"
+                                   poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
                             <div class="player-controls">
                                 <button class="play-button" title="Play">►</button>
                             </div>
@@ -118,7 +123,8 @@
                     <div class="swiper-slide">
                         <!-- Required swiper-lazy class and image source specified in data-src attribute -->
                         <div class="video-player">
-                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}" poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
+                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}"
+                                   poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
                             <div class="player-controls">
                                 <button class="play-button" title="Play">►</button>
                             </div>
@@ -127,7 +133,8 @@
                     <div class="swiper-slide">
                         <!-- Required swiper-lazy class and image source specified in data-src attribute -->
                         <div class="video-player">
-                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}" poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
+                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}"
+                                   poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
                             <div class="player-controls">
                                 <button class="play-button" title="Play">►</button>
                             </div>
@@ -136,28 +143,31 @@
                     <div class="swiper-slide">
                         <!-- Required swiper-lazy class and image source specified in data-src attribute -->
                         <div class="video-player">
-                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}" poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
-                            <div class="player-controls">
-                                <button class="play-button" title="Play">►</button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slide">
-                        <!-- Required swiper-lazy class and image source specified in data-src attribute -->
-                        <div class="video-player">
-                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}" poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
+                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}"
+                                   poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
                             <div class="player-controls">
                                 <button class="play-button" title="Play">►</button>
                             </div>
                         </div>
 
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Required swiper-lazy class and image source specified in data-src attribute -->
+                        <div class="video-player">
+                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}"
+                                   poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
+                            <div class="player-controls">
+                                <button class="play-button" title="Play">►</button>
+                            </div>
+                        </div>
+
 
                     </div>
                     <div class="swiper-slide">
                         <!-- Required swiper-lazy class and image source specified in data-src attribute -->
                         <div class="video-player">
-                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}" poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
+                            <video muted="false" src="{{asset('assets/videos/hockey-video.mp4')}}"
+                                   poster="{{asset('assets/videos/thumbnail-video.png')}}" class="video"></video>
                             <div class="player-controls">
                                 <button class="play-button" title="Play">►</button>
                             </div>
@@ -178,9 +188,6 @@
 
     <section>
         <div class="container starting_area_section">
-            <div class="plain-text plain-text__24 plain-text__thin">
-                {!! __("default.pages.faq.faq_annotation") !!}
-            </div>
 
             @if($lang == 'kk')
                 <div class="margin-50">
@@ -428,7 +435,125 @@
                         </svg>
                     </a>
                 </div>
+                <div class="margin-50">
+                    <a href="/{{ $lang }}/faq" class="d-block h-75">
+
+                    </a>
+                </div>
             @else
+                <div class="margin-50">
+                    <a href="/{{ $lang }}/faq" class="d-block h-75">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="159.12" height="87.64"
+                             viewBox="0 0 159.12 87.64">
+                            <path
+                                d="M105.43,84.64c14.08-4.09,25.65-15,22-31-1-10.66-7.45-10.1-6.2-19.32,0,0,5.6-32.38-23.1-34.3-10.26,0-14.38,8.17-16,11.65s-11.72,11.45-19.49,3S35.13,5,29,15.2s1,21.53.36,27.06-6.42,22.13,3.4,31.39S55.48,71,62.45,71.88c4.77.57,12.75,14.31,29.8,14.55a45.52,45.52,0,0,0,13.18-1.79"
+                                transform="translate(0 -0.02)" fill="#e8eff7"/>
+                            <path d="M26.62,27.83c.71,5.88,3.06,11.16,2.69,14.43-.23,2.06-1.18,5.64-1.77,9.8"
+                                  transform="translate(0 -0.02)" fill="none" stroke="#00adee" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M61.81,13.89c-5.57-5.22-15.92-7.32-23.88-5" transform="translate(0 -0.02)"
+                                  fill="none" stroke="#00adee" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path
+                                d="M126.33,68.23a23.31,23.31,0,0,0,1.08-14.61c-1-10.66-7.45-10.1-6.2-19.32a33.15,33.15,0,0,0,.36-3.44"
+                                transform="translate(0 -0.02)" fill="none" stroke="#00adee" stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                            <path
+                                d="M47.08,76.38c5.92-1.6,11.55-5,15.37-4.5,4.77.57,12.75,14.31,29.8,14.55a44.71,44.71,0,0,0,11.23-1.28"
+                                transform="translate(0 -0.02)" fill="none" stroke="#00adee" stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                            <circle cx="13.46" cy="34.31" r="6.5" fill="#a3d9f6"/>
+                            <circle cx="149.35" cy="11.29" r="9.77" fill="#e8eff7"/>
+                            <path
+                                d="M12.63,22.18a5.19,5.19,0,0,0,1.3,1.13,2.41,2.41,0,0,0,1.17.34,1.16,1.16,0,0,0,.78-.25.67.67,0,0,0,.26-.54.72.72,0,0,0-.21-.58,5.28,5.28,0,0,0-1.44-.57,5.74,5.74,0,0,1-2.64-1.32A3.26,3.26,0,0,1,11,18.05,4,4,0,0,1,12.28,15a4.52,4.52,0,0,1,3.21-1.18,6.45,6.45,0,0,1,2,.28,5.88,5.88,0,0,1,1.77.84.42.42,0,0,1,.15.52l-1,2.3a.44.44,0,0,1-.3.25.45.45,0,0,1-.37-.09,4.05,4.05,0,0,0-1-.64,2.66,2.66,0,0,0-1-.2,1.1,1.1,0,0,0-.68.19.44.44,0,0,0-.19.37A.47.47,0,0,0,15,18a3.36,3.36,0,0,0,1.06.42h.14A6.62,6.62,0,0,1,19,19.76,3.16,3.16,0,0,1,19.72,21a4.71,4.71,0,0,1-1.12,4.8A5.08,5.08,0,0,1,15,27a6.35,6.35,0,0,1-2.4-.45,6.94,6.94,0,0,1-2.07-1.4.41.41,0,0,1-.06-.52L12,22.25a.38.38,0,0,1,.32-.21.43.43,0,0,1,.36.14Z"
+                                transform="translate(0 -0.02)" fill="#ce005b" fill-rule="evenodd"/>
+                            <path
+                                d="M29.38,14.38a.42.42,0,0,0-.4-.28H25a.42.42,0,0,0-.4.28L20.52,26.12a.4.4,0,0,0,.05.38.44.44,0,0,0,.35.18H24.1a.41.41,0,0,0,.41-.3l.52-1.8h3.91l.5,1.79a.43.43,0,0,0,.41.31H33a.39.39,0,0,0,.35-.18.43.43,0,0,0,.06-.38ZM26,21.45l1-3.31,1,3.31Z"
+                                transform="translate(0 -0.02)" fill="#ce005b" fill-rule="evenodd"/>
+                            <path
+                                d="M38.75,23.09H42.3a.42.42,0,0,1,.42.42h0v2.74a.42.42,0,0,1-.42.42H35.13a.42.42,0,0,1-.43-.41h0V14.52a.42.42,0,0,1,.42-.42h3.21a.42.42,0,0,1,.42.42Z"
+                                transform="translate(0 -0.02)" fill="#ce005b" fill-rule="evenodd"/>
+                            <path
+                                d="M48.38,17.52v1.19h3.41a.42.42,0,0,1,.43.41h0v2.52a.42.42,0,0,1-.42.42H48.38v1.14H52a.42.42,0,0,1,.43.41h0v2.63a.42.42,0,0,1-.42.42H44.84a.42.42,0,0,1-.43-.41h0V14.52a.42.42,0,0,1,.42-.42H52a.42.42,0,0,1,.43.41h0V17.1a.42.42,0,0,1-.42.42H48.38Z"
+                                transform="translate(0 -0.02)" fill="#ce005b" fill-rule="evenodd"/>
+                            <path
+                                d="M64.46,21.09l-1.54,5.29a.41.41,0,0,1-.4.3H60.38a.43.43,0,0,1-.41-.3l-1.54-5.32v.18l-.69,5.08a.42.42,0,0,1-.42.36h-3a.42.42,0,0,1-.42-.49l1.81-11.73a.42.42,0,0,1,.42-.36H59.3a.42.42,0,0,1,.41.3l1.73,5.92,1.75-5.92a.42.42,0,0,1,.41-.3h3.17a.42.42,0,0,1,.42.36L69,26.19a.42.42,0,0,1-.42.49h-3a.43.43,0,0,1-.42-.37l-.68-5.07v-.15Z"
+                                transform="translate(0 -0.02)" fill="#ce005b" fill-rule="evenodd"/>
+                            <path
+                                d="M80,18.54h3.76V14a.43.43,0,0,1,.43-.43h3.46a.42.42,0,0,1,.42.42h0V26.72a.42.42,0,0,1-.41.43H84.22a.43.43,0,0,1-.43-.43h0V22H80v4.73a.43.43,0,0,1-.43.43H76.15a.43.43,0,0,1-.43-.43h0V14a.43.43,0,0,1,.43-.43H79.6A.43.43,0,0,1,80,14v4.54Z"
+                                transform="translate(0 -0.02)" fill="#00adee" fill-rule="evenodd"/>
+                            <path
+                                d="M110,18.44l3.23-4.65a.39.39,0,0,1,.35-.18h4A.43.43,0,0,1,118,14a.44.44,0,0,1-.09.27l-4.49,5.92,4.89,6.24a.43.43,0,0,1-.34.69h-4.31a.41.41,0,0,1-.35-.18L110,22.35v4.37a.43.43,0,0,1-.43.43h-3.43c-.23,0-.66-.19-.66-.43L105.73,14a.42.42,0,0,1,.41-.43h3.44A.44.44,0,0,1,110,14v4.44Z"
+                                transform="translate(0 -0.02)" fill="#00adee" fill-rule="evenodd"/>
+                            <path
+                                d="M123.63,17.25v1.34h3.72a.43.43,0,0,1,.43.43h0v2.72a.43.43,0,0,1-.43.43h-3.72v1.29h4a.42.42,0,0,1,.43.41h0v2.84a.43.43,0,0,1-.43.43h-7.77a.43.43,0,0,1-.43-.43h0V14a.43.43,0,0,1,.43-.43h7.77A.43.43,0,0,1,128,14v2.78a.43.43,0,0,1-.43.43h0Z"
+                                transform="translate(0 -0.02)" fill="#00adee" fill-rule="evenodd"/>
+                            <path d="M129.9,26.72V13.61h4.35V27.15h-3.92a.43.43,0,0,1-.43-.43Z"
+                                  transform="translate(0 -0.02)" fill="#00adee" fill-rule="evenodd"/>
+                            <path
+                                d="M103.75,17.68a6.76,6.76,0,0,0-1.56-2.28,7.06,7.06,0,0,0-2.34-1.54,7.25,7.25,0,0,0-2.76-.53A7,7,0,0,0,92,25.42a7.27,7.27,0,0,0,10.19,0,6.86,6.86,0,0,0,1.56-2.28,7.17,7.17,0,0,0,0-5.46Zm-4.61,5.11a2.81,2.81,0,0,1-4,.16,1.21,1.21,0,0,1-.16-.16,3.47,3.47,0,0,1-.81-2.39A3.44,3.44,0,0,1,95,18a2.74,2.74,0,0,1,3.87-.23,2.5,2.5,0,0,1,.23.23,3.46,3.46,0,0,1,.84,2.38A3.41,3.41,0,0,1,99.14,22.79Z"
+                                transform="translate(0 -0.02)" fill="#00adee" fill-rule="evenodd"/>
+                            <path
+                                d="M137.64,28.53a2.47,2.47,0,0,1-.8-1.86,2.39,2.39,0,0,1,.8-1.86,3,3,0,0,1,2.06-.73,2.9,2.9,0,0,1,2,.73,2.41,2.41,0,0,1,.79,1.86,2.47,2.47,0,0,1-.8,1.86,3.09,3.09,0,0,1-4.09,0Zm-.78-17h5.67l-.95,11.15h-3.79Z"
+                                transform="translate(0 -0.02)" fill="#b0cb1f"/>
+                            <path
+                                d="M28.09,69.92h0a.73.73,0,0,1,.76.67L29.12,75a.71.71,0,0,1-.67.75h0a.7.7,0,0,1-.75-.65h0l-.28-4.39a.73.73,0,0,1,.67-.76ZM41.51,84.5h0c-.21-.3-.21-.66,0-.8l3.32-2.26c.2-.14.53,0,.74.3h0c.2.3.38,1.09.16,1.2L42.24,84.8A.61.61,0,0,1,41.51,84.5ZM46,48.26s.69.57.23,1.21a3.09,3.09,0,0,1-1.21,1,5.1,5.1,0,0,0-3.53,5.35,5.5,5.5,0,0,0,5.65,5,5.56,5.56,0,0,0,5-5.65,5,5,0,0,0-3.71-4.75A2,2,0,0,0,46,48.26ZM26.7,56.71c-.92,1.21.43,2.56,1.52,1.13l3.63-4.71c.47,1.83,1.23,3.67,4.07,7.48s3.64,5.18,1.71,6.77-6.41,1.09-7.06,2.88-.52,5,.5,4.7,5.89-3.34,7.57-.91-.06,7.34,2.72,7.24,3.48-.91,2.81-1.82c-.54-.73-.57-2.43.42-4.45a22.92,22.92,0,0,1,6.63-8.77c2.18-1.68,4.46-2.25,5.71-5.1.64-1.48.26-2.49-1.34-1.51-10.61,6.5-14.13,1.07-21-7.38-.4-.49-.77-.94-1.11-1.28L41,41.17h0A1,1,0,0,0,41.18,40l-2.77-5.38c-.66-1.27-3.32.77-2.69,1.53l3.5,4.26Z"
+                                transform="translate(0 -0.02)" fill="#00adee" fill-rule="evenodd"/>
+                            <path d="M113.33,83.73h-4.24a.71.71,0,1,0,0,1.42h4.24a.71.71,0,0,0,0-1.42Z"
+                                  transform="translate(0 -0.02)" fill="#ce005b"/>
+                            <path
+                                d="M100,56.75a5,5,0,0,0,.22,1.67,5.13,5.13,0,0,0,9.81-3h0a5.3,5.3,0,0,0-.83-1.62,1,1,0,0,0,0-.71,6.85,6.85,0,0,1,3.57-.6c-.94-4-4.49-4.63-4.46-.15a1,1,0,0,0-.68.07,5.13,5.13,0,0,0-6.95,2s0,.07-.05.1a1,1,0,0,0-.74.33c-2.44-3.76-5-1.23-3.63,2.58A6.83,6.83,0,0,1,99.47,56,1,1,0,0,0,100,56.75Z"
+                                transform="translate(0 -0.02)" fill="#ce005b"/>
+                            <path
+                                d="M121.25,57.73c1.19,1.36,2.45-.07,1.45-1.22l-4.38-5a.4.4,0,0,0-.1-.12l-9-10.32,3.23-4.47c.57-.8-2.21-2.67-2.78-1.36l-2.43,5.55a1,1,0,0,0,.2,1.11h0l9.3,10.66c-3.36,4.56-3.86,7.43-8.9,10.37-1.56.9-13.37,6.08-11.23,8.4.37.41,1.58.31,3.92-.41,7-2.15,9.37,3.94,8.88,10.23-.07.9.14,1.25,2.92,1.18s.8-5.13,2.33-7.67,6.58.16,7.62.44,1-3,.21-4.73-5.22-1-7.23-2.44c-3.82-2.76,2.4-7.51,3.31-13.27Z"
+                                transform="translate(0 -0.02)" fill="#ce005b"/>
+                            <path d="M124.93,70.23a.73.73,0,0,0-.71.72v4.3a.71.71,0,0,0,1.42,0V71a.72.72,0,0,0-.67-.77Z"
+                                  transform="translate(0 -0.02)" fill="#ce005b"/>
+                            <circle cx="138.27" cy="54.77" r="7.6" fill="#ffae00"/>
+                            <circle cx="11.73" cy="75.91" r="11.73" fill="#e8eff7"/>
+                            <path d="M98,48.22H55v-10H98Z" transform="translate(0 -0.02)" fill="#052460"/>
+                            <path
+                                d="M98,48.22c0,3.39-9.62,6.14-21.5,6.14S55,51.61,55,48.22s9.62-10,21.49-10S98,44.82,98,48.22Z"
+                                transform="translate(0 -0.02)" fill="#052460"/>
+                            <path
+                                d="M98,38.21c0,3.39-9.62,6.15-21.5,6.15S55,41.6,55,38.21s9.62-6.15,21.49-6.15S98,34.82,98,38.21Z"
+                                transform="translate(0 -0.02)" fill="#00adee"/>
+                            <path
+                                d="M93,34.38c2.86,1,4.57,2.38,4.57,3.83,0,3.39-9.39,6.15-21,6.15s-21-2.76-21-6.15c0-1.33,1.44-2.57,3.9-3.57"
+                                transform="translate(0 -0.02)" fill="none" stroke="#052460" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="0.99"/>
+                            <path d="M64.44,33.18a61.27,61.27,0,0,1,12.09-1.12c1.86,0,3.66.07,5.38.21"
+                                  transform="translate(0 -0.02)" fill="none" stroke="#052460" stroke-linecap="round"
+                                  stroke-linejoin="round" stroke-width="0.99"/>
+                            <path
+                                d="M82,36.78a3.25,3.25,0,0,1-.69-.08,18.07,18.07,0,0,0-4.8-.57,18.77,18.77,0,0,0-4.29.44,3.12,3.12,0,0,1-1.36,0c-.34-.12-.28-.3.14-.39a24.9,24.9,0,0,1,5.51-.56,23.78,23.78,0,0,1,6.17.72c.38.11.38.29,0,.4A3.07,3.07,0,0,1,82,36.78Z"
+                                transform="translate(0 -0.02)" fill="#a3d9f6"/>
+                            <polygon
+                                points="17.91 45.89 18.91 47.91 21.14 48.23 19.52 49.8 19.9 52.02 17.91 50.97 15.91 52.02 16.3 49.8 14.68 48.23 16.91 47.91 17.91 45.89"
+                                fill="none" stroke="#ffae00" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="141.19 38.19 138.61 38.4 137.33 40.65 136.32 38.26 133.79 37.74 135.75 36.04 135.47 33.47 137.68 34.81 140.04 33.75 139.45 36.27 141.19 38.19"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="140.08 80.14 137.9 79.49 136.12 80.92 136.07 78.65 134.16 77.4 136.31 76.64 136.9 74.44 138.28 76.25 140.56 76.14 139.27 78.01 140.08 80.14"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="61.45 83.71 59.82 82.78 58.13 83.59 58.51 81.76 57.21 80.4 59.08 80.2 59.96 78.54 60.73 80.25 62.58 80.59 61.19 81.85 61.45 83.71"
+                                fill="none" stroke="#ffae00" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="9.28 58.53 7.46 58.37 6.29 59.78 5.88 58 4.18 57.33 5.75 56.39 5.86 54.56 7.24 55.76 9.02 55.3 8.3 56.99 9.28 58.53"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="89.88 80.92 86.93 79.98 84.48 81.87 84.47 78.77 81.92 77.03 84.86 76.06 85.73 73.09 87.56 75.59 90.65 75.5 88.84 78.01 89.88 80.92"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                        </svg>
+                    </a>
+                </div>
                 <div class="margin-50">
                     <a href="/{{ $lang }}/faq" class="d-block h-75">
 
@@ -631,6 +756,408 @@
                         </svg>
                     </a>
                 </div>
+                <div class="margin-50">
+                    <a href="/{{ $lang }}/faq" class="d-block h-75">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="158.85" height="93" viewBox="0 0 158.85 93">
+                            <circle cx="19.29" cy="20.9" r="13.59" fill="#ffae00"/>
+                            <path
+                                d="M122.64,34.3S128.25,1.92,99.54,0c-10.26,0-14.38,8.17-16,11.65S71.79,23.1,64,14.67,36.56,5,30.39,15.2s1,21.53.36,27.06-6.42,22.13,3.4,31.39S56.92,71,63.89,71.88c4.76.57,12.74,14.31,29.79,14.55,18.82.27,39.95-11.88,35.16-32.81C127.84,43,121.39,43.52,122.64,34.3Z"
+                                fill="#e8eff7"/>
+                            <path
+                                d="M90.42,2.74c-3.87,2.7-5.87,6.73-6.91,8.91-1.65,3.48-11.72,11.45-19.49,3C56.83,6.88,39.45,5.2,32,13.09"
+                                fill="none" stroke="#00adee" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M122.86,23.48c-.74-7.2-3.56-16.15-12.37-20.66" fill="none" stroke="#00adee"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M84.5,84.88a30.17,30.17,0,0,0,9.18,1.55c10.15.14,21-3.32,28-9.83" fill="none"
+                                  stroke="#00adee" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M34.15,73.65c8.31,7.83,18.86.53,26.13-1.38" fill="none" stroke="#00adee"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M30.38,44.47a82.45,82.45,0,0,0-1.85,12" fill="none" stroke="#00adee"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="142.59" cy="60.34" r="16.26" fill="#a3d9f6"/>
+                            <circle cx="135.68" cy="18.38" r="7.6" fill="#e8eff7"/>
+                            <circle cx="14.61" cy="78.39" r="14.61" fill="#e8eff7"/>
+                            <g style="isolation:isolate">
+                                <g style="isolation:isolate">
+                                    <path
+                                        d="M83.89,59.9h7.58v1.7H85.94V64h2.74a5.36,5.36,0,0,1,1.88.28,2.7,2.7,0,0,1,1.28,1A3,3,0,0,1,92.37,67a2.91,2.91,0,0,1-.54,1.77,2.76,2.76,0,0,1-1.21,1,5.49,5.49,0,0,1-1.94.27H83.89Zm2,8.44h2a5.89,5.89,0,0,0,1.34-.1,1.26,1.26,0,0,0,.68-.42,1.2,1.2,0,0,0,.28-.82,1.1,1.1,0,0,0-.5-1A3.24,3.24,0,0,0,88,65.65H85.94Z"
+                                        fill="#052460"/>
+                                </g>
+                                <g style="isolation:isolate">
+                                    <path
+                                        d="M91.66,65a6.44,6.44,0,0,1,.46-2.6A4.87,4.87,0,0,1,93.06,61a3.82,3.82,0,0,1,1.32-.91,5.5,5.5,0,0,1,2.18-.41,4.79,4.79,0,0,1,3.59,1.39,6.25,6.25,0,0,1,0,7.72,5.35,5.35,0,0,1-7.17,0A5.22,5.22,0,0,1,91.66,65ZM93.77,65a3.79,3.79,0,0,0,.79,2.61,2.74,2.74,0,0,0,4,0,3.85,3.85,0,0,0,.79-2.65,3.81,3.81,0,0,0-.77-2.6,2.83,2.83,0,0,0-4.07,0A3.81,3.81,0,0,0,93.77,65Z"
+                                        fill="#052460"/>
+                                </g>
+                                <g style="isolation:isolate">
+                                    <path
+                                        d="M102.71,59.9h7.1V70h-2V61.61h-3.05v4.33a18.84,18.84,0,0,1-.12,2.6,1.85,1.85,0,0,1-.61,1.15,2.3,2.3,0,0,1-1.5.41c-.24,0-.68,0-1.31-.07V68.45h.46a1.44,1.44,0,0,0,.86-.18c.15-.11.22-.4.22-.85V59.9Z"
+                                        fill="#052460"/>
+                                    <path
+                                        d="M112,59.9H114V64h2.74a3.74,3.74,0,0,1,2.81.91,3,3,0,0,1,.87,2.17,2.92,2.92,0,0,1-.53,1.76,2.65,2.65,0,0,1-1.2,1,5.75,5.75,0,0,1-2,.26H112ZM114,68.34h2a5.83,5.83,0,0,0,1.34-.1,1.31,1.31,0,0,0,.67-.42,1.21,1.21,0,0,0,.29-.82,1.14,1.14,0,0,0-.5-1,3.29,3.29,0,0,0-1.71-.33H114Z"
+                                        fill="#052460"/>
+                                    <path d="M122.14,59.9h2v8.44h2.93V59.9h2v8.44h3V59.9h2V70.05H122.14Z"
+                                          fill="#052460"/>
+                                    <path d="M136.35,70V59.9h7.52v1.71H138.4v2.25h5.09v1.71H138.4v2.76h5.66V70Z"
+                                          fill="#052460"/>
+                                    <path d="M146.55,67.42,146,62.28V59.9h2.1v2.38l-.49,5.14ZM146.12,70V68.1h1.95V70Z"
+                                          fill="#052460"/>
+                                </g>
+                            </g>
+                            <g style="isolation:isolate">
+                                <path d="M9.33,62.69H11.2v4.62l3-4.62H16.1V70H14.23v-4.7l-3,4.7H9.33Z" fill="#ce005b"/>
+                                <path
+                                    d="M21,59.9H23.3l2.36,5.26,2-5.26h2.14L26.4,67.6a7.78,7.78,0,0,1-1.14,1.91,1.92,1.92,0,0,1-1.51.66,6.46,6.46,0,0,1-1.41-.12V68.52l.79,0a1.56,1.56,0,0,0,1-.26,2.6,2.6,0,0,0,.59-1.11Z"
+                                    fill="#ce005b"/>
+                                <path
+                                    d="M32.3,62.66l-2-.46Q31,59.72,34,59.72a4,4,0,0,1,2.69.79,2.36,2.36,0,0,1,.91,1.84,2.24,2.24,0,0,1-.41,1.31,3.54,3.54,0,0,1-1.25,1,3.27,3.27,0,0,1,1.52,1,2.45,2.45,0,0,1,.5,1.56,2.67,2.67,0,0,1-1,2.16,4.45,4.45,0,0,1-2.93.82,5,5,0,0,1-2.51-.53,3.31,3.31,0,0,1-1.38-2L32,67.09a2,2,0,0,0,.77,1.18,2.41,2.41,0,0,0,1.19.27,2,2,0,0,0,1.41-.42,1.27,1.27,0,0,0,.44-1,1.18,1.18,0,0,0-.5-1,2.5,2.5,0,0,0-1.51-.38h-.46V64.25h.23A2.17,2.17,0,0,0,35,63.83a1.41,1.41,0,0,0,.5-1.12,1.25,1.25,0,0,0-.4-.94A1.67,1.67,0,0,0,34,61.39,1.58,1.58,0,0,0,32.3,62.66Z"
+                                    fill="#ce005b"/>
+                                <path d="M39.74,70V59.9h2v4h4v-4h2.05V70H45.8V65.61h-4V70Z" fill="#ce005b"/>
+                                <path
+                                    d="M59.11,70H56.88L56,67.74H51.94L51.11,70H48.93l4-10.14h2.17Zm-3.77-4-1.4-3.77L52.57,66Z"
+                                    fill="#ce005b"/>
+                                <path
+                                    d="M60.22,59.9h1.92v6.75l4.11-6.75h2V70H66.38V63.42L62.27,70H60.22Zm5.26-2.53h1a2.16,2.16,0,0,1-.66,1.48,2.39,2.39,0,0,1-3,0,2.25,2.25,0,0,1-.66-1.48h1a1.07,1.07,0,0,0,.35.75,1.34,1.34,0,0,0,.86.25,1.37,1.37,0,0,0,.87-.25A1.1,1.1,0,0,0,65.48,57.37Z"
+                                    fill="#ce005b"/>
+                            </g>
+                            <path
+                                d="M61.37,87.7a22.62,22.62,0,0,1-1.52-6.11c-.64-4.38-.51-7.77,1.1-8.6a3.57,3.57,0,0,1,2.28-.18A5.22,5.22,0,0,1,68,71.52,4.11,4.11,0,0,1,72.26,70V63.25a2.65,2.65,0,0,1,2.65-2.64h0a2.64,2.64,0,0,1,2.64,2.64V74a2.89,2.89,0,0,1,1.19,2.51c0,3.73.44,8.84-1.92,11.2v.93a2.42,2.42,0,0,1-2.42,2.42H63.78a2.43,2.43,0,0,1-2.41-2.42Z"
+                                fill="#b0cb1f"/>
+                            <path
+                                d="M46.43,22.18h64a15,15,0,0,1,15,15h0a15,15,0,0,1-15,15h-64a15,15,0,0,1-15-15h0A15,15,0,0,1,46.43,22.18Z"
+                                fill="#00adee"/>
+                            <g style="isolation:isolate">
+                                <g style="isolation:isolate">
+                                    <path d="M38.64,31.46h8.07V41.6H44.66V33.16h-4V41.6h-2Z" fill="#fff"/>
+                                    <path
+                                        d="M48.38,36.59a6.61,6.61,0,0,1,.46-2.6,4.71,4.71,0,0,1,.95-1.39,3.79,3.79,0,0,1,1.31-.91,5.52,5.52,0,0,1,2.19-.41,4.77,4.77,0,0,1,3.58,1.39,5.33,5.33,0,0,1,1.35,3.87,5.34,5.34,0,0,1-1.34,3.85,5.33,5.33,0,0,1-7.16,0A5.23,5.23,0,0,1,48.38,36.59Zm2.11-.07a3.79,3.79,0,0,0,.8,2.61,2.74,2.74,0,0,0,4,0,3.9,3.9,0,0,0,.78-2.65,3.81,3.81,0,0,0-.76-2.6,2.83,2.83,0,0,0-4.07,0A3.82,3.82,0,0,0,50.49,36.52Z"
+                                        fill="#fff"/>
+                                    <path
+                                        d="M66.31,37.87l2,.63A4.43,4.43,0,0,1,66.77,41a4.78,4.78,0,0,1-6-.58,5.27,5.27,0,0,1-1.3-3.77,5.49,5.49,0,0,1,1.31-3.93,4.45,4.45,0,0,1,3.43-1.41,4.26,4.26,0,0,1,3,1.1,4.15,4.15,0,0,1,1,1.87l-2,.49a2.17,2.17,0,0,0-.75-1.25A2.19,2.19,0,0,0,64.1,33a2.31,2.31,0,0,0-1.83.81,4,4,0,0,0-.7,2.63,4.28,4.28,0,0,0,.69,2.74,2.25,2.25,0,0,0,1.8.81,2,2,0,0,0,1.4-.52A2.94,2.94,0,0,0,66.31,37.87Z"
+                                        fill="#fff"/>
+                                    <path
+                                        d="M69.84,41.6V31.46H72.9l1.84,6.92,1.82-6.92h3.07V41.6h-1.9v-8l-2,8h-2l-2-8v8Z"
+                                        fill="#fff"/>
+                                </g>
+                                <g style="isolation:isolate">
+                                    <path
+                                        d="M80.58,36.59A6.44,6.44,0,0,1,81,34,4.67,4.67,0,0,1,82,32.6a3.88,3.88,0,0,1,1.31-.91,5.59,5.59,0,0,1,2.19-.41,4.79,4.79,0,0,1,3.59,1.39,5.33,5.33,0,0,1,1.34,3.87,5.33,5.33,0,0,1-1.33,3.85,5.35,5.35,0,0,1-7.17,0A5.22,5.22,0,0,1,80.58,36.59Zm2.11-.07a3.79,3.79,0,0,0,.79,2.61,2.74,2.74,0,0,0,4,0,3.85,3.85,0,0,0,.79-2.65,3.81,3.81,0,0,0-.77-2.6,2.83,2.83,0,0,0-4.07,0A3.81,3.81,0,0,0,82.69,36.52Z"
+                                        fill="#fff"/>
+                                </g>
+                                <g style="isolation:isolate">
+                                    <path d="M93.22,41.6V33.17h-3V31.46h8.07v1.71h-3V41.6Z" fill="#fff"/>
+                                    <path
+                                        d="M99.6,41.6V31.46h3.28a12.13,12.13,0,0,1,2.44.15,2.64,2.64,0,0,1,1.46,1,3.17,3.17,0,0,1,.59,2,3.4,3.4,0,0,1-.34,1.57,2.92,2.92,0,0,1-.86,1,3.08,3.08,0,0,1-1.07.48,11.37,11.37,0,0,1-2.12.14h-1.34V41.6Zm2-8.43v2.88h1.13a5.12,5.12,0,0,0,1.61-.16,1.24,1.24,0,0,0,.64-.5,1.32,1.32,0,0,0,.24-.79,1.31,1.31,0,0,0-.33-.91,1.42,1.42,0,0,0-.82-.45,10.9,10.9,0,0,0-1.48-.07Z"
+                                        fill="#fff"/>
+                                    <path d="M109.08,31.46H111v6.75l4.11-6.75h2V41.6h-1.91V35l-4.11,6.62h-2Z"
+                                          fill="#fff"/>
+                                </g>
+                            </g>
+                            <path d="M96.65,52.18H46.43a15,15,0,0,1-15-15h0A15,15,0,0,1,41.56,23" fill="none"
+                                  stroke="#052460" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M46.43,22.18h64a15,15,0,0,1,15,15h0a15,15,0,0,1-15,15" fill="none" stroke="#052460"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                            <polygon
+                                points="138.63 35.33 136.81 34.62 135.19 35.73 135.29 33.78 133.74 32.58 135.63 32.08 136.29 30.23 137.35 31.87 139.31 31.93 138.08 33.45 138.63 35.33"
+                                fill="none" stroke="#ffae00" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="154.3 15.82 152.52 14.73 150.61 15.57 151.11 13.54 149.72 11.98 151.8 11.82 152.85 10.02 153.64 11.95 155.68 12.4 154.09 13.75 154.3 15.82"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="21.8 46.5 20.06 46.74 19.27 48.3 18.5 46.72 16.77 46.45 18.04 45.24 17.76 43.51 19.3 44.34 20.87 43.53 20.55 45.26 21.8 46.5"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="8.36 58.16 6.18 57.73 4.59 59.28 4.33 57.07 2.36 56.04 4.37 55.11 4.75 52.92 6.26 54.55 8.46 54.23 7.38 56.17 8.36 58.16"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="69.59 13.82 68.25 12.23 66.18 12.43 67.28 10.66 66.45 8.75 68.47 9.26 70.03 7.88 70.18 9.96 71.97 11.01 70.04 11.79 69.59 13.82"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="55.63 84.91 53.24 84.06 51.18 85.55 51.25 83.02 49.2 81.52 51.63 80.8 52.42 78.39 53.86 80.48 56.4 80.48 54.85 82.5 55.63 84.91"
+                                fill="none" stroke="#ffae00" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="114.69 16.24 112.1 15.38 109.91 17.02 109.93 14.28 107.69 12.71 110.3 11.89 111.1 9.27 112.69 11.5 115.43 11.45 113.8 13.65 114.69 16.24"
+                                fill="none" stroke="#ffae00" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="margin-50">
+                    <a href="/{{ $lang }}/faq" class="d-block h-75">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="165" height="88.69" viewBox="0 0 165 88.69">
+                            <circle cx="10.81" cy="10.81" r="10.81" fill="#e8eff7"/>
+                            <circle cx="133.65" cy="16.92" r="11.73" fill="#ffae00"/>
+                            <path
+                                d="M126.77,34.3S132.37,1.92,103.66,0c-10.25,0-14.37,8.17-16,11.65s-11.72,11.45-19.49,3S40.69,5,34.51,15.2s1,21.53.36,27.06-6.42,22.13,3.4,31.39S61,71,68,71.88c4.77.57,12.75,14.31,29.79,14.55,18.83.27,38.57-11.61,35.16-32.81C131.27,43,125.52,43.52,126.77,34.3Z"
+                                fill="#e8eff7"/>
+                            <path d="M68.15,14.67C60.37,6.25,40.69,5,34.51,15.2c-4.49,7.44-1.93,15.44-.44,21.37"
+                                  fill="none" stroke="#00adee" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M126.77,34.3S131.2,8.68,112,1.67" fill="none" stroke="#00adee"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                            <path
+                                d="M32.81,54.47c-.64,6.54,0,14,5.46,19.18C48.09,82.9,61,71,68,71.88c4.77.57,12.75,14.31,29.79,14.55a45.26,45.26,0,0,0,17.47-3.28"
+                                fill="none" stroke="#00adee" stroke-linecap="round" stroke-linejoin="round"/>
+                            <g style="isolation:isolate">
+                                <g style="isolation:isolate">
+                                    <path d="M48.2,34.42V26.83H45.49V25.29h7.26v1.54h-2.7v7.59Z" fill="#052460"/>
+                                </g>
+                                <g style="isolation:isolate">
+                                    <path
+                                        d="M56.82,32.31l1.74.3a2.88,2.88,0,0,1-1.06,1.46,3.15,3.15,0,0,1-1.82.5,3,3,0,0,1-2.55-1.13,3.75,3.75,0,0,1-.66-2.28,3.69,3.69,0,0,1,.86-2.58,2.85,2.85,0,0,1,2.18-.93,3,3,0,0,1,2.33,1,4.33,4.33,0,0,1,.82,3H54.27a1.75,1.75,0,0,0,.42,1.21,1.32,1.32,0,0,0,1,.43,1,1,0,0,0,.69-.22A1.39,1.39,0,0,0,56.82,32.31Zm.1-1.77a1.66,1.66,0,0,0-.4-1.15,1.25,1.25,0,0,0-1.85,0,1.64,1.64,0,0,0-.37,1.13Z"
+                                        fill="#052460"/>
+                                    <path
+                                        d="M64.88,25.07h1.19a2.06,2.06,0,0,1-.41,1.2c-.24.28-.83.41-1.77.41h-.56a4.26,4.26,0,0,0-1.36.18,1.68,1.68,0,0,0-.86.71,3.49,3.49,0,0,0-.34,1.71,2.66,2.66,0,0,1,1-1.09,3,3,0,0,1,3.66.65,3.4,3.4,0,0,1,.91,2.35,3.34,3.34,0,0,1-1,2.38,3.26,3.26,0,0,1-2.48,1,3.39,3.39,0,0,1-1.86-.51,2.77,2.77,0,0,1-1.14-1.38,9,9,0,0,1-.34-2.9,5.29,5.29,0,0,1,.88-3.42,3.82,3.82,0,0,1,3-1h.89A.49.49,0,0,0,64.88,25.07Zm-3.53,6.09a2.13,2.13,0,0,0,.45,1.43,1.46,1.46,0,0,0,2.27,0,2.12,2.12,0,0,0,.45-1.4,2.09,2.09,0,0,0-.46-1.42,1.43,1.43,0,0,0-1.13-.54,1.45,1.45,0,0,0-1.12.53A2.12,2.12,0,0,0,61.35,31.16Z"
+                                        fill="#052460"/>
+                                    <path
+                                        d="M71.63,32.31l1.74.3a2.88,2.88,0,0,1-1.06,1.46,3.15,3.15,0,0,1-1.82.5,3,3,0,0,1-2.55-1.13,3.75,3.75,0,0,1-.66-2.28,3.69,3.69,0,0,1,.86-2.58,2.85,2.85,0,0,1,2.18-.93,3,3,0,0,1,2.33,1,4.28,4.28,0,0,1,.81,3H69.08a1.75,1.75,0,0,0,.42,1.21,1.32,1.32,0,0,0,1,.43A1,1,0,0,0,71.2,33,1.39,1.39,0,0,0,71.63,32.31Zm.1-1.77a1.71,1.71,0,0,0-.4-1.15,1.22,1.22,0,0,0-.91-.4,1.2,1.2,0,0,0-.94.42,1.64,1.64,0,0,0-.37,1.13Z"
+                                        fill="#052460"/>
+                                </g>
+                                <g style="isolation:isolate">
+                                    <path d="M7.38,43.11H9.06v4.16l2.7-4.16h1.72v6.62H11.79V45.5L9.06,49.73H7.38Z"
+                                          fill="#052460"/>
+                                    <path d="M15.2,43.11H17v2.43h2.51V43.11h1.75v6.62H19.46V47H17v2.78H15.2Z"
+                                          fill="#052460"/>
+                                    <path d="M22.19,43.11h6v1.42H26.06v5.2H24.31v-5.2H22.19Z" fill="#052460"/>
+                                    <path
+                                        d="M33.06,47.63l1.74.29a2.88,2.88,0,0,1-1.06,1.46,3.15,3.15,0,0,1-1.82.5,3,3,0,0,1-2.55-1.13,3.75,3.75,0,0,1-.66-2.28,3.62,3.62,0,0,1,.87-2.57A2.79,2.79,0,0,1,31.75,43a3,3,0,0,1,2.33,1,4.33,4.33,0,0,1,.82,3H30.51a1.75,1.75,0,0,0,.42,1.21,1.32,1.32,0,0,0,1,.43,1,1,0,0,0,.69-.22A1.4,1.4,0,0,0,33.06,47.63Zm.1-1.77a1.67,1.67,0,0,0-.4-1.16,1.25,1.25,0,0,0-1.85,0,1.65,1.65,0,0,0-.37,1.14Z"
+                                        fill="#052460"/>
+                                    <path
+                                        d="M36.27,43.11h1.64v1a2.34,2.34,0,0,1,.86-.82A2.44,2.44,0,0,1,40,43a2.51,2.51,0,0,1,2,.91,3.62,3.62,0,0,1,.81,2.51A3.76,3.76,0,0,1,41.92,49a2.54,2.54,0,0,1-2,.92,2.19,2.19,0,0,1-1-.22,3.14,3.14,0,0,1-.94-.75v3.34H36.27ZM38,46.31A2.54,2.54,0,0,0,38.45,48a1.35,1.35,0,0,0,1.08.53,1.25,1.25,0,0,0,1-.49A2.5,2.5,0,0,0,41,46.4a2.39,2.39,0,0,0-.42-1.55,1.31,1.31,0,0,0-1-.5,1.34,1.34,0,0,0-1.06.49A2.22,2.22,0,0,0,38,46.31Z"
+                                        fill="#052460"/>
+                                    <path
+                                        d="M48,47.63l1.74.29a2.82,2.82,0,0,1-1.06,1.46,3.14,3.14,0,0,1-1.81.5,3,3,0,0,1-2.56-1.13,3.75,3.75,0,0,1-.65-2.28,3.62,3.62,0,0,1,.86-2.57A2.79,2.79,0,0,1,46.64,43a2.93,2.93,0,0,1,2.33,1,4.33,4.33,0,0,1,.82,3H45.4a1.75,1.75,0,0,0,.42,1.21,1.32,1.32,0,0,0,1,.43,1.09,1.09,0,0,0,.7-.22A1.46,1.46,0,0,0,48,47.63Zm.1-1.77a1.67,1.67,0,0,0-.39-1.16,1.24,1.24,0,0,0-.91-.4,1.21,1.21,0,0,0-1,.42,1.65,1.65,0,0,0-.37,1.14Z"
+                                        fill="#052460"/>
+                                    <path
+                                        d="M56.81,45.07l-1.72.31a1.27,1.27,0,0,0-.4-.78,1.2,1.2,0,0,0-.8-.26,1.31,1.31,0,0,0-1,.45,2.32,2.32,0,0,0-.39,1.51,2.66,2.66,0,0,0,.4,1.67,1.29,1.29,0,0,0,1.06.48,1.16,1.16,0,0,0,.81-.28,1.63,1.63,0,0,0,.45-1l1.72.3a3.07,3.07,0,0,1-1,1.79,3.17,3.17,0,0,1-2,.6A3,3,0,0,1,51.52,49a4.16,4.16,0,0,1,0-5.08A3,3,0,0,1,53.87,43a3.26,3.26,0,0,1,1.92.52A2.84,2.84,0,0,1,56.81,45.07Z"
+                                        fill="#052460"/>
+                                    <path d="M58.07,43.11h1.75v2.43h2.51V43.11h1.76v6.62H62.33V47H59.82v2.78H58.07Z"
+                                          fill="#052460"/>
+                                    <path
+                                        d="M65.44,46.33a3.66,3.66,0,0,1,.43-1.69,3.06,3.06,0,0,1,1.22-1.25A3.7,3.7,0,0,1,68.85,43a3.31,3.31,0,0,1,2.46,1,3.36,3.36,0,0,1,1,2.46,3.4,3.4,0,0,1-1,2.49,3.26,3.26,0,0,1-2.44,1,3.89,3.89,0,0,1-1.73-.41,2.89,2.89,0,0,1-1.26-1.21A4.08,4.08,0,0,1,65.44,46.33Zm1.8.09a2.15,2.15,0,0,0,.47,1.51,1.53,1.53,0,0,0,2.3,0,2.23,2.23,0,0,0,.46-1.52,2.19,2.19,0,0,0-.46-1.5,1.53,1.53,0,0,0-2.3,0A2.17,2.17,0,0,0,67.24,46.42Z"
+                                        fill="#052460"/>
+                                </g>
+                            </g>
+                            <circle cx="24.58" cy="73.02" r="8.43" fill="#b0cb1f"/>
+                            <circle cx="157.4" cy="80.28" r="7.6" fill="#e8eff7"/>
+                            <g style="isolation:isolate">
+                                <g style="isolation:isolate">
+                                    <path d="M91.45,40.47h7.27V49.6H96.87V42H93.3v7.6H91.45Z" fill="#ce005b"/>
+                                    <path
+                                        d="M100.18,46.2a3.66,3.66,0,0,1,.43-1.69,3,3,0,0,1,1.22-1.25,3.7,3.7,0,0,1,1.76-.43,3.31,3.31,0,0,1,2.46,1,3.36,3.36,0,0,1,1,2.46,3.4,3.4,0,0,1-1,2.49,3.26,3.26,0,0,1-2.44,1,3.89,3.89,0,0,1-1.73-.41,2.89,2.89,0,0,1-1.26-1.21A4.08,4.08,0,0,1,100.18,46.2Zm1.8.09a2.2,2.2,0,0,0,.46,1.51,1.5,1.5,0,0,0,1.16.52,1.48,1.48,0,0,0,1.15-.52,2.23,2.23,0,0,0,.46-1.52,2.19,2.19,0,0,0-.46-1.5,1.51,1.51,0,0,0-1.15-.52,1.53,1.53,0,0,0-1.16.52A2.2,2.2,0,0,0,102,46.29Z"
+                                        fill="#ce005b"/>
+                                    <path d="M108.31,43h5.88V49.6h-1.75V44.4h-2.38v5.2h-1.75Z" fill="#ce005b"/>
+                                    <path
+                                        d="M116,43h1.63v1a2.31,2.31,0,0,1,.86-.81,2.34,2.34,0,0,1,1.2-.32,2.55,2.55,0,0,1,2,.91,3.62,3.62,0,0,1,.8,2.51,3.76,3.76,0,0,1-.81,2.58,2.53,2.53,0,0,1-2,.92,2.15,2.15,0,0,1-1-.22,3.14,3.14,0,0,1-.94-.75v3.34H116Zm1.73,3.2a2.6,2.6,0,0,0,.44,1.65,1.38,1.38,0,0,0,1.08.53,1.26,1.26,0,0,0,1-.49,2.52,2.52,0,0,0,.4-1.6,2.39,2.39,0,0,0-.42-1.55,1.29,1.29,0,0,0-1-.5,1.32,1.32,0,0,0-1.06.49A2.17,2.17,0,0,0,117.77,46.18Z"
+                                        fill="#ce005b"/>
+                                    <path
+                                        d="M123.48,46.2a3.54,3.54,0,0,1,.43-1.69,2.94,2.94,0,0,1,1.22-1.25,3.67,3.67,0,0,1,1.76-.43,3.31,3.31,0,0,1,2.46,1,3.36,3.36,0,0,1,1,2.46,3.44,3.44,0,0,1-1,2.49,3.28,3.28,0,0,1-2.44,1,3.9,3.9,0,0,1-1.74-.41,2.81,2.81,0,0,1-1.25-1.21A4,4,0,0,1,123.48,46.2Zm1.79.09a2.2,2.2,0,0,0,.47,1.51,1.53,1.53,0,0,0,2.3,0,2.23,2.23,0,0,0,.47-1.52,2.19,2.19,0,0,0-.47-1.5,1.5,1.5,0,0,0-1.15-.52,1.51,1.51,0,0,0-1.15.52A2.2,2.2,0,0,0,125.27,46.29Z"
+                                        fill="#ce005b"/>
+                                </g>
+                                <g style="isolation:isolate">
+                                    <path
+                                        d="M137,40.25h1.19a2,2,0,0,1-.41,1.2c-.24.28-.83.41-1.77.41h-.56a4.26,4.26,0,0,0-1.36.18,1.62,1.62,0,0,0-.85.71,3.36,3.36,0,0,0-.35,1.71,2.66,2.66,0,0,1,1-1.09,2.85,2.85,0,0,1,1.46-.36,2.88,2.88,0,0,1,2.21,1,3.44,3.44,0,0,1,.9,2.35,3.34,3.34,0,0,1-.95,2.38,3.25,3.25,0,0,1-2.48,1,3.34,3.34,0,0,1-1.85-.51A2.68,2.68,0,0,1,132,47.87a8.73,8.73,0,0,1-.35-2.91,5.29,5.29,0,0,1,.88-3.42,3.82,3.82,0,0,1,3.05-1h.89A.49.49,0,0,0,137,40.25Zm-3.53,6.09a2.13,2.13,0,0,0,.46,1.43,1.41,1.41,0,0,0,1.1.53,1.43,1.43,0,0,0,1.16-.55,2.12,2.12,0,0,0,.45-1.4,2.09,2.09,0,0,0-.46-1.42,1.44,1.44,0,0,0-2.24,0A2.08,2.08,0,0,0,133.46,46.34Z"
+                                        fill="#ce005b"/>
+                                </g>
+                                <g style="isolation:isolate">
+                                    <path
+                                        d="M138.87,43h1.86l1.58,4.7,1.55-4.7h1.81l-2.34,6.37-.41,1.15a4.88,4.88,0,0,1-.44.89,1.87,1.87,0,0,1-.48.49,2.07,2.07,0,0,1-.67.3,3.44,3.44,0,0,1-.89.11,4.62,4.62,0,0,1-1-.11l-.16-1.37a4.26,4.26,0,0,0,.74.08,1.11,1.11,0,0,0,.91-.36,2.49,2.49,0,0,0,.44-.91Z"
+                                        fill="#ce005b"/>
+                                    <path
+                                        d="M146.75,43h1.68v4.16L151.12,43h1.72V49.6h-1.68V45.37l-2.73,4.23h-1.68Zm4.19-2.68h.86a2,2,0,0,1-.6,1.33,2.14,2.14,0,0,1-2.7,0,2,2,0,0,1-.59-1.33h.85a1,1,0,0,0,.31.67,1.49,1.49,0,0,0,1.56,0A1,1,0,0,0,150.94,40.3Z"
+                                        fill="#ce005b"/>
+                                    <path
+                                        d="M155.32,47.24l-.45-4.63V40.47h1.89v2.14l-.45,4.63Zm-.38,2.36V47.85h1.75V49.6Z"
+                                        fill="#ce005b"/>
+                                </g>
+                            </g>
+                            <path
+                                d="M78.3,33.22a19.74,19.74,0,0,1,3-3.39,16.93,16.93,0,0,0,2-2.15,3,3,0,0,0,.7-1.86,2.59,2.59,0,0,0-1.15-2.2,5.08,5.08,0,0,0-3-.84,6.68,6.68,0,0,0-3.43.91A6.75,6.75,0,0,0,74,26.19l-7-3.78a13.38,13.38,0,0,1,5.49-5.16A18.44,18.44,0,0,1,81,15.4a15.77,15.77,0,0,1,9,2.35,7.49,7.49,0,0,1,3.43,6.55,8.59,8.59,0,0,1-.66,3.43,9.7,9.7,0,0,1-1.59,2.51,27.07,27.07,0,0,1-2.39,2.28,16.31,16.31,0,0,0-2.35,2.35,3.46,3.46,0,0,0-.76,2.24H77.26A6.69,6.69,0,0,1,78.3,33.22Zm-.67,14.93a4.71,4.71,0,0,1-1.51-3.52,4.53,4.53,0,0,1,1.49-3.49,5.46,5.46,0,0,1,3.85-1.38,5.54,5.54,0,0,1,3.89,1.38,4.5,4.5,0,0,1,1.51,3.49,4.71,4.71,0,0,1-1.51,3.52,5.38,5.38,0,0,1-3.89,1.45A5.28,5.28,0,0,1,77.63,48.15Z"
+                                fill="#00adee"/>
+                            <path
+                                d="M79.86,22.78a6.68,6.68,0,0,0-3.43.91A6.85,6.85,0,0,0,74,26.19l-7-3.78a13.2,13.2,0,0,1,4.31-4.48m12.14,9.75A3,3,0,0,0,84,25.82m-2.69,4a16.93,16.93,0,0,0,2-2.15M87,34.15a8.17,8.17,0,0,0-.61.71,3.46,3.46,0,0,0-.76,2.24H77.26a6.73,6.73,0,0,1,1-3.89,19.74,19.74,0,0,1,3-3.39M76.12,15.91A21.07,21.07,0,0,1,81,15.4a15.77,15.77,0,0,1,9,2.35,7.49,7.49,0,0,1,3.43,6.55,8.59,8.59,0,0,1-.66,3.43,9.7,9.7,0,0,1-1.59,2.51c-.27.3-.59.62-.93,1M71.25,18c.38-.24.77-.47,1.18-.68A16,16,0,0,1,76.16,16m10.7,28.67a4.71,4.71,0,0,1-1.51,3.52,5.38,5.38,0,0,1-3.89,1.45,5.28,5.28,0,0,1-3.83-1.45,4.71,4.71,0,0,1-1.51-3.52,4.53,4.53,0,0,1,1.49-3.49,5.46,5.46,0,0,1,3.85-1.38,6.42,6.42,0,0,1,2.56.5"
+                                fill="none" stroke="#052460" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path
+                                d="M120.36,86.71a4.76,4.76,0,0,1-1.53-3.58,4.57,4.57,0,0,1,1.53-3.55,5.68,5.68,0,0,1,4-1.41,5.53,5.53,0,0,1,3.92,1.41,4.6,4.6,0,0,1,1.52,3.55,4.77,4.77,0,0,1-1.54,3.58,6,6,0,0,1-7.9,0Zm-1.48-32.63h10.87l-1.83,21.4h-7.26Z"
+                                fill="#ffae00"/>
+                            <path
+                                d="M120.36,79.58a6.28,6.28,0,0,1,7.39-.39m-7.52,7.39a4.75,4.75,0,0,1-1.4-3.45m10.92,0a4.77,4.77,0,0,1-1.54,3.58,6,6,0,0,1-7.9,0l-.13-.13m7.52-7.39a4.54,4.54,0,0,1,.48.39m-.07-6.9-.24,2.8h-7.26l-1.78-21.4h4.39m6.27,2.41-.94,11.06m-1.41-13.47h2.56l-.21,2.41"
+                                fill="none" stroke="#ce005b" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polygon
+                                points="30 33.47 27.84 32.85 26.11 34.27 26.03 32.03 24.14 30.82 26.25 30.05 26.82 27.88 28.2 29.65 30.44 29.52 29.18 31.38 30 33.47"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="147.13 37.11 144.34 36.39 142.16 38.27 141.99 35.4 139.52 33.91 142.2 32.86 142.86 30.05 144.69 32.27 147.56 32.03 146.01 34.46 147.13 37.11"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="153.33 18.66 152.82 16.87 151.07 16.28 152.6 15.25 152.62 13.39 154.08 14.54 155.85 13.98 155.22 15.72 156.29 17.23 154.44 17.17 153.33 18.66"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="27.29 60.16 26.23 59.69 25.25 60.3 25.36 59.15 24.48 58.4 25.61 58.16 26.04 57.08 26.63 58.08 27.78 58.17 27.01 59.03 27.29 60.16"
+                                fill="none" stroke="#ffae00" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="64.93 83.13 62.35 82.3 60.19 83.95 60.19 81.24 57.95 79.7 60.53 78.86 61.3 76.25 62.9 78.45 65.62 78.38 64.02 80.57 64.93 83.13"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="137.5 76.25 134.96 75.11 132.58 76.55 132.88 73.79 130.78 71.97 133.5 71.4 134.58 68.83 135.96 71.25 138.73 71.48 136.86 73.54 137.5 76.25"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="151.05 64.78 148.16 64.16 146.01 66.19 145.7 63.25 143.11 61.84 145.81 60.64 146.35 57.73 148.33 59.93 151.26 59.55 149.78 62.11 151.05 64.78"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="38.63 82.61 36.79 82.66 35.79 84.19 35.19 82.46 33.42 81.98 34.88 80.87 34.79 79.04 36.29 80.08 38 79.43 37.48 81.19 38.63 82.61"
+                                fill="none" stroke="#ffae00" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="111.5 15.4 108.77 14.13 106.17 15.65 106.54 12.66 104.29 10.66 107.25 10.09 108.46 7.33 109.91 9.96 112.91 10.26 110.86 12.46 111.5 15.4"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="121.93 32.16 119.4 31.68 117.58 33.49 117.25 30.95 114.97 29.77 117.29 28.67 117.7 26.14 119.46 28 122 27.61 120.77 29.86 121.93 32.16"
+                                fill="none" stroke="#ffae00" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="margin-50">
+                    <a href="/{{ $lang }}/faq" class="d-block h-75">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="162.59" height="93" viewBox="0 0 162.59 93">
+                            <circle cx="25.1" cy="84.57" r="8.43" fill="#e8eff7"/>
+                            <circle cx="141.8" cy="66.5" r="8.43" fill="#b0cb1f"/>
+                            <path
+                                d="M124.77,34.3S130.38,1.92,101.67,0c-10.26,0-14.38,8.17-16,11.65S74,23.1,66.18,14.65,38.69,5,32.52,15.2s1,21.53.36,27.06-6.42,22.13,3.4,31.39S59.05,71,66,71.88c4.76.57,12.74,14.31,29.79,14.55,18.82.27,38.56-11.61,35.16-32.81C129.27,43,123.52,43.52,124.77,34.3Z"
+                                fill="#00adee"/>
+                            <path
+                                d="M95.07,1.32C89.51,3.78,86.88,9,85.64,11.65c-1.65,3.48-11.72,11.45-19.49,3S38.69,5,32.52,15.2c-4.48,7.41-2,15.37-.46,21.3"
+                                fill="none" stroke="#052460" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M124.77,34.3a46.91,46.91,0,0,0-1.18-17.81c-1.88-6-5.76-11.94-13.54-14.8"
+                                  fill="none" stroke="#052460" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path
+                                d="M77.05,79.82a32,32,0,0,0,18.76,6.61c18.82.27,38.56-11.61,35.16-32.81A21.71,21.71,0,0,0,128.9,47"
+                                fill="none" stroke="#052460" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M31.05,52.47c-.95,7-.83,15.47,5.23,21.18,5.17,4.87,11.21,3.89,16.78,2" fill="none"
+                                  stroke="#052460" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="147.98" cy="33.03" r="14.61" fill="#e8eff7"/>
+                            <circle cx="10.49" cy="46.21" r="10.49" fill="#a3d9f6"/>
+                            <g style="isolation:isolate">
+                                <g style="isolation:isolate">
+                                    <path
+                                        d="M43.82,32.06l2.78.88a6.19,6.19,0,0,1-2.13,3.45,6,6,0,0,1-3.77,1.13,6.1,6.1,0,0,1-4.65-1.93,7.41,7.41,0,0,1-1.82-5.28,7.75,7.75,0,0,1,1.83-5.51,6.28,6.28,0,0,1,4.82-2,5.91,5.91,0,0,1,4.23,1.54A5.55,5.55,0,0,1,46.56,27l-2.84.68a2.9,2.9,0,0,0-1-1.74,3,3,0,0,0-1.94-.64,3.21,3.21,0,0,0-2.56,1.13,5.54,5.54,0,0,0-1,3.67,6,6,0,0,0,1,3.84,3.16,3.16,0,0,0,2.52,1.14,2.86,2.86,0,0,0,2-.73A4.18,4.18,0,0,0,43.82,32.06Z"
+                                        fill="#fff"/>
+                                    <path
+                                        d="M49.14,23.08H52v5.67h3.83a7.19,7.19,0,0,1,2.6.42,3.74,3.74,0,0,1,1.82,1.47A4.25,4.25,0,0,1,61,33.08a4.13,4.13,0,0,1-.76,2.48,3.71,3.71,0,0,1-1.68,1.38,8.19,8.19,0,0,1-2.71.34h-6.7ZM52,34.9h2.8a9.44,9.44,0,0,0,1.86-.13,1.86,1.86,0,0,0,.94-.6A1.67,1.67,0,0,0,58,33a1.63,1.63,0,0,0-.67-1.43,4.54,4.54,0,0,0-2.43-.47H52ZM62.64,23.08h2.87v14.2H62.64Z"
+                                        fill="#fff"/>
+                                    <path d="M68.63,23.08h9.62v2.38H71.5V37.28H68.63Z" fill="#fff"/>
+                                </g>
+                                <g style="isolation:isolate">
+                                    <path
+                                        d="M76.68,37.28V23.08h4.61a17,17,0,0,1,3.41.21,3.73,3.73,0,0,1,2,1.39,4.43,4.43,0,0,1,.82,2.77,4.74,4.74,0,0,1-.47,2.2,4,4,0,0,1-1.21,1.4,4.12,4.12,0,0,1-1.49.67,16.86,16.86,0,0,1-3,.2H79.55v5.36Zm2.87-11.8v4h1.57a7.42,7.42,0,0,0,2.27-.22,1.83,1.83,0,0,0,.89-.7,1.88,1.88,0,0,0,.33-1.1,1.8,1.8,0,0,0-.46-1.28A1.94,1.94,0,0,0,83,25.58a12.88,12.88,0,0,0-2.06-.1Z"
+                                        fill="#fff"/>
+                                </g>
+                                <g style="isolation:isolate">
+                                    <path
+                                        d="M101.79,37.28H98.67l-1.24-3.23H91.75l-1.17,3.23h-3l5.53-14.2h3Zm-5.28-5.62-2-5.27-1.91,5.27Z"
+                                        fill="#fff"/>
+                                    <path
+                                        d="M103.35,23.08H106v9.45l5.76-9.45h2.86v14.2H112V28l-5.74,9.27h-2.87Zm7.36-3.54H112a3.08,3.08,0,0,1-.93,2.07,2.93,2.93,0,0,1-2.09.75,3,3,0,0,1-2.1-.75,3.08,3.08,0,0,1-.93-2.07h1.33a1.49,1.49,0,0,0,.49,1,2.21,2.21,0,0,0,2.42,0A1.44,1.44,0,0,0,110.71,19.54Z"
+                                        fill="#fff"/>
+                                </g>
+                            </g>
+                            <path
+                                d="M147.94,16.14a1.78,1.78,0,0,0-2.5.33h0l-23,30.06-12.32,16.1L108,65.3l-2,2.5a4.84,4.84,0,0,1-.58.62,5.11,5.11,0,0,1-5.22,1.11L89.8,66a4.18,4.18,0,0,0-2.88,7.85l.28.09,9.61,3a8.43,8.43,0,0,0,9.19-3l.32-.41,1-1.33.37-.49,2.14-2.79L124.25,50l24-31.39A1.79,1.79,0,0,0,147.94,16.14Z"
+                                fill="#ffae00"/>
+                            <path d="M107.68,71.68l2.14-2.79L108,65.3l-2,2.5a4.84,4.84,0,0,1-.58.62l2,3.75Z"
+                                  fill="#052460"/>
+                            <polygon
+                                points="124.25 50.04 122.43 46.53 110.11 62.63 107.95 65.3 109.82 68.89 124.25 50.04"
+                                fill="#ce005b"/>
+                            <polygon points="97.36 77.17 95.56 76.14 99.42 69.27 101.13 70.31 97.36 77.17"
+                                     fill="#052460"/>
+                            <polygon
+                                points="95.56 68.07 97.41 68.83 94.68 76.14 92.8 75.39 91.78 75.2 90.83 75.05 90.92 71.22 89.56 74.54 87.74 73.77 90.71 66.5 91.76 66.96 93.15 67 93.14 67.46 95.06 67.87 94.25 71.51 95.56 68.07"
+                                fill="#052460"/>
+                            <path
+                                d="M12.25,16.14a1.79,1.79,0,0,1,2.51.33l23,30.06,12.32,16.1,2.16,2.67,2,2.5a5.67,5.67,0,0,0,.58.62A5.11,5.11,0,0,0,60,69.53L70.44,66a4.18,4.18,0,0,1,2.88,7.85L73,73.9l-9.61,3A8.43,8.43,0,0,1,54.21,74l-.32-.41-1-1.33-.38-.49L50.37,69,35.94,50l-24-31.39A1.79,1.79,0,0,1,12.25,16.14Z"
+                                fill="#ffae00"/>
+                            <path d="M52.51,71.68l-2.14-2.79,1.87-3.59,2,2.5a5.67,5.67,0,0,0,.58.62l-1.94,3.75Z"
+                                  fill="#052460"/>
+                            <polygon points="35.94 50.04 37.76 46.53 50.08 62.63 52.24 65.3 50.37 68.89 35.94 50.04"
+                                     fill="#ce005b"/>
+                            <polygon points="62.83 77.17 64.63 76.14 60.77 69.27 59.06 70.31 62.83 77.17"
+                                     fill="#052460"/>
+                            <polygon
+                                points="64.64 68.07 62.79 68.83 65.51 76.14 67.39 75.39 68.41 75.2 69.36 75.05 69.28 71.22 70.64 74.54 72.45 73.77 69.48 66.5 68.43 66.96 67.04 67 67.06 67.46 65.13 67.87 65.95 71.51 64.64 68.07"
+                                fill="#052460"/>
+                            <path d="M97.71,56.57H62.48v-8.2H97.71Z" fill="#052460"/>
+                            <path
+                                d="M72.23,61.08c-5.78-.83-9.75-2.53-9.75-4.51,0-2.78,7.89-8.2,17.62-8.2s17.61,5.42,17.61,8.2-7.88,5-17.61,5A56,56,0,0,1,72.23,61"
+                                fill="#052460"/>
+                            <path
+                                d="M66.25,45.26A43.32,43.32,0,0,1,80.1,43.33c9.73,0,17.61,2.26,17.61,5s-7.88,5-17.61,5-17.62-2.26-17.62-5c0-1.17,1.41-2.26,3.77-3.11"
+                                fill="#a3d9f6"/>
+                            <path
+                                d="M95.5,46.23c1.1.65,1.72,1.37,1.72,2.14,0,2.7-7.67,4.9-17.12,4.9S63,51.07,63,48.37c0-1.23,1.6-2.36,4.23-3.22"
+                                fill="none" stroke="#052460" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M71.68,44.11a51.64,51.64,0,0,1,8.42-.63,53.9,53.9,0,0,1,6.48.36" fill="none"
+                                  stroke="#052460" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path
+                                d="M84.59,47.2a2.1,2.1,0,0,1-.56-.07,14.88,14.88,0,0,0-3.93-.46,16.68,16.68,0,0,0-3.52.35,2.36,2.36,0,0,1-1.12,0c-.27-.09-.22-.24.12-.32a20.83,20.83,0,0,1,4.52-.46,19.55,19.55,0,0,1,5.05.6c.31.09.31.23,0,.32A2.09,2.09,0,0,1,84.59,47.2Z"
+                                fill="#00adee"/>
+                            <line x1="62.97" y1="48.37" x2="62.97" y2="56.82" fill="none" stroke="#052460"
+                                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.01"/>
+                            <path
+                                d="M116.9,36.85a2.5,2.5,0,0,1-.8-1.87,2.38,2.38,0,0,1,.8-1.85,2.94,2.94,0,0,1,2.06-.74,2.89,2.89,0,0,1,2,.74,2.38,2.38,0,0,1,.8,1.85,2.5,2.5,0,0,1-.81,1.87,2.8,2.8,0,0,1-2,.76A2.87,2.87,0,0,1,116.9,36.85Zm-.78-17h5.68L120.8,31H117Z"
+                                fill="#fff"/>
+                            <polygon
+                                points="26.72 17.99 24.28 17.55 22.54 19.31 22.2 16.86 19.99 15.74 22.23 14.66 22.61 12.21 24.32 14.01 26.76 13.61 25.59 15.79 26.72 17.99"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="72.45 12.98 70.31 12.37 68.6 13.79 68.52 11.57 66.64 10.37 68.73 9.61 69.28 7.46 70.66 9.21 72.88 9.07 71.64 10.91 72.45 12.98"
+                                fill="none" stroke="#ffae00" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="152.35 57.71 150.03 56.19 147.46 57.23 148.2 54.56 146.41 52.44 149.18 52.31 150.64 49.95 151.62 52.55 154.31 53.21 152.15 54.95 152.35 57.71"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="131.35 85.61 129.78 85.62 128.89 86.92 128.4 85.42 126.88 84.98 128.15 84.05 128.11 82.47 129.39 83.39 130.87 82.86 130.39 84.36 131.35 85.61"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="59.85 84.69 57.75 83.63 55.68 84.76 56.04 82.43 54.34 80.81 56.66 80.44 57.67 78.32 58.74 80.41 61.07 80.71 59.41 82.38 59.85 84.69"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="15.72 68.89 13.49 69.06 12.37 71 11.52 68.93 9.33 68.46 11.03 67.01 10.8 64.78 12.71 65.96 14.76 65.05 14.23 67.23 15.72 68.89"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="26.76 50.86 25.29 50.37 24.04 51.3 24.05 49.74 22.78 48.85 24.26 48.38 24.72 46.89 25.62 48.16 27.18 48.13 26.26 49.39 26.76 50.86"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="139.85 39.4 138.64 38.95 137.58 39.69 137.63 38.4 136.6 37.62 137.85 37.28 138.27 36.05 138.98 37.13 140.27 37.15 139.47 38.16 139.85 39.4"
+                                fill="none" stroke="#00376a" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                            <polygon
+                                points="128.37 13.79 126.83 12.21 124.65 12.58 125.68 10.62 124.65 8.66 126.83 9.04 128.38 7.46 128.69 9.65 130.68 10.63 128.69 11.6 128.37 13.79"
+                                fill="none" stroke="#ffae00" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0.76"/>
+                        </svg>
+                    </a>
+                </div>
             @endif
 
         </div>
@@ -758,7 +1285,7 @@
 @section('scripts')
 
     <!--Only this page's scripts-->
-{{--    <script src="{{asset('assets/js/JiSlider.js')}}"></script>--}}
+    {{--    <script src="{{asset('assets/js/JiSlider.js')}}"></script>--}}
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
