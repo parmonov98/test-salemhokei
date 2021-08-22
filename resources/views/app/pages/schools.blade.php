@@ -9,12 +9,56 @@
     @include('app.layout.components.page-title')
 
     @if($schools == null)
-    <section>
-        <div class="container">
-            <h2 class="title-primary">
-                {!! $textItems->firstWhere('element_id', 'schools_page__desc_' . app()->getLocale())->content !!}
-            </h2>
-
+        <section>
+            <div class="container">
+                <h2 class="title-primary">
+                    {!! $textItems->firstWhere('element_id', 'schools_page__desc_' . app()->getLocale())->content !!}
+                </h2>
+                <section>
+                    <div class="container">
+                        <div class="row row--multiline text-center">
+                            <div class="col-sm-4">
+                                <div class="privilege">
+                                    <img src="/assets/img/privilege2.svg" alt="" class="privilege__img">
+                                    <div class="privilege__text">
+                                        <span class="privilege__count" >
+                                            {!! $textItems->firstWhere('element_id', 'schools_count_' . app()->getLocale())->content !!}
+                                        </span>
+                                        <span class="privilege__title">
+                                             {!! $textItems->firstWhere('element_id', 'schools_count_title_' . app()->getLocale())->content !!}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="privilege">
+                                    <img src="/assets/img/privilege1.svg" alt="" class="privilege__img">
+                                    <div class="privilege__text">
+                                        <span class="privilege__count">
+                                            {!! $textItems->firstWhere('element_id', 'children_count_' . app()->getLocale())->content !!}
+                                        </span>
+                                        <span class="privilege__title">
+                                            {!! $textItems->firstWhere('element_id', 'children_count_title_' . app()->getLocale())->content !!}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="privilege">
+                                    <img src="/assets/img/privilege3.svg" alt="" class="privilege__img">
+                                    <div class="privilege__text">
+                                        <span class="privilege__count">
+                                            {!! $textItems->firstWhere('element_id', 'children_teams_count_' . app()->getLocale())->content !!}
+                                        </span>
+                                        <span                                            class="privilege__title">
+                                             {!! $textItems->firstWhere('element_id', 'children_teams_count_title_' . app()->getLocale())->content !!}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <div class="map">
                     <svg version="1.1" id="map" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
                          xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -203,9 +247,10 @@
                         </g>
         </svg>
                 </div>
-        </div>
-    </section>
+            </div>
+        </section>
     @endif
+
 
     <section>
         <div class="container">
@@ -279,6 +324,8 @@
             @endif
         </div>
     </section>
+
+
 @endsection
 
 @section("scripts")

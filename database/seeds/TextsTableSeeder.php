@@ -27,7 +27,8 @@ class TextsTableSeeder extends Seeder
                 'element_id' => 'goal_keeper__content_ru',
                 'page' => 'hockey',
                 'created_at' => NULL,
-                'updated_at' => '2021-08-18 11:13:44',
+                'updated_at' => '2021-08-20 08:38:32',
+                'video_id' => '52',
             ),
             1 => 
             array (
@@ -38,6 +39,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 11:13:32',
+                'video_id' => NULL,
             ),
             2 => 
             array (
@@ -48,16 +50,18 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 20:30:08',
+                'video_id' => NULL,
             ),
             3 => 
             array (
                 'id' => 4,
-                'content' => 'Қақпашы',
+                'content' => 'Хороший вратарь',
                 'language' => 'ru',
                 'element_id' => 'goal_keeper__title_kk',
                 'page' => 'hockey',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-08-20 08:36:49',
+                'video_id' => NULL,
             ),
             4 => 
             array (
@@ -68,6 +72,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             5 => 
             array (
@@ -78,6 +83,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             6 => 
             array (
@@ -88,6 +94,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             7 => 
             array (
@@ -98,6 +105,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:17:28',
+                'video_id' => NULL,
             ),
             8 => 
             array (
@@ -108,6 +116,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             9 => 
             array (
@@ -118,6 +127,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             10 => 
             array (
@@ -128,6 +138,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             11 => 
             array (
@@ -140,6 +151,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:34:00',
+                'video_id' => NULL,
             ),
             12 => 
             array (
@@ -150,6 +162,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             13 => 
             array (
@@ -160,6 +173,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             14 => 
             array (
@@ -172,17 +186,18 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             15 => 
             array (
                 'id' => 16,
-                'content' => 'Элемент экипировки хоккеиста, обеспечивающий защиту спины, грудной клетки, позвоночника и плеч.
-<iframe width="939" height="528" src="https://www.youtube.com/embed/n3rB2mENZ4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+                'content' => 'Элемент экипировки хоккеиста, обеспечивающий защиту спины, грудной клетки, позвоночника и плеч.',
                 'language' => 'ru',
                 'element_id' => 'equipment_bib__content_ru',
                 'page' => 'hockey',
                 'created_at' => NULL,
-                'updated_at' => '2021-08-18 20:22:25',
+                'updated_at' => '2021-08-20 12:24:36',
+                'video_id' => '53',
             ),
             16 => 
             array (
@@ -193,6 +208,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             17 => 
             array (
@@ -203,6 +219,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             18 => 
             array (
@@ -213,6 +230,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             19 => 
             array (
@@ -223,6 +241,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:34:00',
+                'video_id' => NULL,
             ),
             20 => 
             array (
@@ -233,6 +252,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             21 => 
             array (
@@ -243,6 +263,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             22 => 
             array (
@@ -253,6 +274,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             23 => 
             array (
@@ -263,6 +285,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:34:00',
+                'video_id' => NULL,
             ),
             24 => 
             array (
@@ -273,6 +296,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             25 => 
             array (
@@ -283,6 +307,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             26 => 
             array (
@@ -293,6 +318,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             27 => 
             array (
@@ -302,7 +328,8 @@ class TextsTableSeeder extends Seeder
                 'element_id' => 'neck_protection__content_ru',
                 'page' => 'hockey',
                 'created_at' => NULL,
-                'updated_at' => '2021-08-19 12:52:07',
+                'updated_at' => '2021-08-20 13:14:01',
+                'video_id' => '55',
             ),
             28 => 
             array (
@@ -313,6 +340,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             29 => 
             array (
@@ -323,6 +351,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             30 => 
             array (
@@ -333,6 +362,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             31 => 
             array (
@@ -343,6 +373,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:34:00',
+                'video_id' => NULL,
             ),
             32 => 
             array (
@@ -353,6 +384,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             33 => 
             array (
@@ -363,6 +395,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             34 => 
             array (
@@ -373,6 +406,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             35 => 
             array (
@@ -383,6 +417,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:34:00',
+                'video_id' => NULL,
             ),
             36 => 
             array (
@@ -393,6 +428,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             37 => 
             array (
@@ -403,6 +439,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             38 => 
             array (
@@ -413,6 +450,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             39 => 
             array (
@@ -423,6 +461,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:34:00',
+                'video_id' => NULL,
             ),
             40 => 
             array (
@@ -433,6 +472,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 21:23:38',
+                'video_id' => NULL,
             ),
             41 => 
             array (
@@ -443,6 +483,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 21:24:07',
+                'video_id' => NULL,
             ),
             42 => 
             array (
@@ -453,6 +494,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             43 => 
             array (
@@ -463,6 +505,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:34:00',
+                'video_id' => NULL,
             ),
             44 => 
             array (
@@ -473,6 +516,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             45 => 
             array (
@@ -489,6 +533,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             46 => 
             array (
@@ -499,6 +544,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             47 => 
             array (
@@ -515,6 +561,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 21:42:18',
+                'video_id' => NULL,
             ),
             48 => 
             array (
@@ -525,6 +572,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             49 => 
             array (
@@ -535,6 +583,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             50 => 
             array (
@@ -545,6 +594,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             51 => 
             array (
@@ -555,6 +605,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:34:00',
+                'video_id' => NULL,
             ),
             52 => 
             array (
@@ -565,6 +616,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             53 => 
             array (
@@ -585,6 +637,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             54 => 
             array (
@@ -595,6 +648,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             55 => 
             array (
@@ -615,6 +669,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:34:00',
+                'video_id' => NULL,
             ),
             56 => 
             array (
@@ -625,6 +680,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             57 => 
             array (
@@ -635,6 +691,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             58 => 
             array (
@@ -645,6 +702,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             59 => 
             array (
@@ -655,6 +713,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:34:00',
+                'video_id' => NULL,
             ),
             60 => 
             array (
@@ -665,6 +724,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             61 => 
             array (
@@ -684,6 +744,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             62 => 
             array (
@@ -694,6 +755,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             63 => 
             array (
@@ -714,6 +776,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:34:00',
+                'video_id' => NULL,
             ),
             64 => 
             array (
@@ -724,6 +787,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             65 => 
             array (
@@ -734,6 +798,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             66 => 
             array (
@@ -744,6 +809,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             67 => 
             array (
@@ -754,6 +820,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:34:00',
+                'video_id' => NULL,
             ),
             68 => 
             array (
@@ -764,6 +831,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             69 => 
             array (
@@ -774,6 +842,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             70 => 
             array (
@@ -784,6 +853,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             71 => 
             array (
@@ -794,6 +864,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:34:00',
+                'video_id' => NULL,
             ),
             72 => 
             array (
@@ -804,6 +875,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             73 => 
             array (
@@ -814,6 +886,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             74 => 
             array (
@@ -824,6 +897,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-19 02:24:39',
+                'video_id' => NULL,
             ),
             75 => 
             array (
@@ -834,6 +908,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-19 02:25:01',
+                'video_id' => NULL,
             ),
             76 => 
             array (
@@ -844,6 +919,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-19 02:28:58',
+                'video_id' => NULL,
             ),
             77 => 
             array (
@@ -854,6 +930,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-19 02:29:09',
+                'video_id' => NULL,
             ),
             78 => 
             array (
@@ -864,6 +941,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-19 02:28:21',
+                'video_id' => NULL,
             ),
             79 => 
             array (
@@ -874,6 +952,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-19 02:28:39',
+                'video_id' => NULL,
             ),
             80 => 
             array (
@@ -884,6 +963,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-19 02:35:26',
+                'video_id' => NULL,
             ),
             81 => 
             array (
@@ -894,6 +974,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-19 02:45:03',
+                'video_id' => NULL,
             ),
             82 => 
             array (
@@ -904,6 +985,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-19 02:34:35',
+                'video_id' => NULL,
             ),
             83 => 
             array (
@@ -914,6 +996,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-19 02:46:13',
+                'video_id' => NULL,
             ),
             84 => 
             array (
@@ -924,6 +1007,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             85 => 
             array (
@@ -934,6 +1018,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             86 => 
             array (
@@ -944,6 +1029,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             87 => 
             array (
@@ -954,6 +1040,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:34:00',
+                'video_id' => NULL,
             ),
             88 => 
             array (
@@ -964,6 +1051,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             89 => 
             array (
@@ -976,6 +1064,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             90 => 
             array (
@@ -986,6 +1075,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             91 => 
             array (
@@ -997,7 +1087,8 @@ class TextsTableSeeder extends Seeder
                 'element_id' => 'zone_a__content_ru',
                 'page' => 'hockey',
                 'created_at' => NULL,
-                'updated_at' => '2021-08-19 05:02:44',
+                'updated_at' => '2021-08-20 13:12:20',
+                'video_id' => '54',
             ),
             92 => 
             array (
@@ -1008,6 +1099,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             93 => 
             array (
@@ -1020,6 +1112,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             94 => 
             array (
@@ -1030,6 +1123,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             95 => 
             array (
@@ -1040,6 +1134,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:34:00',
+                'video_id' => NULL,
             ),
             96 => 
             array (
@@ -1050,6 +1145,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             97 => 
             array (
@@ -1060,6 +1156,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             98 => 
             array (
@@ -1070,6 +1167,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             99 => 
             array (
@@ -1080,6 +1178,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:34:00',
+                'video_id' => NULL,
             ),
             100 => 
             array (
@@ -1091,6 +1190,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-19 05:59:00',
+                'video_id' => NULL,
             ),
             101 => 
             array (
@@ -1101,6 +1201,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-19 05:59:05',
+                'video_id' => NULL,
             ),
             102 => 
             array (
@@ -1111,6 +1212,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'video_id' => NULL,
             ),
             103 => 
             array (
@@ -1121,6 +1223,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'hockey',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
             ),
             104 => 
             array (
@@ -1131,6 +1234,7 @@ class TextsTableSeeder extends Seeder
                 'page' => 'schools',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-19 13:13:37',
+                'video_id' => NULL,
             ),
             105 => 
             array (
@@ -1141,6 +1245,141 @@ class TextsTableSeeder extends Seeder
                 'page' => 'schools',
                 'created_at' => NULL,
                 'updated_at' => '2021-08-18 12:09:02',
+                'video_id' => NULL,
+            ),
+            106 => 
+            array (
+                'id' => 107,
+                'content' => 'хоккей <br/> школы',
+                'language' => 'ru',
+                'element_id' => 'schools_count_title_ru',
+                'page' => 'schools',
+                'created_at' => NULL,
+                'updated_at' => '2021-08-22 16:05:22',
+                'video_id' => NULL,
+            ),
+            107 => 
+            array (
+                'id' => 108,
+                'content' => 'хоккей <br/>
+мектептері',
+                'language' => 'kk',
+                'element_id' => 'schools_count_title_kk',
+                'page' => 'schools',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'video_id' => NULL,
+            ),
+            108 => 
+            array (
+                'id' => 109,
+                'content' => '23',
+                'language' => 'ru',
+                'element_id' => 'schools_count_ru',
+                'page' => 'schools',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'video_id' => NULL,
+            ),
+            109 => 
+            array (
+                'id' => 110,
+                'content' => '23',
+                'language' => 'kk',
+                'element_id' => 'schools_count_kk',
+                'page' => 'schools',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'video_id' => NULL,
+            ),
+            110 => 
+            array (
+                'id' => 111,
+                'content' => '6850',
+                'language' => 'ru',
+                'element_id' => 'children_count_ru',
+                'page' => 'schools',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'video_id' => NULL,
+            ),
+            111 => 
+            array (
+                'id' => 112,
+                'content' => '6850',
+                'language' => 'kk',
+                'element_id' => 'children_count_kk',
+                'page' => 'schools',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'video_id' => NULL,
+            ),
+            112 => 
+            array (
+                'id' => 113,
+                'content' => 'детей <br/>в хоккее',
+                'language' => 'ru',
+                'element_id' => 'children_count_title_ru',
+                'page' => 'schools',
+                'created_at' => NULL,
+                'updated_at' => '2021-08-22 16:17:00',
+                'video_id' => NULL,
+            ),
+            113 => 
+            array (
+                'id' => 114,
+                'content' => 'хоккей ойнайтын <br/>
+бала',
+                'language' => 'kk',
+                'element_id' => 'children_count_title_kk',
+                'page' => 'schools',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'video_id' => NULL,
+            ),
+            114 => 
+            array (
+                'id' => 115,
+                'content' => 'балалар<br/>командалары',
+                'language' => 'kk',
+                'element_id' => 'children_teams_count_title_kk',
+                'page' => 'schools',
+                'created_at' => NULL,
+                'updated_at' => '2021-08-22 16:24:01',
+                'video_id' => NULL,
+            ),
+            115 => 
+            array (
+                'id' => 116,
+                'content' => 'детских<br/>команд',
+                'language' => 'ru',
+                'element_id' => 'children_teams_count_title_ru',
+                'page' => 'schools',
+                'created_at' => NULL,
+                'updated_at' => '2021-08-22 16:25:17',
+                'video_id' => NULL,
+            ),
+            116 => 
+            array (
+                'id' => 117,
+                'content' => '116',
+                'language' => 'ru',
+                'element_id' => 'children_teams_count_ru',
+                'page' => 'schools',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'video_id' => NULL,
+            ),
+            117 => 
+            array (
+                'id' => 118,
+                'content' => '116',
+                'language' => 'kk',
+                'element_id' => 'children_teams_count_kk',
+                'page' => 'schools',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'video_id' => NULL,
             ),
         ));
         

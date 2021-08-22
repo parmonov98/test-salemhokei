@@ -5001,3 +5001,54 @@ ul.notifications {
     display: inline-block;
     color: #000000;
 }
+
+
+
+
+.privilege__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #2d3447;
+    margin-left: -2em;
+    margin-bottom: .5em
+}
+
+.privilege__count {
+    font-size: 3em;
+    font-weight: 700
+}
+
+.privilege__title {
+    font-size: 1.25em;
+    margin-left: 1em;
+    margin-top: -.3em;
+    /*width: 6em*/
+}
+
+.field-plan {
+    background: url(/assets/img/field/field-outline.svg) no-repeat center center, rgba(0, 158, 224, .75);
+    background-size: 90%;
+    padding: 3em 0
+}
+
+.field-plan .title-primary {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .4)
+}
+
+.field-plan a img {
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+.field-plan a:hover img {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05)
+}

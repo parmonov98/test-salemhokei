@@ -9,7 +9,7 @@
 
     @if($textItems->firstWhere('element_id', 'goal_keeper__content_' . app()->getLocale())->video_id != null)
        <div class="video-player">
-           <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'goal_keeper__content_' . app()->getLocale())->video->filename) }}"
+           <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'goal_keeper__content_' . app()->getLocale())->getVideoFileName()) }}"
                   class="video"></video>
            <div class="player-controls">
                <button class="play-button" title="Play">►</button>
@@ -31,7 +31,7 @@
     {!! $textItems->firstWhere('element_id', 'defender__content_' . app()->getLocale())->content !!}
     @if($textItems->firstWhere('element_id', 'defender__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'defender__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'defender__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -52,7 +52,7 @@
     {!! $textItems->firstWhere('element_id', 'forwarder__content_' . app()->getLocale())->content !!}
     @if($textItems->firstWhere('element_id', 'forwarder__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'forwarder__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'forwarder__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -74,7 +74,7 @@
 
     @if($textItems->firstWhere('element_id', 'equipment_bib__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'equipment_bib__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'equipment_bib__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -96,7 +96,7 @@
 
     @if($textItems->firstWhere('element_id', 'equipment_pads__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'equipment_pads__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'equipment_pads__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -119,7 +119,7 @@
 
     @if($textItems->firstWhere('element_id', 'equipment_gaiters__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'equipment_gaiters__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'equipment_gaiters__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -141,7 +141,7 @@
 
     @if($textItems->firstWhere('element_id', 'neck_protection__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'neck_protection__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'neck_protection__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -163,7 +163,7 @@
 
     @if($textItems->firstWhere('element_id', 'equipment_shields__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'equipment_shields__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'equipment_shields__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -186,7 +186,7 @@
 
     @if($textItems->firstWhere('element_id', 'equipment_helmet__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'equipment_helmet__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'equipment_helmet__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -208,7 +208,7 @@
 
     @if($textItems->firstWhere('element_id', 'equipment_gloves__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'equipment_gloves__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'equipment_gloves__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -231,7 +231,7 @@
 
     @if($textItems->firstWhere('element_id', 'hockey_goal__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'hockey_goal__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'hockey_goal__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -253,7 +253,7 @@
 
     @if($textItems->firstWhere('element_id', 'referee_field__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'referee_field__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'referee_field__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -276,7 +276,7 @@
 
     @if($textItems->firstWhere('element_id', 'washer_field__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'washer_field__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'washer_field__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -303,7 +303,7 @@
 
     @if($textItems->firstWhere('element_id', 'scoreboard__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'scoreboard__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'scoreboard__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -326,7 +326,7 @@
 
     @if($textItems->firstWhere('element_id', 'ice_machine__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'ice_machine__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'ice_machine__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -348,7 +348,7 @@
 
     @if($textItems->firstWhere('element_id', 'tribune__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'tribune__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'tribune__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -371,7 +371,7 @@
 
     @if($textItems->firstWhere('element_id', 'bench__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'bench__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'bench__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -393,7 +393,7 @@
 
     @if($textItems->firstWhere('element_id', 'penalty_box__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'penalty_box__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'penalty_box__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -415,7 +415,7 @@
 
     @if($textItems->firstWhere('element_id', 'zone_a__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'zone_a__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'zone_a__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -437,7 +437,7 @@
 
     @if($textItems->firstWhere('element_id', 'zone_b__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'zone_b__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'zone_b__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>
@@ -460,7 +460,7 @@
 
     @if($textItems->firstWhere('element_id', 'zone_c__content_' . app()->getLocale())->video_id != null)
         <div class="video-player">
-            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'zone_c__content_' . app()->getLocale())->video->filename) }}"
+            <video src="{{asset('videos/' . $textItems->firstWhere('element_id', 'zone_c__content_' . app()->getLocale())->getVideoFileName()) }}"
                    class="video"></video>
             <div class="player-controls">
                 <button class="play-button" title="Play">►</button>

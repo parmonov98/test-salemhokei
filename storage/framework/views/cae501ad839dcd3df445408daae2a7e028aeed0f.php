@@ -549,6 +549,7 @@
                                 <?php echo $textItems->firstWhere('element_id', 'hockey_infrastructure_title_' . app()->getLocale())->content; ?>
 
                             </h2>
+
                             <div class="row row--multiline">
                                 <div class="col-sm-6 col-md-3 col-xs-6">
                                     <a href="#hockey_goal" title="<?php echo e(__('default.pages.main.hockey_goal_title')); ?>" data-fancybox=""

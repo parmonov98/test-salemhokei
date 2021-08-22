@@ -35,5 +35,7 @@ class DatabaseSeeder extends Seeder
         $this->call(SectionRegionTableSeeder::class);
         $this->call(SectionUserTableSeeder::class);
         $this->call(VideosTableSeeder::class);
+        $this->call(\Database\Seeders\TextsTableSeeder::class);
+        $this->call(\Database\Seeders\UploadsTableSeeder::class);
     }
 }
