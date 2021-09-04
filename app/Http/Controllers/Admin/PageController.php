@@ -26,20 +26,19 @@ class PageController extends Controller
         $menuItems = MenuItem::select('id', 'label_kk as name_kk', 'label_ru as name_ru', 'link_ru as link_ru', 'link_kk as link_kk')->get();
         $menuItems->each(function ($item) {
             $item->is_published = 1;
+            $item->is_static = 'static';
             $item->created_at = now();
         });
 
         $items = $items->merge($menuItems);
 
-//        dd($items);
+        //        dd($items);
 
         return view('admin.pages.index', [
             'items' => $items,
             'term' => $term,
         ]);
-
     }
-
 
     public function add()
     {
@@ -62,40 +61,50 @@ class PageController extends Controller
             'item' => $item,
             'textItems' => $textItems
         ]);
+    }
 
+    public function equipment(Request $request, MenuItem $item)
+    {
+        $textItems = Text::with('video')->where('page', 'equipment')->orderBy('id')->get();
+
+        return view('admin.pages.equipment', [
+            'item' => $item,
+            'textItems' => $textItems
+        ]);
     }
 
     public function schools(Request $request, MenuItem $item)
     {
         $textItems = Text::with('video')->where('page', 'schools')->orderByDesc('id')->get();
 
-
-
         return view('admin.pages.schools', [
             'item' => $item,
             'textItems' => $textItems
         ]);
-
     }
 
     public function editStaticPage(Request $request, MenuItem $item)
     {
-        switch ($item->link){
+        // dd($item->link);
+        switch ($item->link) {
             case 'hockey':
-
                 return $this->hockey($request, $item);
                 die;
+                break;
+            case 'equipment':
+                // return $this->equipment($request, $item);
+                // die;
+                break;
             case 'school':
-
                 return $this->schools($request, $item);
                 die;
                 break;
-
         }
-        dd($item);
-//        return view('admin.pages.view', [
-//            'item' => $item
-//        ]);
+
+        // dd($item);
+        return view('admin.pages.default', [
+            'item' => $item
+        ]);
     }
 
     public function save(Request $request)
@@ -124,7 +133,7 @@ class PageController extends Controller
         $item->open_graph_description_ru = $request->open_graph_description_ru;
         $item->open_graph_description_en = $request->open_graph_description_en;
         $item->open_graph_description_kk = $request->open_graph_description_kk;
-//        $item->avatar = $request->image;
+        //        $item->avatar = $request->image;
         $item->is_published = $request->is_published;
         $item->is_published = $request->get("is_published");
 
@@ -188,7 +197,6 @@ class PageController extends Controller
                 }
                 unset($employees_en[$key]["old_img"]);
             }
-
         }
         $employees_en = array_values($employees_en);
         $item->employees_en = $employees_en;
@@ -215,7 +223,7 @@ class PageController extends Controller
         $item->save();
 
         $item->alias = Str::slug($item->id . '-' . $request->name_ru);
-        $item->update(['alias' => Str::slug($item->id . '-' .$request->get("name_ru"))]);
+        $item->update(['alias' => Str::slug($item->id . '-' . $request->get("name_ru"))]);
         $item->alias = Str::slug($request->get("name_ru"));
 
         $logger = new Log;
@@ -312,7 +320,6 @@ class PageController extends Controller
                 }
                 unset($employees_en[$key]["old_img"]);
             }
-
         }
         $employees_en = array_values($employees_en);
         $item->employees_en = $employees_en;
@@ -343,7 +350,6 @@ class PageController extends Controller
         $logger->log('edit', 'pages', $item->id, $item->name);
 
         return redirect('/admin/page/' . $item->id)->with('status', 'Данные о статье успешно изменены');
-
     }
 
     public function delete(Page $item)
@@ -351,7 +357,4 @@ class PageController extends Controller
         $item->delete();
         return redirect('/admin/pages')->with('status', 'Объект успешно удален');
     }
-
-
-
 }
