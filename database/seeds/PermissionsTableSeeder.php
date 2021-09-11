@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class PermissionsTableSeeder extends Seeder
@@ -12,12 +14,12 @@ class PermissionsTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('permissions')->delete();
-
+        
         \DB::table('permissions')->insert(array (
-            0 =>
+            0 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -26,7 +28,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'user.view',
                 'updated_at' => NULL,
             ),
-            1 =>
+            1 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -35,7 +37,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'user.create',
                 'updated_at' => NULL,
             ),
-            2 =>
+            2 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -44,7 +46,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'user.edit',
                 'updated_at' => NULL,
             ),
-            3 =>
+            3 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -53,7 +55,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'user.delete',
                 'updated_at' => NULL,
             ),
-            4 =>
+            4 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -62,7 +64,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'album.view',
                 'updated_at' => NULL,
             ),
-            5 =>
+            5 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -71,7 +73,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'album.create',
                 'updated_at' => NULL,
             ),
-            6 =>
+            6 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -80,7 +82,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'album.edit',
                 'updated_at' => NULL,
             ),
-            7 =>
+            7 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -89,7 +91,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'album.delete',
                 'updated_at' => NULL,
             ),
-            8 =>
+            8 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -98,7 +100,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'video.view',
                 'updated_at' => NULL,
             ),
-            9 =>
+            9 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -107,7 +109,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'video.create',
                 'updated_at' => NULL,
             ),
-            10 =>
+            10 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -116,7 +118,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'video.edit',
                 'updated_at' => NULL,
             ),
-            11 =>
+            11 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -125,7 +127,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'video.delete',
                 'updated_at' => NULL,
             ),
-            12 =>
+            12 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -134,7 +136,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'page.view',
                 'updated_at' => NULL,
             ),
-            13 =>
+            13 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -143,7 +145,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'page.create',
                 'updated_at' => NULL,
             ),
-            14 =>
+            14 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -152,7 +154,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'page.edit',
                 'updated_at' => NULL,
             ),
-            15 =>
+            15 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -161,7 +163,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'page.delete',
                 'updated_at' => NULL,
             ),
-            16 =>
+            16 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -170,7 +172,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'user_role.view',
                 'updated_at' => NULL,
             ),
-            17 =>
+            17 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -179,7 +181,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'user_role.create',
                 'updated_at' => NULL,
             ),
-            18 =>
+            18 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -188,7 +190,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'user_role.edit',
                 'updated_at' => NULL,
             ),
-            19 =>
+            19 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -197,7 +199,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'user_role.delete',
                 'updated_at' => NULL,
             ),
-            20 =>
+            20 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -206,7 +208,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'section.view',
                 'updated_at' => NULL,
             ),
-            21 =>
+            21 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -215,7 +217,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'section.create',
                 'updated_at' => NULL,
             ),
-            22 =>
+            22 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -224,7 +226,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'section.edit',
                 'updated_at' => NULL,
             ),
-            23 =>
+            23 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -233,7 +235,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'section.delete',
                 'updated_at' => NULL,
             ),
-            24 =>
+            24 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -242,7 +244,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'article.view',
                 'updated_at' => NULL,
             ),
-            25 =>
+            25 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -251,7 +253,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'article.create',
                 'updated_at' => NULL,
             ),
-            26 =>
+            26 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -260,7 +262,7 @@ class PermissionsTableSeeder extends Seeder
                 'slug' => 'article.edit',
                 'updated_at' => NULL,
             ),
-            27 =>
+            27 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -270,7 +272,7 @@ class PermissionsTableSeeder extends Seeder
                 'updated_at' => NULL,
             ),
         ));
-
-
+        
+        
     }
 }

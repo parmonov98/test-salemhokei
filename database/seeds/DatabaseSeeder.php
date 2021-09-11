@@ -1,6 +1,32 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Database\Seeders\{
+    UsersTableSeeder,
+    AdminMenusTableSeeder,
+    AdminMenuItemsTableSeeder,
+    AlbumImagesTableSeeder,
+    AlbumsTableSeeder,
+    ArticleAuthorTableSeeder,
+    ArticleCategoryTableSeeder,
+    ArticleImageTableSeeder,
+    ArticleTagTableSeeder,
+    ArticlesTableSeeder,
+    AuthorsTableSeeder,
+    EventsTableSeeder,
+    ImagesTableSeeder,
+    PagesTableSeeder,
+    PermissionsTableSeeder,
+    RolesTableSeeder,
+    PermissionUserTableSeeder,
+    RoleUserTableSeeder,
+    PermissionRoleTableSeeder,
+    RegionsTableSeeder,
+    SectionsTableSeeder,
+    SectionRegionTableSeeder,
+    SectionUserTableSeeder,
+    VideosTableSeeder
+};
 
 class DatabaseSeeder extends Seeder
 {

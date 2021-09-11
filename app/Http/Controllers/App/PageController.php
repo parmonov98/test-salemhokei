@@ -118,8 +118,13 @@ class PageController extends Controller
 
     public function for_parents(Request $request, $lang = "ru")
     {
+//        dd($lang);
+        $lang = 'kk';
+        $textItems = Text::with('video')->where('page', 'faq')->orderByDesc('id')->get();
+//dd($textItems->firstWhere('element_id', 'how_register_a_child_text_' . app()->getLocale()));
         return view("app.pages.faq", [
-            "lang" => $lang
+            "lang" => $lang,
+            'textItems' => $textItems
         ]);
     }
 
@@ -249,7 +254,7 @@ class PageController extends Controller
 
     public function show(Request $request, $lang,  $alias)
     {
-        // dd($alias);
+//         dd($alias);
         $item = Page::whereAlias($alias)->whereIsPublished(true)->orderBy("id", "desc")->first();
         // dd($item->accordion);
         if (!$item) {

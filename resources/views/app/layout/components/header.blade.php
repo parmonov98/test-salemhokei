@@ -26,28 +26,31 @@
 
             </div>
             @if ($lang == 'kk')
-            <nav class="menu menu--kk">@else<nav class="menu">
-                    @endif
-
-
-                    <div class="d-flex flex-column flex-lg-row justify-content-around">
-
-{{--                        {{ AppMenu::get('MyNavBar')->active() }}--}}
-                        {!! $MyNavBar->asUl( ['class' => 'first_level_list'], ['class' => 'second_level_list']) !!}
-
-                        <div class="language" style="">
-                            @if ($lang == 'ru')
-                            <a href="/kk{{ $uri }}" title="KZ">KZ</a><span>|</span><a href="/ru{{ $uri }}" title="RU"
-                                class="active">RU</a>
-                            @else
-                            <a href="/kk{{ $uri }}" title="KZ" class="active">KZ</a><span>|</span><a
-                                href="/ru{{ $uri }}" title="RU">RU</a>
+                <nav class="menu menu--kk">@else
+                        <nav class="menu">
                             @endif
-                        </div>
 
-                    </div>
 
-                </nav>
+                            <div class="d-flex flex-column flex-lg-row justify-content-around">
+
+                                {{--                        {{ AppMenu::get('MyNavBar')->active() }}--}}
+                                {!! $MyNavBar->asUl( ['class' => 'first_level_list'], ['class' => 'second_level_list']) !!}
+
+                                <div class="language" style="">
+                                    @if (app()->getLocale() == 'ru')
+                                        <a href="/kk{{ $uri }}" title="KZ">KZ</a>
+                                        <span>|</span>
+                                        <a href="/ru{{ $uri }}" title="RU" class="active">RU</a>
+                                    @else
+                                        <a href="/kk{{ $uri }}" title="KZ" class="active">KZ</a>
+                                        <span>|</span>
+                                        <a href="/ru{{ $uri }}" title="RU">RU</a>
+                                    @endif
+                                </div>
+
+                            </div>
+
+                        </nav>
         </div>
     </div>
 </header>

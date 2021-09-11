@@ -120,6 +120,9 @@ input[type="range"]::-webkit-slider-thumb {
     height: 20px;
 
 }
+.video-player video{
+    width: 100%;
+}
 
 .video-player .fullscreen svg{
     pointer-events: none;

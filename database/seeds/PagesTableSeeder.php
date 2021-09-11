@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class PagesTableSeeder extends Seeder
@@ -12,11 +14,11 @@ class PagesTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('pages')->delete();
-
-
-
+        
+        
+        
     }
 }

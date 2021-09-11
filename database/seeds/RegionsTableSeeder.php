@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class RegionsTableSeeder extends Seeder
@@ -12,12 +14,12 @@ class RegionsTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('regions')->delete();
-
+        
         \DB::table('regions')->insert(array (
-            0 =>
+            0 => 
             array (
                 'created_at' => '2020-04-08 13:12:23',
                 'id' => 4,
@@ -26,7 +28,7 @@ class RegionsTableSeeder extends Seeder
                 'name_ru' => 'Акмолинская область',
                 'updated_at' => '0000-00-00 00:00:00',
             ),
-            1 =>
+            1 => 
             array (
                 'created_at' => '2020-04-08 13:12:31',
                 'id' => 5,
@@ -35,7 +37,7 @@ class RegionsTableSeeder extends Seeder
                 'name_ru' => 'Актюбинская область',
                 'updated_at' => '0000-00-00 00:00:00',
             ),
-            2 =>
+            2 => 
             array (
                 'created_at' => '2020-04-08 13:12:41',
                 'id' => 6,
@@ -44,7 +46,7 @@ class RegionsTableSeeder extends Seeder
                 'name_ru' => 'Алматинская область',
                 'updated_at' => '0000-00-00 00:00:00',
             ),
-            3 =>
+            3 => 
             array (
                 'created_at' => '2020-04-08 13:12:48',
                 'id' => 7,
@@ -53,7 +55,7 @@ class RegionsTableSeeder extends Seeder
                 'name_ru' => 'Атырауская область',
                 'updated_at' => '0000-00-00 00:00:00',
             ),
-            4 =>
+            4 => 
             array (
                 'created_at' => '2020-04-08 13:12:54',
                 'id' => 8,
@@ -62,7 +64,7 @@ class RegionsTableSeeder extends Seeder
                 'name_ru' => 'Восточно-Казахстанская область',
                 'updated_at' => '0000-00-00 00:00:00',
             ),
-            5 =>
+            5 => 
             array (
                 'created_at' => '2020-04-08 13:13:01',
                 'id' => 9,
@@ -71,7 +73,7 @@ class RegionsTableSeeder extends Seeder
                 'name_ru' => 'Жамбылская область',
                 'updated_at' => '0000-00-00 00:00:00',
             ),
-            6 =>
+            6 => 
             array (
                 'created_at' => '2020-04-08 13:13:06',
                 'id' => 10,
@@ -80,7 +82,7 @@ class RegionsTableSeeder extends Seeder
                 'name_ru' => 'Западно-Казахстанская область',
                 'updated_at' => '0000-00-00 00:00:00',
             ),
-            7 =>
+            7 => 
             array (
                 'created_at' => '2020-04-08 13:13:12',
                 'id' => 11,
@@ -89,7 +91,7 @@ class RegionsTableSeeder extends Seeder
                 'name_ru' => 'Карагандинская область',
                 'updated_at' => '0000-00-00 00:00:00',
             ),
-            8 =>
+            8 => 
             array (
                 'created_at' => '2020-04-08 13:13:22',
                 'id' => 12,
@@ -98,7 +100,7 @@ class RegionsTableSeeder extends Seeder
                 'name_ru' => 'Костанайская область',
                 'updated_at' => '0000-00-00 00:00:00',
             ),
-            9 =>
+            9 => 
             array (
                 'created_at' => '2020-04-08 13:13:32',
                 'id' => 13,
@@ -107,7 +109,7 @@ class RegionsTableSeeder extends Seeder
                 'name_ru' => 'Кызылординская область',
                 'updated_at' => '0000-00-00 00:00:00',
             ),
-            10 =>
+            10 => 
             array (
                 'created_at' => '2020-04-08 13:13:41',
                 'id' => 14,
@@ -116,7 +118,7 @@ class RegionsTableSeeder extends Seeder
                 'name_ru' => 'Мангистауская область',
                 'updated_at' => '0000-00-00 00:00:00',
             ),
-            11 =>
+            11 => 
             array (
                 'created_at' => '2020-04-08 13:13:47',
                 'id' => 15,
@@ -125,7 +127,7 @@ class RegionsTableSeeder extends Seeder
                 'name_ru' => 'Павлодарская область',
                 'updated_at' => '0000-00-00 00:00:00',
             ),
-            12 =>
+            12 => 
             array (
                 'created_at' => '2020-04-08 13:13:55',
                 'id' => 16,
@@ -134,7 +136,7 @@ class RegionsTableSeeder extends Seeder
                 'name_ru' => 'Северо-Казахстанская область',
                 'updated_at' => '0000-00-00 00:00:00',
             ),
-            13 =>
+            13 => 
             array (
                 'created_at' => '2020-04-08 13:14:01',
                 'id' => 17,
@@ -144,7 +146,7 @@ class RegionsTableSeeder extends Seeder
                 'updated_at' => '0000-00-00 00:00:00',
             ),
         ));
-
-
+        
+        
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class RolesTableSeeder extends Seeder
@@ -12,12 +14,12 @@ class RolesTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('roles')->delete();
-
+        
         \DB::table('roles')->insert(array (
-            0 =>
+            0 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -27,7 +29,7 @@ class RolesTableSeeder extends Seeder
                 'special' => NULL,
                 'updated_at' => NULL,
             ),
-            1 =>
+            1 => 
             array (
                 'created_at' => NULL,
                 'description' => NULL,
@@ -38,7 +40,7 @@ class RolesTableSeeder extends Seeder
                 'updated_at' => NULL,
             ),
         ));
-
-
+        
+        
     }
 }

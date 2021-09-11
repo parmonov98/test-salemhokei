@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class ImagesTableSeeder extends Seeder
@@ -12,11 +14,11 @@ class ImagesTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('images')->delete();
-
-
-
+        
+        
+        
     }
 }

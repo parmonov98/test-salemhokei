@@ -8,6 +8,7 @@ use App\Models\Text;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Log;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Carbon\Carbon;
@@ -83,6 +84,18 @@ class PageController extends Controller
         ]);
     }
 
+    public function faq(Request $request, MenuItem $item)
+    {
+        $lang = App::getLocale();
+        dd($lang);
+        $textItems = Text::with('video')->where('page', 'schools')->orderByDesc('id')->get();
+
+        return view('admin.pages.schools', [
+            'item' => $item,
+            'textItems' => $textItems
+        ]);
+    }
+
     public function editStaticPage(Request $request, MenuItem $item)
     {
         // dd($item->link);
@@ -94,6 +107,10 @@ class PageController extends Controller
             case 'equipment':
                 // return $this->equipment($request, $item);
                 // die;
+                break;
+            case 'faq':
+                 return $this->faq($request, $item);
+                 die;
                 break;
             case 'school':
                 return $this->schools($request, $item);

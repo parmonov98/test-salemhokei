@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class AlbumsTableSeeder extends Seeder
@@ -12,12 +14,12 @@ class AlbumsTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('albums')->delete();
-
+        
         \DB::table('albums')->insert(array (
-            0 =>
+            0 => 
             array (
                 'alias' => '1-albom-1',
                 'avatar' => '/images/1591596329.png',
@@ -44,7 +46,7 @@ class AlbumsTableSeeder extends Seeder
                 'updated_at' => '2020-06-08 11:05:33',
             ),
         ));
-
-
+        
+        
     }
 }

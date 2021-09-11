@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class AuthorsTableSeeder extends Seeder
@@ -12,12 +14,12 @@ class AuthorsTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('authors')->delete();
-
+        
         \DB::table('authors')->insert(array (
-            0 =>
+            0 => 
             array (
                 'alias' => '2-mukhamed-kanapiya',
             'annotation' => '<p><span style="color: #545454; font-family: Ubuntu, sans-serif; font-size: 16px; text-align: center;">Главный редактор блога Panama.kz. Пишу про интернет маркетинг, в основном про поисковое продвижение (SEO).</span></p>',
@@ -39,7 +41,7 @@ class AuthorsTableSeeder extends Seeder
                 'vk_url' => NULL,
                 'youtube_url' => NULL,
             ),
-            1 =>
+            1 => 
             array (
                 'alias' => '2-mukhamed-kanapiya',
             'annotation' => '<p><span style="color: #545454; font-family: Ubuntu, sans-serif; font-size: 16px; text-align: center;">Главный редактор блога Panama.kz. Пишу про интернет маркетинг, в основном про поисковое продвижение (SEO).</span></p>',
@@ -62,7 +64,7 @@ class AuthorsTableSeeder extends Seeder
                 'youtube_url' => NULL,
             ),
         ));
-
-
+        
+        
     }
 }

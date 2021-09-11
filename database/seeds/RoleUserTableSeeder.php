@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class RoleUserTableSeeder extends Seeder
@@ -12,13 +14,12 @@ class RoleUserTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('role_user')->delete();
-
+        
         \DB::table('role_user')->insert(array (
-
-            1 =>
+            0 => 
             array (
                 'created_at' => '2020-03-26 14:28:45',
                 'id' => 4,
@@ -26,7 +27,7 @@ class RoleUserTableSeeder extends Seeder
                 'updated_at' => '2020-03-26 14:28:45',
                 'user_id' => 3,
             ),
-            2 =>
+            1 => 
             array (
                 'created_at' => '2020-03-26 14:33:11',
                 'id' => 5,
@@ -34,8 +35,7 @@ class RoleUserTableSeeder extends Seeder
                 'updated_at' => '2020-03-26 14:33:11',
                 'user_id' => 9,
             ),
-
-            5 =>
+            2 => 
             array (
                 'created_at' => NULL,
                 'id' => 9,
@@ -43,7 +43,7 @@ class RoleUserTableSeeder extends Seeder
                 'updated_at' => NULL,
                 'user_id' => 13,
             ),
-            6 =>
+            3 => 
             array (
                 'created_at' => NULL,
                 'id' => 10,
@@ -51,7 +51,7 @@ class RoleUserTableSeeder extends Seeder
                 'updated_at' => NULL,
                 'user_id' => 14,
             ),
-            7 =>
+            4 => 
             array (
                 'created_at' => NULL,
                 'id' => 11,
@@ -60,7 +60,7 @@ class RoleUserTableSeeder extends Seeder
                 'user_id' => 15,
             ),
         ));
-
-
+        
+        
     }
 }

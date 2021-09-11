@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class PermissionUserTableSeeder extends Seeder
@@ -12,11 +14,11 @@ class PermissionUserTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('permission_user')->delete();
-
-
-
+        
+        
+        
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class SectionRegionTableSeeder extends Seeder
@@ -12,12 +14,12 @@ class SectionRegionTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('section_region')->delete();
-
+        
         \DB::table('section_region')->insert(array (
-            0 =>
+            0 => 
             array (
                 'created_at' => '2020-06-10 09:29:14',
                 'id' => 8,
@@ -25,7 +27,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 8,
                 'updated_at' => '2020-06-10 09:29:14',
             ),
-            1 =>
+            1 => 
             array (
                 'created_at' => '2020-06-10 09:25:48',
                 'id' => 9,
@@ -33,7 +35,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 1,
                 'updated_at' => '2020-06-10 09:25:48',
             ),
-            2 =>
+            2 => 
             array (
                 'created_at' => '2020-06-10 09:25:48',
                 'id' => 10,
@@ -41,7 +43,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 2,
                 'updated_at' => '2020-06-10 09:25:48',
             ),
-            3 =>
+            3 => 
             array (
                 'created_at' => '2020-06-10 09:25:48',
                 'id' => 11,
@@ -49,7 +51,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 3,
                 'updated_at' => '2020-06-10 09:25:48',
             ),
-            4 =>
+            4 => 
             array (
                 'created_at' => '2020-06-10 09:25:48',
                 'id' => 12,
@@ -57,7 +59,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 4,
                 'updated_at' => '2020-06-10 09:25:48',
             ),
-            5 =>
+            5 => 
             array (
                 'created_at' => '2020-06-10 09:29:14',
                 'id' => 13,
@@ -65,7 +67,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 5,
                 'updated_at' => '2020-06-10 09:29:14',
             ),
-            6 =>
+            6 => 
             array (
                 'created_at' => '2020-06-10 09:29:14',
                 'id' => 14,
@@ -73,7 +75,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 6,
                 'updated_at' => '2020-06-10 09:29:14',
             ),
-            7 =>
+            7 => 
             array (
                 'created_at' => '2020-06-10 09:29:14',
                 'id' => 15,
@@ -81,7 +83,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 7,
                 'updated_at' => '2020-06-10 09:29:14',
             ),
-            8 =>
+            8 => 
             array (
                 'created_at' => '2020-06-10 09:29:14',
                 'id' => 16,
@@ -89,7 +91,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 9,
                 'updated_at' => '2020-06-10 09:29:14',
             ),
-            9 =>
+            9 => 
             array (
                 'created_at' => '2020-05-20 14:13:32',
                 'id' => 17,
@@ -97,7 +99,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 10,
                 'updated_at' => '2020-05-20 14:13:32',
             ),
-            10 =>
+            10 => 
             array (
                 'created_at' => '2020-05-20 14:14:50',
                 'id' => 18,
@@ -105,7 +107,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 11,
                 'updated_at' => '2020-05-20 14:14:50',
             ),
-            11 =>
+            11 => 
             array (
                 'created_at' => '2020-05-20 14:17:20',
                 'id' => 19,
@@ -113,7 +115,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 12,
                 'updated_at' => '2020-05-20 14:17:20',
             ),
-            12 =>
+            12 => 
             array (
                 'created_at' => '2020-05-20 14:18:38',
                 'id' => 20,
@@ -121,7 +123,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 13,
                 'updated_at' => '2020-05-20 14:18:38',
             ),
-            13 =>
+            13 => 
             array (
                 'created_at' => '2020-06-10 09:31:26',
                 'id' => 21,
@@ -129,7 +131,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 14,
                 'updated_at' => '2020-06-10 09:31:26',
             ),
-            14 =>
+            14 => 
             array (
                 'created_at' => '2020-05-20 14:21:42',
                 'id' => 22,
@@ -137,7 +139,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 15,
                 'updated_at' => '2020-05-20 14:21:42',
             ),
-            15 =>
+            15 => 
             array (
                 'created_at' => '2020-05-20 14:22:57',
                 'id' => 23,
@@ -145,7 +147,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 16,
                 'updated_at' => '2020-05-20 14:22:57',
             ),
-            16 =>
+            16 => 
             array (
                 'created_at' => '2020-05-20 14:24:50',
                 'id' => 24,
@@ -153,7 +155,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 17,
                 'updated_at' => '2020-05-20 14:24:50',
             ),
-            17 =>
+            17 => 
             array (
                 'created_at' => '2020-05-20 14:26:06',
                 'id' => 25,
@@ -161,7 +163,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 18,
                 'updated_at' => '2020-05-20 14:26:06',
             ),
-            18 =>
+            18 => 
             array (
                 'created_at' => '2020-05-20 14:27:50',
                 'id' => 26,
@@ -169,7 +171,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 19,
                 'updated_at' => '2020-05-20 14:27:50',
             ),
-            19 =>
+            19 => 
             array (
                 'created_at' => '2020-05-20 14:29:06',
                 'id' => 27,
@@ -177,7 +179,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 20,
                 'updated_at' => '2020-05-20 14:29:06',
             ),
-            20 =>
+            20 => 
             array (
                 'created_at' => '2020-05-20 14:30:02',
                 'id' => 28,
@@ -185,7 +187,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 21,
                 'updated_at' => '2020-05-20 14:30:02',
             ),
-            21 =>
+            21 => 
             array (
                 'created_at' => '2020-05-20 14:30:54',
                 'id' => 29,
@@ -193,7 +195,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 22,
                 'updated_at' => '2020-05-20 14:30:54',
             ),
-            22 =>
+            22 => 
             array (
                 'created_at' => '2020-05-20 14:32:15',
                 'id' => 30,
@@ -201,7 +203,7 @@ class SectionRegionTableSeeder extends Seeder
                 'section_id' => 23,
                 'updated_at' => '2020-05-20 14:32:15',
             ),
-            23 =>
+            23 => 
             array (
                 'created_at' => '2020-07-10 23:01:42',
                 'id' => 31,
@@ -210,7 +212,7 @@ class SectionRegionTableSeeder extends Seeder
                 'updated_at' => '2020-07-10 23:01:42',
             ),
         ));
-
-
+        
+        
     }
 }

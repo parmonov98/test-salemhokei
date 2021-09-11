@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class ArticleImageTableSeeder extends Seeder
@@ -12,11 +14,11 @@ class ArticleImageTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('article_image')->delete();
-
-
-
+        
+        
+        
     }
 }

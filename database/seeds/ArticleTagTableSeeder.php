@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class ArticleTagTableSeeder extends Seeder
@@ -12,12 +14,12 @@ class ArticleTagTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('article_tag')->delete();
-
+        
         \DB::table('article_tag')->insert(array (
-            0 =>
+            0 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -25,7 +27,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 3,
                 'updated_at' => NULL,
             ),
-            1 =>
+            1 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -33,7 +35,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 3,
                 'updated_at' => NULL,
             ),
-            2 =>
+            2 => 
             array (
                 'article_id' => 3,
                 'created_at' => NULL,
@@ -41,7 +43,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 3,
                 'updated_at' => NULL,
             ),
-            3 =>
+            3 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -49,7 +51,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 3,
                 'updated_at' => NULL,
             ),
-            4 =>
+            4 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -57,7 +59,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 3,
                 'updated_at' => NULL,
             ),
-            5 =>
+            5 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -65,7 +67,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 3,
                 'updated_at' => NULL,
             ),
-            6 =>
+            6 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -73,7 +75,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 2,
                 'updated_at' => NULL,
             ),
-            7 =>
+            7 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -81,7 +83,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 1,
                 'updated_at' => NULL,
             ),
-            8 =>
+            8 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -89,7 +91,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 2,
                 'updated_at' => NULL,
             ),
-            9 =>
+            9 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -97,7 +99,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 5,
                 'updated_at' => NULL,
             ),
-            10 =>
+            10 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -105,7 +107,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 6,
                 'updated_at' => NULL,
             ),
-            11 =>
+            11 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -113,7 +115,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 7,
                 'updated_at' => NULL,
             ),
-            12 =>
+            12 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -121,7 +123,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 8,
                 'updated_at' => NULL,
             ),
-            13 =>
+            13 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -129,7 +131,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 9,
                 'updated_at' => NULL,
             ),
-            14 =>
+            14 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -137,7 +139,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 10,
                 'updated_at' => NULL,
             ),
-            15 =>
+            15 => 
             array (
                 'article_id' => 38,
                 'created_at' => NULL,
@@ -145,7 +147,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 9,
                 'updated_at' => NULL,
             ),
-            16 =>
+            16 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -153,7 +155,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 3,
                 'updated_at' => NULL,
             ),
-            17 =>
+            17 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -161,7 +163,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 3,
                 'updated_at' => NULL,
             ),
-            18 =>
+            18 => 
             array (
                 'article_id' => 3,
                 'created_at' => NULL,
@@ -169,7 +171,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 3,
                 'updated_at' => NULL,
             ),
-            19 =>
+            19 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -177,7 +179,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 3,
                 'updated_at' => NULL,
             ),
-            20 =>
+            20 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -185,7 +187,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 3,
                 'updated_at' => NULL,
             ),
-            21 =>
+            21 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -193,7 +195,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 3,
                 'updated_at' => NULL,
             ),
-            22 =>
+            22 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -201,7 +203,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 2,
                 'updated_at' => NULL,
             ),
-            23 =>
+            23 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -209,7 +211,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 1,
                 'updated_at' => NULL,
             ),
-            24 =>
+            24 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -217,7 +219,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 2,
                 'updated_at' => NULL,
             ),
-            25 =>
+            25 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -225,7 +227,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 5,
                 'updated_at' => NULL,
             ),
-            26 =>
+            26 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -233,7 +235,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 6,
                 'updated_at' => NULL,
             ),
-            27 =>
+            27 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -241,7 +243,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 7,
                 'updated_at' => NULL,
             ),
-            28 =>
+            28 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -249,7 +251,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 8,
                 'updated_at' => NULL,
             ),
-            29 =>
+            29 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -257,7 +259,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 9,
                 'updated_at' => NULL,
             ),
-            30 =>
+            30 => 
             array (
                 'article_id' => NULL,
                 'created_at' => NULL,
@@ -265,7 +267,7 @@ class ArticleTagTableSeeder extends Seeder
                 'tag_id' => 10,
                 'updated_at' => NULL,
             ),
-            31 =>
+            31 => 
             array (
                 'article_id' => 38,
                 'created_at' => NULL,
@@ -274,7 +276,7 @@ class ArticleTagTableSeeder extends Seeder
                 'updated_at' => NULL,
             ),
         ));
-
-
+        
+        
     }
 }

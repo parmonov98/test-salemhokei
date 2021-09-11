@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class EventsTableSeeder extends Seeder
@@ -12,12 +14,12 @@ class EventsTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('events')->delete();
-
+        
         \DB::table('events')->insert(array (
-            0 =>
+            0 => 
             array (
                 'alias' => '1-meropriyatie-1',
                 'city_en' => NULL,
@@ -36,7 +38,7 @@ class EventsTableSeeder extends Seeder
                 'updated_at' => '2020-03-26 16:32:21',
             ),
         ));
-
-
+        
+        
     }
 }

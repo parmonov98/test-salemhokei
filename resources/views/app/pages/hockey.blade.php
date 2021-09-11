@@ -13,34 +13,6 @@
 
     @include('app.layout.components.page-title')
 
-    <section>
-        <div class="container">
-            <h2 class="title-primary">{!! __('default.pages.about.block_title_4') !!}</h2>
-            <div class="plain-text plain-text__18">
-                {!! $textItems->firstWhere('element_id', 'hockey_block_desc_4_' . app()->getLocale())->content !!}
-            </div>
-
-            <div class="roles">
-                <a href="#goalkeeper" title="{!! __('default.pages.about.goalkeeper_title') !!}" data-fancybox="roles"
-                   class="roles-item">
-                    <img src="/assets/img/goalkeeper.svg" alt="">
-                    <span>{!! $textItems->firstWhere('element_id', 'goal_keeper__title_' . app()->getLocale())->content !!}</span>
-                </a>
-                <a href="#forward" title="{!! __('default.pages.about.forward_title') !!}" data-fancybox="roles"
-                   class="roles-item"
-                   style="margin-left: -3rem;">
-                    <img src="/assets/img/striker.svg" alt="">
-                    <span>{!! $textItems->firstWhere('element_id', 'forwarder__title_' . app()->getLocale())->content !!}</span>
-                </a>
-                <a href="#defender" title="{!! __('default.pages.about.defender_title') !!}" data-fancybox="roles"
-                   class="roles-item">
-                    <img src="/assets/img/defender.svg" alt="">
-                    <span>{!! $textItems->firstWhere('element_id', 'defender__title_' . app()->getLocale())->content !!}</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
 
     <section>
         <div class="container">
@@ -1088,6 +1060,35 @@
                     <a href="#tribune" title="{{ __('default.pages.main.tribune_title') }}" data-fancybox=""
                        class="field-item"><img src="/assets/img/field/field-item-6.svg" alt=""></a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            {{--            <h2 class="title-primary">{!! __('default.pages.about.block_title_4') !!}</h2>--}}
+            <div class="plain-text plain-text__18">
+                {!! $textItems->firstWhere('element_id', 'hockey_block_desc_4_' . app()->getLocale())->content !!}
+            </div>
+
+            <div class="roles">
+                <a href="#goalkeeper" title="{!! __('default.pages.about.goalkeeper_title') !!}" data-fancybox="roles"
+                   class="roles-item">
+                    <img src="/assets/img/goalkeeper.svg" alt="">
+                    <span>{!! $textItems->firstWhere('element_id', 'goal_keeper__title_' . app()->getLocale())->content !!}</span>
+                </a>
+                <a href="#forward" title="{!! __('default.pages.about.forward_title') !!}" data-fancybox="roles"
+                   class="roles-item"
+                   style="margin-left: -3rem;">
+                    <img src="/assets/img/striker.svg" alt="">
+                    <span>{!! $textItems->firstWhere('element_id', 'forwarder__title_' . app()->getLocale())->content !!}</span>
+                </a>
+                <a href="#defender" title="{!! __('default.pages.about.defender_title') !!}" data-fancybox="roles"
+                   class="roles-item">
+                    <img src="/assets/img/defender.svg" alt="">
+                    <span>{!! $textItems->firstWhere('element_id', 'defender__title_' . app()->getLocale())->content !!}</span>
+                </a>
             </div>
         </div>
     </section>

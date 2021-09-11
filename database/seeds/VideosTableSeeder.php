@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class VideosTableSeeder extends Seeder
@@ -12,12 +14,12 @@ class VideosTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('videos')->delete();
-
+        
         \DB::table('videos')->insert(array (
-            0 =>
+            0 => 
             array (
                 'created_at' => '2020-05-05 16:17:14',
                 'id' => 1,
@@ -33,7 +35,7 @@ class VideosTableSeeder extends Seeder
                 'updated_at' => '2020-05-04 17:26:47',
             ),
         ));
-
-
+        
+        
     }
 }
