@@ -116,10 +116,28 @@ class PageController extends Controller
         ]);
     }
 
-    public function for_parents(Request $request, $lang = "ru")
+    public function faq(Request $request, $lang = "ru")
     {
         $textItems = Text::with('video')->where('page', 'faq')->orderByDesc('id')->get();
         return view("app.pages.faq", [
+            "lang" => $lang,
+            'textItems' => $textItems
+        ]);
+    }
+
+    public function for_parents(Request $request, $lang = "ru")
+    {
+//        dd($request->all());
+        $textItems = Text::with('video')->where('page', 'parents')->orderByDesc('id')->get();
+        return view("app.pages.parents", [
+            "lang" => $lang,
+            'textItems' => $textItems
+        ]);
+    }
+    public function play(Request $request, $lang = "ru")
+    {
+        $textItems = Text::with('video')->where('page', 'play')->orderByDesc('id')->get();
+        return view("app.pages.play", [
             "lang" => $lang,
             'textItems' => $textItems
         ]);

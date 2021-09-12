@@ -244,7 +244,9 @@ Route::group(["middleware" => ["web"], "namespace" => "App"], function () {
         Route::get("/schools", "PageController@schools");
         Route::get("/school/{item}", "PageController@school");
 
-        Route::get("/faq", "PageController@for_parents");
+        Route::get("/faq", "PageController@faq");
+        Route::get("/play", "PageController@play");
+        Route::get("/parents", "PageController@for_parents");
         Route::get("/training", "PageController@for_parents_training");
         Route::get("/food", "PageController@for_parents_food");
         Route::get("/psychology", "PageController@for_parents_psychology");

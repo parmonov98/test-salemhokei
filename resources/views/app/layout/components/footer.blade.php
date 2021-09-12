@@ -29,10 +29,10 @@
                 <a href="#">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<style type="text/css">
-    .st0{fill:url(#SVGID_1_);}
-    .st1{fill:#FFFFFF;}
-</style>
+                        <style type="text/css">
+                            .st0{fill:url(#SVGID_1_);}
+                            .st1{fill:#FFFFFF;}
+                        </style>
                         <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="40.7386" y1="470.924" x2="586.2218" y2="-74.5592">
                             <stop  offset="0.0011" style="stop-color:#FBE18A"/>
                             <stop  offset="0.2094" style="stop-color:#FCBB45"/>

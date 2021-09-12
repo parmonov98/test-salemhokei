@@ -63,14 +63,18 @@ html {
 }
 
 .play-button {
-    width: 64px;
+    width: 32px;
     border: none;
     background: #009ee0;
     color: white;
     padding: 8px;
     height: 32px;
     border-radius: 32px;
-    /*visibility: hidden;*/
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* visibility: hidden; */
+    font-size: 12px;
 }
 
 .play-button:focus {

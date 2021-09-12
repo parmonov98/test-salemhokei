@@ -16,7 +16,7 @@ class VideoPlayer {
                 item.querySelector(`.play-button`).addEventListener('click', this.toggle);
                 item.querySelector(`video`).addEventListener('click', this.toggle);
                 if (this.options.autoplay == false){
-                    item.querySelector('.play-button').textContent = '❚❚';
+                    item.querySelector('.play-button').textContent = '►';
                 }
                 item.addEventListener('mouseenter', this.showPlayButton);
                 item.addEventListener('mouseleave', this.hidePlayButton);
@@ -43,8 +43,6 @@ class VideoPlayer {
     toggle = (e) => {
         const playerContainer = e.target.closest(`${this.options['selector']}`);
 
-        console.log(playerContainer)
-
         this.playerContainerElements.forEach((item) => {
             if (!item.isSameNode(playerContainer) && !item.querySelector('video').paused) {
                 item.querySelector('video').pause();
@@ -56,11 +54,11 @@ class VideoPlayer {
         if (video.paused) {
             video.play();
             video.muted = false;
-            playerContainer.querySelector('.play-button').textContent = '❚❚'
+            playerContainer.querySelector('.play-button').textContent = ' ❚❚ '
             playerContainer.querySelector('.play-button').style.visibility = 'visible';
         } else {
             video.pause()
-            playerContainer.querySelector('.play-button').textContent = '►'
+            playerContainer.querySelector('.play-button').textContent = ' ► '
             playerContainer.querySelector('.play-button').style.visibility = 'hidden';
 
         }

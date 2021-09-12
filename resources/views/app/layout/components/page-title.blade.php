@@ -2,8 +2,9 @@
     <div class="container">
         <div class="title-block text-center">
             <h1 class="title-primary">
-
+{{--                {{\Request::fullUrl()}}--}}
                 @foreach($MyNavBar->roots() as $item)
+{{--                    {{$item->url()}}--}}
                     @if($item->url() == \Request::fullUrl())
                         {!! $item->title !!}
                     @endif

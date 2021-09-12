@@ -25,6 +25,7 @@ class PageController extends Controller
         }
         $items = $query->get();
         $menuItems = MenuItem::select('id', 'label_kk as name_kk', 'label_ru as name_ru', 'link_ru as link_ru', 'link_kk as link_kk')->get();
+
         $menuItems->each(function ($item) {
             $item->is_published = 1;
             $item->is_static = 'static';
@@ -86,11 +87,7 @@ class PageController extends Controller
 
     public function faq(Request $request, MenuItem $item)
     {
-        $lang = App::getLocale();
-//        dd($lang);
         $textItems = Text::with('video')->where('page', 'faq')->orderByDesc('id')->get();
-
-//        dd($textItems);
 
         return view('admin.pages.faq', [
             'item' => $item,
@@ -98,9 +95,20 @@ class PageController extends Controller
         ]);
     }
 
+    public function parents(Request $request, MenuItem $item)
+    {
+//        dd($item);
+        $textItems = Text::with('video')->where('page', 'faq')->orderByDesc('id')->get();
+
+        return view('admin.pages.parents', [
+            'item' => $item,
+            'textItems' => $textItems
+        ]);
+    }
+
     public function editStaticPage(Request $request, MenuItem $item)
     {
-        // dd($item->link);
+//         dd($item->link);
         switch ($item->link) {
             case 'hockey':
                 return $this->hockey($request, $item);
@@ -112,6 +120,10 @@ class PageController extends Controller
                 break;
             case 'faq':
                  return $this->faq($request, $item);
+                 die;
+                break;
+            case 'parents':
+                 return $this->parents($request, $item);
                  die;
                 break;
             case 'school':
