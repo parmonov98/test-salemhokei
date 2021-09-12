@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/admin/vendors/bootstrap-daterangepicker/daterangepicker.css">
 
     <link rel="stylesheet" href="/assets/admin/css/main.css"/>
+    <link rel="stylesheet" href="/assets/admin/css/style.css"/>
 
     <style>
         .daterangepicker.single.ltr .ranges,
@@ -57,7 +58,7 @@
 
 
                 <section>
-                    <div class="container">
+                    <div class="custom-container">
                         <h2 class="title-primary" data-fancybox="map_desc" href="#schools_page__desc">
                             {!! $textItems->firstWhere('element_id', 'schools_page__desc_ru')->content !!}
                         </h2>

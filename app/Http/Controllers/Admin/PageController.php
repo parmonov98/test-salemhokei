@@ -87,10 +87,12 @@ class PageController extends Controller
     public function faq(Request $request, MenuItem $item)
     {
         $lang = App::getLocale();
-        dd($lang);
-        $textItems = Text::with('video')->where('page', 'schools')->orderByDesc('id')->get();
+//        dd($lang);
+        $textItems = Text::with('video')->where('page', 'faq')->orderByDesc('id')->get();
 
-        return view('admin.pages.schools', [
+//        dd($textItems);
+
+        return view('admin.pages.faq', [
             'item' => $item,
             'textItems' => $textItems
         ]);

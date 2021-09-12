@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/admin/vendors/bootstrap-daterangepicker/daterangepicker.css">
 
     <link rel="stylesheet" href="/assets/admin/css/main.css"/>
+    <link rel="stylesheet" href="/assets/admin/css/style.css" type="text/css" media="screen">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <style>
         .daterangepicker.single.ltr .ranges,
@@ -57,7 +58,7 @@
 
 
                     <section class="col-10">
-                        <div class="container">
+                        <div class="custom-container">
                             <h2 class="title-primary">{!! __('default.pages.about.block_title_4') !!}</h2>
                             <div class="plain-text plain-text__18"  href="#hockey_block_desc_4" data-fancybox="text_desc" class="text_desc-item">
                                 {!! $textItems->firstWhere('element_id', 'hockey_block_desc_4_ru')->content !!}
@@ -84,7 +85,7 @@
 
 
                     <section class="col-10">
-                        <div class="container">
+                        <div class="custom-container">
                             <div class="kit-plan">
                                 <div class="row row--multiline">
                                     <div class="col-xs-6 col-md-3">
@@ -545,7 +546,7 @@
 
 
                     <section class="col-10 field-plan">
-                        <div class="container">
+                        <div class="custom-container">
                             <h2 class="title-primary text-center" id="hockey_infrastructure_title">
                                 {!! $textItems->firstWhere('element_id', 'hockey_infrastructure_title_' . app()->getLocale())->content !!}
                             </h2>
