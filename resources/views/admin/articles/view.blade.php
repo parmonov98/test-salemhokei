@@ -57,8 +57,7 @@
             </div>
           </div>
         @endif
-        <form action="/admin/article/@if (empty($item->id)) add
-          @else{{ $item->id }} @endif" method="post"
+        <form action="/admin/article/@if (empty($item->id))add @else{{ $item->id }} @endif" method="post"
           enctype="multipart/form-data" class="form-horizontal form-label-left">
           {{ csrf_field() }}
           <div class="col-md-12 col-sm-12 col-xs-12">

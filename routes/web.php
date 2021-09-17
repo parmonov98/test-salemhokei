@@ -41,10 +41,21 @@ Route::group(["namespace" => "Admin"], function () {
             Route::post("/event/add", "EventController@save");
         });
 
+
+
         Route::group(["middleware" => "has.permission:page.create"], function () {
             Route::get("/page/add", "PageController@add");
             Route::post("/page/add", "PageController@save");
         });
+
+
+        // Страницы
+        Route::group(["middleware" => "has.permission:page.view"], function () {
+            Route::get("/pages", "PageController@index");
+//            Route::any("/page/{item}", "PageController@edit");
+            Route::get("/page/{item}", "PageController@edit");
+        });
+
 
         Route::group(["middleware" => "has.permission:user.create"], function () {
             Route::get("/user/add", "UserController@create");
@@ -119,13 +130,6 @@ Route::group(["namespace" => "Admin"], function () {
         });
         Route::group(["middleware" => "has.permission:event.delete"], function () {
             Route::delete("/event/{item}", "EventController@delete");
-        });
-
-        // Страницы
-        Route::group(["middleware" => "has.permission:page.view"], function () {
-
-            Route::get("/pages", "PageController@index");
-            Route::get("/page/{item}", "PageController@edit");
         });
 
         Route::group(["middleware" => "has.permission:page.view"], function () {

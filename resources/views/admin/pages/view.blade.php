@@ -15,6 +15,7 @@
             float: none;
         }
     </style>
+{{--    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="screen" />--}}
 @endsection
 @section('scripts')
     <script type="text/javascript">
@@ -587,36 +588,37 @@
 
 
                                 </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6">
 
-                                    @can('page.delete')
-                                        @if (!empty($item))
-                                            <form action='{{ route('page.delete', ['item', $item->id]) }}'
-                                                  method="POST">
-                                                {{ csrf_field() }}
-                                                {{ method_field('DELETE') }}
-                                                <div class="input-group">
-                                                    <span class="input-group-addon" style="width: 100%">При удалении, все данные будут
-                                                        удалены</span>
-                                                                        <span class="input-group-btn">
-                                                        <button class="btn btn-danger">Удалить</button>
-                                                    </span>
-                                                </div>
-                                            </form>
-                                        @endif
-                                    @endcan
-                                </div>
                             </div>
                             <div class="row">
+                                <input type="submit" class="btn btn-success" value="Сохранить">
                                 @if (!empty($item->id))
-                                    @can('page.edit')
-                                        <input type="submit" class="btn btn-success" value="Сохранить">
+                                    @can('page')
                                     @endcan
                                 @endif
                             </div>
                         </div>
                     </div>
                 </form>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+
+                        @can('page.delete')
+                            @if (!empty($item))
+                                <form action='/admin/page/{{$item->id}}'
+                                      method="POST">
+                                    {{ csrf_field() }}
+                                    {{ method_field('DELETE') }}
+                                    <div class="input-group">
+                                                    <span class="input-group-addon" style="width: 100%">При удалении, все данные будут
+                                                        удалены</span>
+                                        <span class="input-group-btn">
+                                                        <button class="btn btn-danger">Удалить</button>
+                                                    </span>
+                                    </div>
+                                </form>
+                            @endif
+                        @endcan
+                    </div>
 
 
             </div>

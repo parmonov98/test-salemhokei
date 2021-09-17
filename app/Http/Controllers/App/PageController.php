@@ -128,10 +128,12 @@ class PageController extends Controller
     public function for_parents(Request $request, $lang = "ru")
     {
 //        dd($request->all());
-        $textItems = Text::with('video')->where('page', 'parents')->orderByDesc('id')->get();
+//        $textItems = Text::with('video')->where('page', 'parents')->orderByDesc('id')->get();
+//        dd($textItems);
+//        dd($ParentsNavBar->roots());
         return view("app.pages.parents", [
             "lang" => $lang,
-            'textItems' => $textItems
+//            'textItems' => $textItems
         ]);
     }
     public function play(Request $request, $lang = "ru")

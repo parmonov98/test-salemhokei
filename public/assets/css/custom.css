@@ -132,11 +132,11 @@ body {
 
 .footer .footer-socials {
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer .footer-socials a {
-    width: 64px;
+    width: 42px;
     display: inline-block;
 }
 
@@ -202,6 +202,20 @@ body {
         height: auto;
         padding: 1rem 0;
     }
+
+
+    .mobile-applications{
+        flex-direction: row;
+    }
+    .mobile-applications > div{
+        flex: 1;
+    }
+    .mobile-applications a {
+        width: 50%;
+    }
+    .mobile-applications a > svg{
+        width: 100%;
+    }
 }
 
 @media (max-width: 1140px) and (min-width: 769px) {
@@ -209,7 +223,6 @@ body {
     .banner {
         height: auto;
     }
-
 
 }
 
