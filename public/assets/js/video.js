@@ -15,8 +15,8 @@ class VideoPlayer {
                     item.querySelector('.fullscreen').addEventListener('click', this.toggleFullscreen);
                 item.querySelector(`.play-button`).addEventListener('click', this.toggle);
                 item.querySelector(`video`).addEventListener('click', this.toggle);
+                item.querySelector('.play-button').innerHTML = `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512"><g></g><path d="M152.443 136.417l207.114 119.573-207.114 119.593z" fill="#ffffff" /></svg>`;
                 if (this.options.autoplay == false){
-                    item.querySelector('.play-button').textContent = '►';
                 }
                 item.addEventListener('mouseenter', this.showPlayButton);
                 item.addEventListener('mouseleave', this.hidePlayButton);
@@ -46,7 +46,7 @@ class VideoPlayer {
         this.playerContainerElements.forEach((item) => {
             if (!item.isSameNode(playerContainer) && !item.querySelector('video').paused) {
                 item.querySelector('video').pause();
-                item.querySelector('.play-button').textContent = '►';
+                item.querySelector('.play-button').innerHTML = `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512"><g></g><path d="M152.443 136.417l207.114 119.573-207.114 119.593z" fill="#ffffff" /></svg>`;
             }
         });
 
@@ -54,11 +54,11 @@ class VideoPlayer {
         if (video.paused) {
             video.play();
             video.muted = false;
-            playerContainer.querySelector('.play-button').textContent = ' ❚❚ '
+            playerContainer.querySelector('.play-button').innerHTML = `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512"><g></g><path d="M162.642 148.337h56.034v215.317h-56.034v-215.316z" fill="#ffffff" /><path d="M293.356 148.337h56.002v215.317h-56.002v-215.316z" fill="#ffffff" /></svg>`;
             playerContainer.querySelector('.play-button').style.visibility = 'visible';
         } else {
             video.pause()
-            playerContainer.querySelector('.play-button').textContent = ' ► '
+            playerContainer.querySelector('.play-button').innerHTML = `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512"><g></g><path d="M152.443 136.417l207.114 119.573-207.114 119.593z" fill="#ffffff" /></svg>`;
             playerContainer.querySelector('.play-button').style.visibility = 'hidden';
 
         }
@@ -66,7 +66,7 @@ class VideoPlayer {
     pause() {
         this.playerContainerElements.forEach((item) => {
             item.querySelector('video').pause();
-            item.querySelector('.play-button').textContent = '►';
+            item.querySelector('.play-button').innerHTML = `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512"><g></g><path d="M152.443 136.417l207.114 119.573-207.114 119.593z" fill="#ffffff" /></svg>`;
         });
     }
 
