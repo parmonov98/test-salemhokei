@@ -233,3 +233,62 @@ body {
 .ytp-contextmenu {
     display: none;
 }
+
+
+svg [data-name="background-layer"]{
+    fill: transparent !important;
+    transition: .3s;
+}
+svg:hover [data-name="background-layer"]{
+    transition: .2s;
+    fill: #1aa6e0 !important;
+}
+svg [data-name="text-layer"] path
+,svg [data-name="text-layer"]{
+    transition: .3s;
+    fill: #1aa6e0 !important;
+}
+svg:hover [data-name="text-layer"],
+svg:hover [data-name="text-layer"] path
+{
+    transition: .2s;
+    fill: #fff !important;
+}
+
+svg [data-name="transparent-layer"]{
+    transition: .3s;
+}
+svg:hover [data-name="transparent-layer"]{
+    opacity: 0 !important;
+    transition: .2s;
+}
+
+/*#welcome-wrapper #transparent-layer{*/
+/*    opacity: .80;*/
+/*    transition: .3s;*/
+/*}*/
+/*#welcome-wrapper:hover #transparent-layer{*/
+/*    opacity: 0;*/
+/*    transition: .2s;*/
+/*}*/
+/*#wrapper-playing-child #transparent-layer{*/
+/*    transition: .3s;*/
+/*}*/
+/*#wrapper-playing-child:hover #transparent-layer{*/
+/*    opacity: 0;*/
+/*    transition: .2s;*/
+/*}*/
+/*#wrapper-interested #transparent-layer{*/
+/*    transition: .3s;*/
+/*}*/
+/*#wrapper-interested:hover #transparent-layer{*/
+/*    opacity: 0;*/
+/*    transition: .2s;*/
+/*}*/
+
+/*#wrapper-learn-more:hover #fill-background-on-hover{*/
+/*    opacity: 1;*/
+/*}*/
+/*#wrapper-learn-more:hover #disable-on-hover{*/
+/*    opacity: 0;*/
+/*}*/
