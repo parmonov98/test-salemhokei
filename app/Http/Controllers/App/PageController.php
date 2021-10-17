@@ -19,12 +19,15 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use App\Helpers\EmailHelper;
 use App\Models\Page;
+use App\Models\Schoreg;
 
 
 class PageController extends Controller
 {
     public function index(Request $request, $lang = "ru")
     {
+
+       
         $articles = Article::orderBy("published_at", "desc")
             ->where("is_published", "=", 1);
         $articles = $articles->take(5)->get();
@@ -75,7 +78,8 @@ class PageController extends Controller
 
     public function schools(Request $request, $lang = "ru")
     {
-
+// dd($lang);
+       
         $regions = Region::all();
         $schools = Section::where("is_published", "=", 1)->with('regions')->paginate(6);
 //        $schools = Section::where("is_published", "=", 1)->with('regions')->get();
@@ -100,6 +104,72 @@ class PageController extends Controller
             'textItems' => $textItems,
             "lang" => $lang
         ]);
+    }
+
+    public function schoolreg(Request $request, $lang = 'ru')
+    {
+        $data = $request->except('_token');
+        $this->validate($request, [
+            "first_name" => "required", "last_name"=> "required", 
+            "email"=> "required|email", "phone"=> "required", "avatar", 
+            "sex", "cite"=> "required", "shool"=> "required",       
+        ]);
+
+        if(Schoreg::where('email',$data['email'])->count()===0)
+         {
+         $item = new Schoreg;
+         $item->first_name = $data['first_name']; 
+         $item->last_name = $data['last_name'];
+         $item->email = $data['email'];$item->phone = $data['phone'];
+         $item->cite = $data['cite'];$item->shool = $data['shool']; $item->lang = $lang;
+         if($item->save()){
+
+            $this->reg_mail($data['first_name'],$data['last_name'],$data['email'],$lang);
+
+            return response()->json(['success'=>'Ajax request submitted successfully']);
+         }else{
+            return response()->json(['error'=>'Ajax request submitted successfully']);
+         }
+        // dd($data );
+
+
+         }else{
+            return response()->json(['error'=>'Oldindan mavjut']);
+         }
+    }
+
+
+
+    public function reg_mail($first_name,$last_name,$email, $lang = 'ru')
+    {
+        $request = $first_name.' '.$last_name;
+
+        Mail::send('app.pages.emails.school', ['data' => $request], function ($m) use ($email) {
+                $m->from(env('MAIL_USERNAME'), 'Salem Hokei');
+                $m->to($email, 'Receiver')->subject('Сообщение с сайта');
+        });
+
+        return redirect()->back()->with('success', 'message send!');
+    }
+
+
+
+
+    public function schooll(Request $request, $lang = 'ru')
+    {
+        $data = $request->except('_token');
+        $item = Section::get();
+        // dd($item->count());
+if($item->count()==0){
+          $s = '<option value="">-Tanlang-</option>';
+}
+else{
+         $s = '<option value="">-Tanlang-</option>';
+    foreach ($item as $key => $value) {
+         $s .= '<option value="'.$value->id.'">'.$value['name_'.$lang].'</option>';
+        }
+    }
+return ['select'=>$s];
     }
 
     public function school(Request $request, $lang = 'ru', $alias)

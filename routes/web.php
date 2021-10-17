@@ -247,6 +247,8 @@ Route::group(["middleware" => ["web"], "namespace" => "App"], function () {
 
         Route::get("/schools", "PageController@schools");
         Route::get("/school/{item}", "PageController@school");
+        Route::post("/schooll", "PageController@schooll")->name('schooll');
+        Route::post("/schoolreg", "PageController@schoolreg")->name('schoolreg');
 
         Route::get("/faq", "PageController@faq");
         Route::get("/play", "PageController@play");
