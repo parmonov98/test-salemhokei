@@ -93,6 +93,7 @@ class PageController extends Controller
             })->paginate(6);
         }
 
+        $regItems = Region::get();
         $textItems = Text::where('page', 'schools')->get();
 //        dd($textItems);
 //        dd(Menu::get('school'));
@@ -102,6 +103,7 @@ class PageController extends Controller
             "schools" => $schools,
             "regions" => $regions,
             'textItems' => $textItems,
+            'regItems' => $regItems,
             "lang" => $lang
         ]);
     }

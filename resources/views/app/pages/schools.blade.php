@@ -369,14 +369,10 @@
 
 
   <select name="cite" id="gor" required="required">
+@if(isset($regItems))
 <option value="">-Tanlang-</option>
-<option value="1">-Tanlang1-</option>
-<option value="2">-Tanlang2-</option>
-
-@if(isset($yillar))
-<option value="">-Tanlang-</option>
-@foreach($yillar as $yil)
-<option value="{{$yil->id}}">{{$yil->name}}</option>
+@foreach($regItems as $regIt)
+<option value="{{$regIt->id}}">{{$regIt['name_'.$lang]}}</option>
 @endforeach
 @endif
    </select>
