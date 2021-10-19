@@ -35,7 +35,7 @@ class SectionController extends Controller
 
     public function notifications()
     {
-//dd(1);
+// dd(1);
         return view('admin.sections.notifications', [
             'item' => []
         ]);
@@ -127,6 +127,7 @@ class SectionController extends Controller
 
     public function update(Request $request, Section $item)
     {
+        // dd($request);
         $this->validate($request, [
             "name_ru" => "required|min:3|max:255",
             "alias" => "unique:articles,alias",
@@ -158,6 +159,7 @@ class SectionController extends Controller
         $alias = $request->get("alias", Str::slug($item->id . "-" . $request->get("name_ru")));
         $alias = $alias !== null ? $alias : Str::slug($item->id . "-" . $request->get("name_ru"));
         $item->alias = $alias;
+        $item->satrud = $request->satrud;
         $item->is_published = $request->get("is_published");
 
         $item->save();

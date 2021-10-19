@@ -370,7 +370,7 @@
 
   <select name="cite" id="gor" required="required">
 @if(isset($regItems))
-<option value="">-Tanlang-</option>
+<option value="">----</option>
 @foreach($regItems as $regIt)
 <option value="{{$regIt->id}}">{{$regIt['name_'.$lang]}}</option>
 @endforeach
@@ -381,7 +381,7 @@
 
 <select name="shool" id="shool" required="required">
 @if(isset($kurslar))
-<option value="">-Tanlang-</option>
+<option value="">----</option>
 @foreach($kurslar as $l=>$semes)
 <option value="{{$semes->id}}" {{($semes->parent==0)?'disabled':''}}>{{($semes->parent==0)?$semes->name:'..'.$semes->name}} </option>
 @endforeach

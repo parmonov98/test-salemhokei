@@ -85,6 +85,7 @@ class PageController extends Controller
 //        $schools = Section::where("is_published", "=", 1)->with('regions')->get();
 
         $type = $request->type;
+
         if (empty($type)) {
             $schools = [];
         } else {
@@ -155,23 +156,37 @@ class PageController extends Controller
     }
 
 
+public function shkola($id)
+    {
+
+        if (empty($id)) {
+            $schools = [];
+        } else {
+            $schools = Section::where('is_published', '=', 1)->with('regions')->whereHas('regions', function ($query) use ($id) {
+                $query->where('regions.id', '=', $id);
+            })->get();
+        }
+        return $schools;
+    }
 
 
     public function schooll(Request $request, $lang = 'ru')
     {
         $data = $request->except('_token');
-        $item = Section::get();
-        // dd($item->count());
-if($item->count()==0){
-          $s = '<option value="">-Tanlang-</option>';
-}
-else{
-         $s = '<option value="">-Tanlang-</option>';
-    foreach ($item as $key => $value) {
-         $s .= '<option value="'.$value->id.'">'.$value['name_'.$lang].'</option>';
-        }
+     
+    $item = $this->shkola($data['gor']); 
+
+
+   if($data['gor']=='' ||  $item->count()==0){
+          $s = '<option value="">----</option>';
     }
-return ['select'=>$s];
+    else{
+             $s = '<option value="">-----</option>';
+        foreach ($item as $key => $value) {
+             $s .= '<option value="'.$value->id.'">'.$value['name_'.$lang].'</option>';
+            }
+        }
+        return ['select'=>$s];
     }
 
     public function school(Request $request, $lang = 'ru', $alias)

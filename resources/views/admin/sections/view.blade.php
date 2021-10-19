@@ -60,7 +60,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2>Школа</h2>
+                                <h2>Школа</h2> 
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li style="float: right!important;">
                                         <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
@@ -90,6 +90,19 @@
                                             <div role="tabpanel" class="tab-pane fade @if($key == 0) active in @endif"
                                                  id="tab_{{ $language }}_content"
                                                  aria-labelledby="home-tab">
+                                                
+                                                
+
+                                <div class="form-group">
+                                    <label>
+                                        <!-- <input name="satrud" value="0" type="radio"> -->
+                                        <input name="satrud" type="checkbox" class="js-switch"
+                                               @if($item->satrud == 1) checked="checked" @endif> С нами сотрудничает
+                                    </label>
+                                </div>
+
+
+
                                                 <div class="form-group {{ $errors->has("name_$language") ? " has-error" : "" }}">
                                                     <label for="{{ "name_$language" }}">Название<span
                                                                 class="required">*</span></label>

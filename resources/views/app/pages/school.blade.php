@@ -24,7 +24,7 @@
                         <div class="article-sidebar margin-50">
                             <img src="{!! $item->avatar !!}" class="article__image article__image--school" alt="">
                             <div class="text-center">
-                                <a href="#testLesson" title="{{ __("default.pages.schools.testLesson") }}" data-fancybox="" class="btn">{{ __("default.pages.schools.testLesson") }}</a>
+                               
                             </div>
                         </div>
                         <div class="share">
