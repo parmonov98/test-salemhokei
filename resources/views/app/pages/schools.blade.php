@@ -302,6 +302,7 @@
                                         <a href="/{{$lang}}/school/{{$school->alias}}"
                                            title="{{ __("default.pages.schools.detail") }}"
                                            class="btn btn--arrow btn--red">{{ __("default.pages.schools.detail") }}</a>
+                                          @if($school->satrud=='on') <a class="btn" style="margin-left: 10%;">SALEM HOKEI</a>@endif
                                     </div>
                                 </div>
                             </div>
@@ -344,13 +345,13 @@
 #modal_form { background-image: url('/images/icons/frru.svg');}
 #modal_form2 {background-image: url('/images/icons/sentru.svg');  width: 420px; height: 200px;border-radius: 5px; position: fixed;left: 47%;  margin-top: -150px; margin-left: -150px;  display: none; opacity: 0; z-index: 5; padding: 20px 10px;
 }
-#modal_form3 {background-image: url('/images/icons/sentru.svg');  width: 420px; height: 200px;border-radius: 5px; position: fixed;left: 47%;  margin-top: -150px; margin-left: -150px;  display: none; opacity: 0; z-index: 5; padding: 20px 10px;}
+#modal_form3 {background-image: url('/images/icons/essentru.svg');  width: 420px; height: 200px;border-radius: 5px; position: fixed;left: 47%;  margin-top: -150px; margin-left: -150px;  display: none; opacity: 0; z-index: 5; padding: 20px 10px;}
 </style>
 @else
 <style type="text/css"> 
 #modal_form { background-image: url('/images/icons/frkk.svg');}
 #modal_form2 {background-image: url('/images/icons/sentkk.svg');width: 420px; height: 200px;border-radius: 5px; position: fixed;left: 47%;  margin-top: -150px; margin-left: -150px;  display: none; opacity: 0; z-index: 5; padding: 20px 10px;}
-#modal_form3 {background-image: url('/images/icons/sentkk.svg');width: 490px; height: 200px;border-radius: 5px; position: fixed;left: 47%;  margin-top: -150px; margin-left: -150px;  display: none; opacity: 0; z-index: 5; padding: 20px 10px;}
+#modal_form3 {background-image: url('/images/icons/essentkk.svg');width: 420px; height: 200px;border-radius: 5px; position: fixed;left: 47%;  margin-top: -150px; margin-left: -150px;  display: none; opacity: 0; z-index: 5; padding: 20px 10px;}
 
 </style>
 @endif
