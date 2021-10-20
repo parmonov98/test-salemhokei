@@ -127,7 +127,7 @@ class PageController extends Controller
          $item->cite = $data['cite'];$item->shool = $data['shool']; $item->lang = $lang;
          if($item->save()){
 
-            $this->reg_mail($data['first_name'],$data['last_name'],$data['email'],$lang);
+            $this->reg_mail($data['email'],$lang);
 
             return response()->json(['success'=>'Ajax request submitted successfully']);
          }else{
@@ -143,16 +143,32 @@ class PageController extends Controller
 
 
 
-    public function reg_mail($first_name,$last_name,$email, $lang = 'ru')
+    public function reg_mail($email, $lang = 'ru')
     {
-        $request = $first_name.' '.$last_name;
+        if($lang=='kk'){ $url = 'app.pages.emails.schoolkk'; 
+        }else{$url = 'app.pages.emails.schoolru';   }
 
-        Mail::send('app.pages.emails.school', ['data' => $request], function ($m) use ($email) {
+        // dd($email.' ' .$lang.' '.$url.' '.$namesent);
+
+        Mail::send($url, ['data' => 'SALEM HOKEI'], function ($m) use ($email) {
                 $m->from(env('MAIL_USERNAME'), 'Salem Hokei');
                 $m->to($email, 'Receiver')->subject('Сообщение с сайта');
         });
 
         return redirect()->back()->with('success', 'message send!');
+    }
+
+
+    public function sendmail()
+    {
+        $email = 'test@mail.com';
+        $request = 'Salem Hokei';
+        Mail::send('app.pages.emails.schoolru', ['data' => $request], function ($m) use ($email) {
+                $m->from(env('MAIL_FROM_ADDRESS'), 'Salem Hokei');
+                $m->to($email, 'Receiver')->subject('Сообщение с сайта');
+        });
+
+        // dd('successfully sent');
     }
 
 
