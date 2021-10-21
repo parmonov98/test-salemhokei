@@ -3,8 +3,9 @@
 @section("title",__("default.site_name").' | '.__("default.pages.schools.title"))
 
 @section("content")
-
+@if($schools == null) 
     <link rel="stylesheet" href="{{asset('assets/css/stform.css')}}">
+@endif
 
 <div class="header-last"><div id="preloader"></div></div>
 
@@ -302,7 +303,7 @@
                                         <a href="/{{$lang}}/school/{{$school->alias}}"
                                            title="{{ __("default.pages.schools.detail") }}"
                                            class="btn btn--arrow btn--red">{{ __("default.pages.schools.detail") }}</a>
-                                          @if($school->satrud=='on') <a class="btn" style="margin-left: 10%;">SALEM HOKEI</a>@endif
+                                          @if($school->satrud==1) <a class="btn" style="margin-left: 10%;">SALEM HOKEI</a>@endif
                                     </div>
                                 </div>
                             </div>
@@ -356,8 +357,8 @@
 </style>
 @endif
 
-
-<div id="modal_form"><!-- Само окно --> 
+@if($schools == null)
+<div  id="modal_form" ><!-- Само окно --> 
       <span id="modal_close"></span> <!-- Кнопка закрыть --> 
       <!-- Тут любое содержимое -->
 
@@ -556,7 +557,7 @@
 
 </div>
 <div id="overlay"></div><!-- Подложка -->
-
+@endif
 
 <div id="modal_form2"><span id="modal_close"></span><div class="form-int"></div></div>
 <div id="overlay"></div><!-- Подложка -->

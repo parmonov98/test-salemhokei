@@ -98,7 +98,7 @@ class SectionController extends Controller
 
         $item->save();
 
-        $item->alias = Str::slug($item->id . '-' . $request->name_ru);
+        $item->alias = str_limit(Str::slug($item->id . '-' . $request->name_ru),100); 
         $item->update(['alias' => Str::slug($item->id . '-' .$request->get("name_ru"))]);
         $item->alias = Str::slug($request->get("name_ru"));
 
@@ -160,7 +160,7 @@ class SectionController extends Controller
         $item->is_published = $request->is_published;
         $alias = $request->get("alias", Str::slug($item->id . "-" . $request->get("name_ru")));
         $alias = $alias !== null ? $alias : Str::slug($item->id . "-" . $request->get("name_ru"));
-        $item->alias = $alias;
+        $item->alias = str_limit($alias,100);
 
         $item->email = (isset($request->email))?$request->email:null;
 
