@@ -93,14 +93,6 @@
                                                 
                                                 
 
-                                <div class="form-group">
-                                    <label>
-                                        <!-- <input name="satrud" value="0" type="radio"> -->
-                                        <input name="satrud" type="checkbox" class="js-switch"
-                                               @if($item->satrud == 1) checked="checked" @endif> С нами сотрудничает
-                                    </label>
-                                </div>
-
 
 
                                                 <div class="form-group {{ $errors->has("name_$language") ? " has-error" : "" }}">
@@ -304,8 +296,26 @@
                                         @endforeach
                                     </select>
                                 </div>
+                            <hr>
+                               
 
-                                <br>
+
+                                <div class="form-group">
+                                    <label>
+                                        <input name="satrud" value="0" type="hidden">
+                                        <input name="satrud" value="1" type="checkbox" class="js-switch"
+                                               @if($item->satrud == 1) checked="checked" @endif> С нами сотрудничает
+                                    </label>
+                                </div>
+
+    <div class="form-group email">
+         <label for="email">E-mail</label>
+            <input type="text" name="email"    id="email" class="form-control" placeholder="Введите email школы"  value="@if($item->email != null) {{$item->email}} @endif">
+    </div>
+
+
+                                <hr>
+                                
                                 <div class="form-group">
                                     <label>
                                         <input name="is_published" value="0" type="hidden">
@@ -313,6 +323,12 @@
                                                @if($item->is_published == 1) checked="checked" @endif> Опубликовать
                                     </label>
                                 </div>
+
+
+
+
+
+
                                 @if(!empty($item->id))
                                     @can("section.edit")
                                         <input type="submit" class="btn btn-success" value="Сохранить">

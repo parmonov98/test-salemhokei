@@ -92,6 +92,8 @@ class SectionController extends Controller
         $item->open_graph_description_en = $request->open_graph_description_en;
         $item->open_graph_description_kk = $request->open_graph_description_kk;
         $item->avatar = $request->image;
+        $item->email = (isset($request->email))?$request->email:null;
+        $item->satrud = ($request->satrud==1)?$request->satrud:null;
         $item->is_published = $request->is_published;
 
         $item->save();
@@ -159,7 +161,15 @@ class SectionController extends Controller
         $alias = $request->get("alias", Str::slug($item->id . "-" . $request->get("name_ru")));
         $alias = $alias !== null ? $alias : Str::slug($item->id . "-" . $request->get("name_ru"));
         $item->alias = $alias;
-        $item->satrud = $request->satrud;
+
+        $item->email = (isset($request->email))?$request->email:null;
+
+
+
+
+        // dd($request);
+
+        $item->satrud = ($request->satrud==1)?$request->satrud:null;
         $item->is_published = $request->get("is_published");
 
         $item->save();

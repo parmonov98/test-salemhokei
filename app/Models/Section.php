@@ -98,7 +98,7 @@ class Section extends Model
         "name_ru", "description_ru", "accordion_ru", "employees_ru", "meta_title_ru", "meta_description_ru", "meta_keywords_ru",
         "name_kk", "description_kk", "accordion_kk", "employees_kk", "meta_title_kk", "meta_description_kk", "meta_keywords_kk",
         "name_en", "description_en", "accordion_en", "employees_en", "meta_title_en", "meta_description_en", "meta_keywords_en",
-        "parent_id", "alt", "satrud", "views", "is_published"
+        "parent_id", "alt", "satrud", "email", "views", "is_published"
     ];
 
     protected $guarded = [];
