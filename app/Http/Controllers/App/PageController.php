@@ -78,8 +78,8 @@ class PageController extends Controller
 
     public function schools(Request $request, $lang = "ru")
     {
-// dd($lang);
-       
+
+//        dd($lang);
         $regions = Region::all();
         $schools = Section::where("is_published", "=", 1)->with('regions')->paginate(6);
 //        $schools = Section::where("is_published", "=", 1)->with('regions')->get();

@@ -329,6 +329,7 @@
             {{--@endforeach--}}
             {{--</div>--}}
             {{--</div>--}}
+
             @if($schools != null)
                 <ul class="pagination">
                     {{ $schools->links('app.pages.paginate') }}

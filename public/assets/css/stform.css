@@ -1,142 +1,147 @@
+@media (min-width: 421px) {
+    #modal_form {
+        width: 523px;
+        height: 720px;
+        border-radius: 5px;
+        background: #fff;
+        position: fixed;
+        top: 30%;
+        left: 43%;
+        margin-top: -150px;
+        margin-left: -150px;
+        display: none;
+        opacity: 0;
+        z-index: 5;
+        padding: 20px 10px;
+    }
+
+    .form-int {
+        position: absolute;
+        bottom: 0;
+        margin: 20px 20px 4px 32px;
+    }
 
 
+    .form-int input {
+        width: 94%;
+        padding: 5px 9px;
+        margin-bottom: 28.5px;
+		font-size: 1.2em;
+    }
 
-@media (min-width: 421px){
-	#modal_form {
-	    width: 523px;
-	    height: 720px;
-	    border-radius: 5px;
-	    background: #fff;
-	    position: fixed;
-	    top: 30%;
-	    left: 43%;
-	    margin-top: -150px;
-	    margin-left: -150px;
-	    display: none;
-	    opacity: 0;
-	    z-index: 5;
-	    padding: 20px 10px;
-	}
-	.form-int {
-	    position: absolute;
-	    bottom: 0;
-	    margin: 20px 20px 4px 32px;
-		}
+    #gor, #shool {
+        width: 94%;
+        margin-bottom: 27px;
+        padding: 10px;
+    }
 
+    #svg410 {
+        height: 83px;
+        width: 431px;
+    }
 
-		.form-int input{    
-			width: 94%;
-		    padding: 9px;
-		    margin-bottom: 28.5px;
-		}
-
-		#gor, #shool {
-		    width: 94%;
-		    margin-bottom: 27px;
-		    padding: 10px;
-			}
-
-			#svg410{height: 83px; width: 431px;}
-
-			.cont {
-			  position: relative;
-			}
+    .cont {
+        position: relative;
+    }
 }
 
-@media (max-width: 420px){
-#modal_form {
-	width: 320px; 
-	height: 442px; 
-	border-radius: 5px;	
-	background: #fff;
-	position: fixed; 
-	top: 35% !important;
-	left: 50%; 
-	margin-top: -150px;
-	margin-left: -150px; 
-	display: none; 
-	opacity: 0; 
-	z-index: 5; 
-	padding: 20px 10px;
+@media (max-width: 420px) {
+    #modal_form {
+        width: 320px;
+        height: 442px;
+        border-radius: 5px;
+        background: #fff;
+        position: fixed;
+        top: 35% !important;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -150px;
+        display: none;
+        opacity: 0;
+        z-index: 5;
+        padding: 20px 10px;
+    }
+
+    .form-int {
+        position: absolute;
+        bottom: 0;
+        margin: 20px 20px 4px 20px;;
+    }
+
+    .form-int input {
+        width: 96%;
+        padding: 3px;
+        margin-bottom: 15px;
+    }
+
+    #gor, #shool {
+        width: 96%;
+        margin-bottom: 15px;
+        padding: 3px;
+    }
+
+    .cont {
+        position: relative;
+        width: 50%;
+        left: 23%;
+    }
+
 }
 
-.form-int{
-  position: absolute;
-    bottom: 0;
-    margin: 20px 20px 4px 20px;;
-}
-.form-int input{width: 96%;
-    padding: 3px;
-    margin-bottom: 15px;}
 
-#gor,#shool{
-  width: 96%;
-margin-bottom: 15px;
-padding: 3px;
-}
-
-.cont {
-  position: relative;
-  width: 50%;
-  left: 23%;
-}
-
-}
-
-
-
-/* Кнопка закрыть для тех кто в танке) */
-#modal_form #modal_close,#modal_form2 #modal_close {
-	width: 21px;
-	height: 21px;
-	position: absolute;
-	top: -25px;
+/* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ) */
+#modal_form #modal_close, #modal_form2 #modal_close {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: -25px;
     left: -25px;
-	cursor: pointer;
-	display: block;
-	 background-image:url(drawing.svg);
+    cursor: pointer;
+    display: block;
+    background-image: url(drawing.svg);
 }
-/* Подложка */
+
+/* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 #overlay {
-	z-index: 3; /* подложка должна быть выше слоев элементов сайта, но ниже слоя модального окна */
-	position: fixed; /* всегда перекрывает весь сайт */
-	background-color: #000; /* черная */
-	opacity: 0.8; /* но немного прозрачна */
-	width: 100%; 
-	height: 100%; /* размером во весь экран */
-	top: 0; 
-	left: 0; /* сверху и слева 0, обязательные свойства! */
-	cursor: pointer;
-	display: none; /* в обычном состоянии её нет) */
+    z-index: 3; /* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ */
+    position: fixed; /* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ */
+    background-color: #000; /* пїЅпїЅпїЅпїЅпїЅпїЅ */
+    opacity: 0.8; /* пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
+    width: 100%;
+    height: 100%; /* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ */
+    top: 0;
+    left: 0; /* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ 0, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ! */
+    cursor: pointer;
+    display: none; /* пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ) */
 }
 
 
-
-
-svg [data-name="background-layer"]{
+svg [data-name="background-layer"] {
     fill: transparent !important;
     transition: .3s;
 }
-svg:hover [data-name="background-layer"]{
+
+svg:hover [data-name="background-layer"] {
     transition: .2s;
     fill: #1aa6e0 !important;
 }
-svg [data-name="text-layer"] path
-,svg [data-name="text-layer"]{
+
+svg [data-name="text-layer"] path, svg [data-name="text-layer"] {
     transition: .3s;
     fill: #1aa6e0 !important;
 }
+
 svg:hover [data-name="text-layer"],
-svg:hover [data-name="text-layer"] path
-{
+svg:hover [data-name="text-layer"] path {
     transition: .2s;
     fill: #fff !important;
 }
 
-svg [data-name="transparent-layer"]{
+svg [data-name="transparent-layer"] {
     transition: .3s;
 }
-svg:hover [data-name="transparent-layer"]{
+
+svg:hover [data-name="transparent-layer"] {
     opacity: 0 !important;
     transition: .2s;
 }
@@ -144,16 +149,16 @@ svg:hover [data-name="transparent-layer"]{
 /*data-name="background-layer"*/
 
 
-   /* Container needed to position the button. Adjust the width as needed */
+/* Container needed to position the button. Adjust the width as needed */
 
 
 div#preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 99999;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  background:  rgba(255,255,255,.3) url('../../images/icons/preloader.gif') no-repeat center center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: rgba(255, 255, 255, .3) url('../../images/icons/preloader.gif') no-repeat center center;
 }
