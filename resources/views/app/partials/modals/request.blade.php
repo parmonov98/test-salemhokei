@@ -106,12 +106,12 @@
         {{--<a href="/" class="btn">На главную</a>--}}
     {{--</div>--}}
 </div>
-@if(session()->has('success'))
-    <script>
-        $.fancybox.open({
-            src: "#messageSuccess",
-            touch: false
-        })
-    </script>
+{{--@if(session()->has('success'))--}}
+{{--    <script>--}}
+{{--        $.fancybox.open({--}}
+{{--            src: "#messageSuccess",--}}
+{{--            touch: false--}}
+{{--        })--}}
+{{--    </script>--}}
 
-@endif
+{{--@endif--}}
