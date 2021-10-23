@@ -3,16 +3,18 @@
 @section("title",__("default.site_name").' | '.__("default.pages.schools.title"))
 
 @section("content")
-@if($schools == null) 
-    <link rel="stylesheet" href="{{asset('assets/css/stform.css')}}">
-@endif
+    @if($schools == null)
+        <link rel="stylesheet" href="{{asset('assets/css/stform.css')}}">
+    @endif
 
-<div class="header-last"><div id="preloader"></div></div>
+    <div class="header-last">
+        <div id="preloader"></div>
+    </div>
 
 
 
 
-<script type="text/javascript" src="/assets/admin/vendors/Flot/jquery.js"></script>
+    <script type="text/javascript" src="/assets/admin/vendors/Flot/jquery.js"></script>
 
     <div style="background-image: url(/assets/img/pattern1.png);
     background-size: 1440px; opacity: .5;" class="main-wrapper__bg"></div>
@@ -32,7 +34,7 @@
                                 <div class="privilege">
                                     <img src="/assets/img/privilege2.svg" alt="" class="privilege__img">
                                     <div class="privilege__text">
-                                        <span class="privilege__count" >
+                                        <span class="privilege__count">
                                             {!! $textItems->firstWhere('element_id', 'schools_count_' . app()->getLocale())->content !!}
                                         </span>
                                         <span class="privilege__title">
@@ -61,7 +63,7 @@
                                         <span class="privilege__count">
                                             {!! $textItems->firstWhere('element_id', 'children_teams_count_' . app()->getLocale())->content !!}
                                         </span>
-                                        <span                                            class="privilege__title">
+                                        <span class="privilege__title">
                                              {!! $textItems->firstWhere('element_id', 'children_teams_count_title_' . app()->getLocale())->content !!}
                                         </span>
                                     </div>
@@ -303,7 +305,8 @@
                                         <a href="/{{$lang}}/school/{{$school->alias}}"
                                            title="{{ __("default.pages.schools.detail") }}"
                                            class="btn btn--arrow btn--red">{{ __("default.pages.schools.detail") }}</a>
-                                          @if($school->satrud==1) <a class="btn" style="margin-left: 10%;">SALEM HOKEI</a>@endif
+                                        @if($school->satrud==1) <a class="btn" style="margin-left: 10%;">SALEM
+                                            HOKEI</a>@endif
                                     </div>
                                 </div>
                             </div>
@@ -342,329 +345,446 @@
 
 
 
-@if($lang=='ru')
-<style type="text/css"> 
-#modal_form { background-image: url('/images/icons/frru.svg');}
-#modal_form2 {background-image: url('/images/icons/sentru.svg');  width: 420px; height: 200px;border-radius: 5px; position: fixed;left: 47%;  margin-top: -150px; margin-left: -150px;  display: none; opacity: 0; z-index: 5; padding: 20px 10px;
-}
-#modal_form3 {background-image: url('/images/icons/essentru.svg');  width: 420px; height: 200px;border-radius: 5px; position: fixed;left: 47%;  margin-top: -150px; margin-left: -150px;  display: none; opacity: 0; z-index: 5; padding: 20px 10px;}
-</style>
-@else
-<style type="text/css"> 
-#modal_form { background-image: url('/images/icons/frkk.svg');}
-#modal_form2 {background-image: url('/images/icons/sentkk.svg');width: 420px; height: 200px;border-radius: 5px; position: fixed;left: 47%;  margin-top: -150px; margin-left: -150px;  display: none; opacity: 0; z-index: 5; padding: 20px 10px;}
-#modal_form3 {background-image: url('/images/icons/essentkk.svg');width: 420px; height: 200px;border-radius: 5px; position: fixed;left: 47%;  margin-top: -150px; margin-left: -150px;  display: none; opacity: 0; z-index: 5; padding: 20px 10px;}
+    @if($lang=='ru')
+        <style type="text/css">
+            #modal_form {
+                background-image: url(/assets/img/schools/form-bg-ru.svg);
+            }
 
-</style>
-@endif
+            #modal_form2 {
+                background-image: url('/images/icons/sentru.svg');
+                width: 420px;
+                height: 200px;
+                border-radius: 5px;
+                position: fixed;
+                left: 47%;
+                margin-top: -150px;
+                margin-left: -150px;
+                display: none;
+                opacity: 0;
+                z-index: 5;
+                padding: 20px 10px;
+            }
 
-@if($schools == null)
-<div  id="modal_form" ><!-- Само окно --> 
-      <span id="modal_close"></span> <!-- Кнопка закрыть --> 
-      <!-- Тут любое содержимое -->
+            #modal_form3 {
+                background-image: url('/images/icons/essentru.svg');
+                width: 420px;
+                height: 200px;
+                border-radius: 5px;
+                position: fixed;
+                left: 47%;
+                margin-top: -150px;
+                margin-left: -150px;
+                display: none;
+                opacity: 0;
+                z-index: 5;
+                padding: 20px 10px;
+            }
+        </style>
+    @else
+        <style type="text/css">
+            #modal_form {
+                background-image: url(/assets/img/schools/form-bg-kk.svg);
+            }
 
-  <div class="form-int" id="form">   
-    <input type="text" placeholder="..." name="first_name" id="first_name" required>
-    <input type="text" placeholder="..." name="last_name" id="last_name" required>
-    <input type="text" placeholder="..." name="email" id="email" required>
-    <input type="text" placeholder="..." name="phone" id="phone" required>
- 
+            #modal_form2 {
+                background-image: url('/images/icons/sentkk.svg');
+                width: 420px;
+                height: 200px;
+                border-radius: 5px;
+                position: fixed;
+                left: 47%;
+                margin-top: -150px;
+                margin-left: -150px;
+                display: none;
+                opacity: 0;
+                z-index: 5;
+                padding: 20px 10px;
+            }
 
+            #modal_form3 {
+                background-image: url('/images/icons/essentkk.svg');
+                width: 420px;
+                height: 200px;
+                border-radius: 5px;
+                position: fixed;
+                left: 47%;
+                margin-top: -150px;
+                margin-left: -150px;
+                display: none;
+                opacity: 0;
+                z-index: 5;
+                padding: 20px 10px;
+            }
 
-  <select name="cite" id="gor" required="required">
-@if(isset($regItems))
-<option value="">----</option>
-@foreach($regItems as $regIt)
-<option value="{{$regIt->id}}">{{$regIt['name_'.$lang]}}</option>
-@endforeach
-@endif
-   </select>
+        </style>
+    @endif
 
+    @if($schools == null)
+        <div id="modal_form"><!-- Само окно -->
+            <span id="modal_close"></span> <!-- Кнопка закрыть -->
+            <!-- Тут любое содержимое -->
 
+            <div class="form-int" id="form">
+                <div class="form-group">
+                    <label for="pwd">ИМЯ:</label>
+                    <input class="form-control" type="text" placeholder="..." name="first_name" id="first_name"
+                           required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">ФАМИЛИЯ:</label>
+                    <input class="form-control" type="text" placeholder="..." name="last_name" id="last_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">E-MAIL:</label>
+                    <input class="form-control" type="email" placeholder="..." name="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">ТЕЛЕФОН:</label>
+                    <input class="form-control" type="phone" placeholder="..." name="phone" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">ГОРОД:</label>
+                    <select name="cite" id="gor" required="required">
+                        @if(isset($regItems))
+                            <option value="">----</option>
+                            @foreach($regItems as $regIt)
+                                <option value="{{$regIt->id}}">{{$regIt['name_'.$lang]}}</option>
+                            @endforeach
+                        @endif
+                    </select>
+                </div>
 
-<select name="shool" id="shool" required="required">
-@if(isset($kurslar))
-<option value="">----</option>
-@foreach($kurslar as $l=>$semes)
-<option value="{{$semes->id}}" {{($semes->parent==0)?'disabled':''}}>{{($semes->parent==0)?$semes->name:'..'.$semes->name}} </option>
-@endforeach
-@endif
-   </select>
-
-
-
- 
-   
-
-
-
-
-<div class="cont">
-
-
-<a href="https://play.google.com/store/apps/" class="d-block h-75" id="sent">
-
-@if($lang=='ru')
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   id="svg410"
-   version="1.1"
-   viewBox="0 0 38 13"
-   height="13mm"
-   width="38mm">
-  <defs
-     id="defs404" />
-  <metadata
-     id="metadata407">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     transform="translate(0,-284)"
-     id="layer1">
-    <path id="path6" style="fill:#73aad5;fill-rule:evenodd;stroke-width:0.16678256" data-name="background-layer"
-       d="M 31.526129,296.42433 H 6.6093965 a 5.8415536,5.8332293 0 0 1 -5.84154941,-5.83322 v 0 A 5.8415536,5.8332293 0 0 1 6.6093965,284.75788 H 31.526129 a 5.8415536,5.8332293 0 0 1 5.841554,5.83323 v 0 a 5.8415536,5.8332293 0 0 1 -5.841554,5.83322 z" />
-    <path
-       id="path12"
-       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.16678256" 
-       d="m 4.1960035,288.41448 a 2.6704245,2.6666191 0 0 1 1.0681676,0.16667 1.0815219,1.0799808 0 0 1 0.5574522,0.60498 4.3277567,4.3215896 0 0 1 0,2.46829 1.0815219,1.0799808 0 0 1 -0.5574522,0.60498 3.4148053,3.4099392 0 0 1 -2.1296614,0 1.0815219,1.0799808 0 0 1 -0.5574521,-0.60498 4.3277567,4.3215896 0 0 1 0,-2.46829 1.0815219,1.0799808 0 0 1 0.5574521,-0.60498 2.6537343,2.6499527 0 0 1 1.0614938,-0.16667 z m 0.4172549,1.12164 a 0.50070459,0.49999108 0 0 0 -0.8345098,0 3.8687775,3.8632644 0 0 0 -0.00669,1.78164 0.50070459,0.49999108 0 0 0 0.8345035,0 3.808693,3.8032655 0 0 0 0,-1.77497 z" />
-    <polygon
-       id="polygon14"
-       style="fill:#ffffff;fill-rule:evenodd"
-       points="279.37,809.49 279.37,827.22 272.08,827.22 272.08,809.49 265.6,809.49 265.6,804.05 285.85,804.05 285.85,809.49 "
-       transform="matrix(0.16690153,0,0,0.16666369,-38.120212,154.48686)" />
-    <polygon
-       id="polygon16"
-       style="fill:#ffffff;fill-rule:evenodd"
-       points="308.38,827.22 301.1,827.22 301.1,808.82 295.39,808.82 295.39,827.22 288.1,827.22 288.1,804.05 308.38,804.05 "
-       transform="matrix(0.16690153,0,0,0.16666369,-38.120212,154.48686)" />
-    <path
-       id="path18"
-       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.16678256" 
-       d="m 13.983105,292.35441 v -3.8616 q 0.570806,-0.0567 1.637309,-0.0567 c 0.615865,0 1.038128,0.0917 1.263441,0.27499 0.225318,0.18333 0.333805,0.52999 0.333805,1.03998 0,0.50999 -0.103478,0.84832 -0.313777,1.02999 -0.210293,0.18165 -0.582483,0.27499 -1.121579,0.27499 a 5.1956446,5.1882408 0 0 1 -0.587491,-0.0333 v 1.33331 z m 1.216717,-2.15496 h 0.392218 a 0.45564118,0.45499188 0 0 0 0.333799,-0.09 0.53742293,0.53665709 0 0 0 0.08346,-0.35834 0.5674652,0.56665656 0 0 0 -0.08346,-0.36665 0.45397217,0.45332525 0 0 0 -0.333799,-0.0917 h -0.392218 z" />
-    <path
-       id="path20"
-       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.16678256"        d="m 19.58766,291.52109 h -1.058158 l -0.196938,0.83332 h -1.23841 l 1.001409,-3.54827 a 0.42726792,0.42665906 0 0 1 0.151879,-0.22666 0.40557072,0.40499277 0 0 1 0.25703,-0.0867 h 1.104888 a 0.40223269,0.4016595 0 0 1 0.257028,0.0867 0.42726792,0.42665906 0 0 1 0.151881,0.22666 l 1.001409,3.54827 h -1.23841 l -0.196946,-0.83332 z m -0.195274,-0.85165 -0.190265,-0.83332 c -0.03337,-0.16667 -0.05677,-0.32166 -0.06843,-0.44166 h -0.150214 c -0.02334,0.16666 -0.04504,0.32333 -0.06843,0.44166 l -0.190264,0.83332 z" />
-    <path
-       id="path22"
-       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.16678256" 
-       d="m 23.708463,290.33445 v 0.0333 a 0.85787385,0.85665136 0 0 1 0.640902,0.29166 1.1683107,1.1666458 0 0 1 0.193601,0.73165 c 0,0.38499 -0.106814,0.64833 -0.322116,0.79332 -0.215307,0.145 -0.574143,0.215 -1.078185,0.215 -0.819489,0 -1.437021,-0.015 -1.855946,-0.045 v -3.8616 q 0.570805,-0.045 1.669012,-0.045 0.824499,0 1.139942,0.21001 0.315442,0.20999 0.317113,0.79665 a 1.0247754,1.0233151 0 0 1 -0.166905,0.63332 0.73436676,0.73332028 0 0 1 -0.540761,0.24666 z m -1.233408,-0.33333 h 0.432281 a 0.39054958,0.38999304 0 0 0 0.280395,-0.0717 0.47400035,0.47332489 0 0 0 0.06675,-0.29667 0.42226087,0.42165914 0 0 0 -0.0701,-0.29166 0.435613,0.43499224 0 0 0 -0.288741,-0.0667 h -0.42059 z m 0,1.5783 h 0.448965 a 0.47233133,0.47165825 0 0 0 0.333806,-0.0833 0.54076096,0.53999037 0 0 0 0.07844,-0.34666 0.55411308,0.55332347 0 0 0 -0.07844,-0.35333 0.48401444,0.48332472 0 0 0 -0.333806,-0.0833 h -0.442285 z" />
-    <path
-       id="path24"
-       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.16678256" 
-       d="M 28.490191,292.35441 H 27.33523 v -1.7733 a 3.7569534,3.7515997 0 0 1 0.06175,-0.6 h -0.04006 a 3.1026995,3.0982781 0 0 1 -0.235336,0.59333 l -0.946327,1.77997 h -1.168315 v -3.8616 h 1.154961 v 1.71164 a 4.1725382,4.1665923 0 0 1 -0.06176,0.62832 h 0.04006 a 3.2812841,3.2766082 0 0 1 0.247012,-0.59332 l 0.941324,-1.74664 H 28.4835 Z" />
-    <polygon
-       id="polygon26"
-       style="fill:#ffffff;fill-rule:evenodd"
-       points="415.12,809.49 415.12,827.22 407.83,827.22 407.83,809.49 401.35,809.49 401.35,804.05 421.6,804.05 421.6,809.49 "
-       transform="matrix(0.16690153,0,0,0.16666369,-38.120212,154.48686)" />
-    <path
-       id="path28"
-       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.16678256" 
-       d="m 33.837715,289.81779 h 0.333799 c 0.594171,0 1.001408,0.09 1.228399,0.27166 0.226983,0.18166 0.333798,0.51832 0.333798,1.01498 0,0.49666 -0.103477,0.83332 -0.310434,1.01332 -0.206955,0.17999 -0.552443,0.27999 -1.03479,0.27999 q -1.154954,0 -1.742452,-0.045 h -0.03337 v -3.85993 h 1.21671 v 1.33331 z m 0,1.73996 h 0.333799 c 0.146878,0 0.240338,-0.0317 0.283738,-0.095 a 0.81614848,0.81498546 0 0 0 0.06508,-0.40333 0.84952881,0.84831821 0 0 0 -0.06508,-0.40832 c -0.0434,-0.0667 -0.13686,-0.1 -0.283738,-0.1 h -0.333799 z" />
-    <path
-       id="path8" 
-       style="fill:none;fill-rule:evenodd;stroke:#232765;stroke-width:0.38903704px;stroke-linecap:round;stroke-linejoin:round"
-       d="M 26.165251,296.41933 H 6.6093991 a 5.8415536,5.8332293 0 0 1 -5.84155391,-5.83322 v 0 a 5.8415536,5.8332293 0 0 1 3.94722131,-5.51657" />
-    <path
-       id="path10"
-       style="fill:none;fill-rule:evenodd;stroke:#232765;stroke-width:0.3892372px;stroke-linecap:round;stroke-linejoin:round"
-       d="M 6.6093991,284.75788 H 31.526129 a 5.8415536,5.8332293 0 0 1 5.841554,5.83323 v 0 a 5.8415536,5.8332293 0 0 1 -5.841554,5.83322" />
-  </g>
-</svg>
-
-
-@else
-
-
-<svg   xmlns:dc="http://purl.org/dc/elements/1.1/"   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"   width="41mm"   height="13mm"   viewBox="0 0 41 13"
-   version="1.1"   id="svg410"   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"   sodipodi:docname="btnkk2.svg">
-  <defs     id="defs404">    <pattern       y="0"       x="0"       height="6"       width="6"    patternUnits="userSpaceOnUse"       id="EMFhbasepattern" />  </defs>
-  <sodipodi:namedview     id="base"    pagecolor="#ffffff"    bordercolor="#666666"    borderopacity="1.0"    inkscape:pageopacity="0.0"     inkscape:pageshadow="2"    inkscape:zoom="4"    inkscape:cx="56.446315"    inkscape:cy="-5.1108573"     inkscape:document-units="mm"    inkscape:current-layer="layer1"    showgrid="false"    inkscape:window-width="1366"     inkscape:window-height="705"    inkscape:window-x="-8"    inkscape:window-y="-8"    inkscape:window-maximized="1"     showguides="true"    inkscape:guide-bbox="true" />
-  <metadata     id="metadata407">    <rdf:RDF>      <cc:Work         rdf:about="">        <dc:format>image/svg+xml</dc:format>        <dc:type           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>      </cc:Work>    </rdf:RDF>
-  </metadata>
-  <g     inkscape:label="Layer 1"     inkscape:groupmode="layer"     id="layer1"     transform="translate(0,-284)">
-    <path       inkscape:connector-curvature="0"       d="M 34.084564,296.26396 H 6.8769341 a 6.3786385,5.7239369 0 0 1 -6.37863399,-5.72394 v 0 A 6.3786385,5.7239369 0 0 1 6.8769341,284.81608 H 34.084564 a 6.3786385,5.7239369 0 0 1 6.37864,5.72394 v 0 a 6.3786385,5.7239369 0 0 1 -6.37864,5.72394 z" data-name="background-layer"       style="fill:#73aad5;fill-rule:evenodd;stroke-width:0.17264076"
-       id="path6" />
-    <path       inkscape:connector-curvature="0"       d="m 12.955554,292.78422 v -4.89288 c 0.576233,-0.0101 0,0 1.662187,-0.006 l 0.009,4.90081 z"       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.22047947"
-       id="path18"        sodipodi:nodetypes="ccccc" />
-    <path       inkscape:connector-curvature="0"       d="m 17.56427,289.73066 0.906769,0.008 c 0.338731,0.002 0.980283,0.002 1.47982,0.40955 0.227889,0.21988 0.454676,0.28609 0.454676,1.09369 0,0.48781 0,0.9548 -0.442995,1.27183 -0.296959,0.18372 -0.791877,0.27242 -1.487068,0.27242 -1.130268,0 -1.981987,-0.019 -2.559784,-0.057 v -4.89288 l 4.315447,0.008 v 0.98659 H 17.56427 Z m -0.0096,2.01664 h 0.619229 c 0.162477,0.0192 0.32686,-0.0185 0.460395,-0.10558 0.08905,-0.13102 0.163518,-0.29249 0.144522,-0.4459 0.01966,-0.15614 -0.05478,-0.30714 -0.144522,-0.44103 -0.134188,-0.0857 -0.298013,-0.1233 -0.460395,-0.10558 h -0.610015 z"       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.22047947"
-       id="path22"       sodipodi:nodetypes="cccccscccccccccccccc" />
-    <path       inkscape:connector-curvature="0"
-       d="m 21.696383,292.78615 -0.0019,-1.66426 0.01068,-1.63474 0.0056,-1.60323 h 4.492268 l -0.0055,0.98376 h -2.737948 v 0.87993 H 26.1975 v 0.94659 h -2.737917 v 1.07992 H 26.1975 l -2e-6,1.01203 z"       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.21343441"       id="path24"       sodipodi:nodetypes="ccccccccccccccc" />
-    <path       inkscape:connector-curvature="0"       d="M 29.181613,291.11266 H 29.642 c 0.819499,0 1.381175,-0.11367 1.694247,-0.34311 0.313064,-0.22945 0.460387,-0.65468 0.460387,-1.28198 0,-0.62731 -0.142721,-1.05254 -0.428161,-1.27988 -0.28544,-0.22735 -0.761948,-0.35366 -1.427217,-0.35366 q -1.592951,0 -2.403247,0.0568 h -0.04603 v 4.87532 h 1.678127 v -1.68404 z m 0,-2.19767 H 29.642 c 0.202578,0 0.331482,0.04 0.39134,0.11999 a 1.125659,1.0293744 0 0 1 0.08977,0.50942 1.1716982,1.0714757 0 0 1 -0.08977,0.51574 c -0.05986,0.0842 -0.188762,0.12631 -0.39134,0.12631 h -0.460387 z"
-       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.22013102"       id="path28" />
-    <path inkscape:connector-curvature="0" d="M 28.418019,296.30524 H 7.1634199 a 6.3489884,5.7827447 0 0 1 -6.34898876,-5.78275 v 0 a 6.3489884,5.7827447 0 0 1 4.29010226,-5.46882" style="fill:none;fill-rule:evenodd;stroke:#232765;stroke-width:0.40382341px;stroke-linecap:round;stroke-linejoin:round"  id="path8" />
-    <path
-       inkscape:connector-curvature="0"
-       d="M 7.1634199,284.74471 H 34.244577 a 6.3489884,5.7827447 0 0 1 6.348989,5.78274 v 0 a 6.3489884,5.7827447 0 0 1 -6.348989,5.78275"
-       style="fill:none;fill-rule:evenodd;stroke:#232765;stroke-width:0.40403122px;stroke-linecap:round;stroke-linejoin:round"
-       id="path10" />
-    <path
-       inkscape:connector-curvature="0"
-       d="m 7.3092511,289.89767 c 0,0 -0.5707361,-1.344 -1.1931252,-1.70443 -0.4324392,-0.25043 -1.5219766,-0.1772 -1.5219766,-0.1772 l -0.047217,1.02891 c 0,0 0.450468,-0.0579 0.7025008,0.15313 0.3008512,0.25192 0.2826858,0.94435 0.8693322,1.1433 -0.6371283,0.26201 -0.9475629,0.98723 -0.9475629,0.98723 l -0.7485664,1.4405 1.6760733,0.0116 c 0,0 0.9540359,-1.8398 1.2111479,-1.86437 -0.00235,0.1027 -0.011006,1.86981 -0.011006,1.86981 l 1.489501,-0.005 0.028824,-1.85663 c 0.086194,-0.0664 1.1249631,1.70446 1.1817161,1.85573 0.2212937,-0.004 1.2687587,0.006 1.6677137,0.003 -0.06205,-0.13648 -0.24382,-0.51183 -0.539685,-1.07368 -0.123899,-0.23557 -0.510537,-1.19047 -1.1599927,-1.34799 0.3657957,-0.17075 0.5216567,-0.42308 0.7216967,-0.9641 0.210832,-0.37603 0.596047,-0.36036 0.829229,-0.35941 2.52e-4,-0.0828 -10e-4,-0.80427 -0.0022,-0.99274 -0.09447,3e-4 -0.525899,0.006 -0.605389,0.0125 -0.119686,0.01 -0.703445,1.5e-4 -1.0761537,0.2743 -0.327579,0.24094 -0.5602307,1.1718 -0.6936327,1.34555 -0.181542,0.23644 -0.2904584,0.1877 -0.3304025,0.20741 l -0.028328,-1.80657 -1.4727485,0.002 z"
-       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.22258554"
-       id="path20" 
-       sodipodi:nodetypes="csccscccccccccccccccssscccc" />
-    <path
-       inkscape:connector-curvature="0"
-       d="m 35.372675,289.90571 -0.697247,-1.89257 -1.589847,-0.009 1.603003,3.39178 c 0,0 0.01516,0.17251 -0.265145,0.31936 -0.280301,0.14686 -0.910696,0.0305 -0.910696,0.0305 l -0.0051,0.9587 c 0,0 0.526468,0.0722 0.710312,0.0738 0,0 0.535694,0.0396 0.809796,-0.0589 0.274103,-0.0985 0.45806,-0.27469 0.571048,-0.38431 0.100556,-0.10961 0.306233,-0.58611 0.349552,-0.70737 l 1.586686,-3.6424 -1.491487,0.009 z"
-       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.25762537"
-       id="path20-0"
-       sodipodi:nodetypes="cccczccszccccc" />
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot4753"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,0,277)"><flowRegion
-         id="flowRegion4755"><rect
-           id="rect4757"
-           width="65.760933"
-           height="55.154327"
-           x="4.9497476"
-           y="117.30985" /></flowRegion><flowPara
-         id="flowPara4759"></flowPara></flowRoot>  </g>
-</svg>
+                <div class="form-group">
+                    <label for="pwd">ХОККЕЙНАЯ ШКОЛА:</label>
+                    <select name="shool" id="shool" required="required">
+                        @if(isset($kurslar))
+                            <option value="">----</option>
+                            @foreach($kurslar as $l=>$semes)
+                                <option value="{{$semes->id}}" {{($semes->parent==0)?'disabled':''}}>{{($semes->parent==0)?$semes->name:'..'.$semes->name}} </option>
+                            @endforeach
+                        @endif
+                    </select>
+                </div>
 
 
 
 
+                <div class="cont">
 
-@endif          
+
+                    <a href="https://play.google.com/store/apps/" class="d-block h-75" id="sent">
+
+                        @if($lang=='ru')
+
+                            <svg
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                    xmlns:svg="http://www.w3.org/2000/svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    id="svg410"
+                                    version="1.1"
+                                    viewBox="0 0 38 13"
+                                    height="13mm"
+                                    width="38mm">
+                                <defs
+                                        id="defs404"/>
+                                <metadata
+                                        id="metadata407">
+                                    <rdf:RDF>
+                                        <cc:Work
+                                                rdf:about="">
+                                            <dc:format>image/svg+xml</dc:format>
+                                            <dc:type
+                                                    rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                            <dc:title></dc:title>
+                                        </cc:Work>
+                                    </rdf:RDF>
+                                </metadata>
+                                <g
+                                        transform="translate(0,-284)"
+                                        id="layer1">
+                                    <path id="path6" style="fill:#73aad5;fill-rule:evenodd;stroke-width:0.16678256"
+                                          data-name="background-layer"
+                                          d="M 31.526129,296.42433 H 6.6093965 a 5.8415536,5.8332293 0 0 1 -5.84154941,-5.83322 v 0 A 5.8415536,5.8332293 0 0 1 6.6093965,284.75788 H 31.526129 a 5.8415536,5.8332293 0 0 1 5.841554,5.83323 v 0 a 5.8415536,5.8332293 0 0 1 -5.841554,5.83322 z"/>
+                                    <path
+                                            id="path12"
+                                            style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.16678256"
+                                            d="m 4.1960035,288.41448 a 2.6704245,2.6666191 0 0 1 1.0681676,0.16667 1.0815219,1.0799808 0 0 1 0.5574522,0.60498 4.3277567,4.3215896 0 0 1 0,2.46829 1.0815219,1.0799808 0 0 1 -0.5574522,0.60498 3.4148053,3.4099392 0 0 1 -2.1296614,0 1.0815219,1.0799808 0 0 1 -0.5574521,-0.60498 4.3277567,4.3215896 0 0 1 0,-2.46829 1.0815219,1.0799808 0 0 1 0.5574521,-0.60498 2.6537343,2.6499527 0 0 1 1.0614938,-0.16667 z m 0.4172549,1.12164 a 0.50070459,0.49999108 0 0 0 -0.8345098,0 3.8687775,3.8632644 0 0 0 -0.00669,1.78164 0.50070459,0.49999108 0 0 0 0.8345035,0 3.808693,3.8032655 0 0 0 0,-1.77497 z"/>
+                                    <polygon
+                                            id="polygon14"
+                                            style="fill:#ffffff;fill-rule:evenodd"
+                                            points="279.37,809.49 279.37,827.22 272.08,827.22 272.08,809.49 265.6,809.49 265.6,804.05 285.85,804.05 285.85,809.49 "
+                                            transform="matrix(0.16690153,0,0,0.16666369,-38.120212,154.48686)"/>
+                                    <polygon
+                                            id="polygon16"
+                                            style="fill:#ffffff;fill-rule:evenodd"
+                                            points="308.38,827.22 301.1,827.22 301.1,808.82 295.39,808.82 295.39,827.22 288.1,827.22 288.1,804.05 308.38,804.05 "
+                                            transform="matrix(0.16690153,0,0,0.16666369,-38.120212,154.48686)"/>
+                                    <path
+                                            id="path18"
+                                            style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.16678256"
+                                            d="m 13.983105,292.35441 v -3.8616 q 0.570806,-0.0567 1.637309,-0.0567 c 0.615865,0 1.038128,0.0917 1.263441,0.27499 0.225318,0.18333 0.333805,0.52999 0.333805,1.03998 0,0.50999 -0.103478,0.84832 -0.313777,1.02999 -0.210293,0.18165 -0.582483,0.27499 -1.121579,0.27499 a 5.1956446,5.1882408 0 0 1 -0.587491,-0.0333 v 1.33331 z m 1.216717,-2.15496 h 0.392218 a 0.45564118,0.45499188 0 0 0 0.333799,-0.09 0.53742293,0.53665709 0 0 0 0.08346,-0.35834 0.5674652,0.56665656 0 0 0 -0.08346,-0.36665 0.45397217,0.45332525 0 0 0 -0.333799,-0.0917 h -0.392218 z"/>
+                                    <path
+                                            id="path20"
+                                            style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.16678256"
+                                            d="m 19.58766,291.52109 h -1.058158 l -0.196938,0.83332 h -1.23841 l 1.001409,-3.54827 a 0.42726792,0.42665906 0 0 1 0.151879,-0.22666 0.40557072,0.40499277 0 0 1 0.25703,-0.0867 h 1.104888 a 0.40223269,0.4016595 0 0 1 0.257028,0.0867 0.42726792,0.42665906 0 0 1 0.151881,0.22666 l 1.001409,3.54827 h -1.23841 l -0.196946,-0.83332 z m -0.195274,-0.85165 -0.190265,-0.83332 c -0.03337,-0.16667 -0.05677,-0.32166 -0.06843,-0.44166 h -0.150214 c -0.02334,0.16666 -0.04504,0.32333 -0.06843,0.44166 l -0.190264,0.83332 z"/>
+                                    <path
+                                            id="path22"
+                                            style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.16678256"
+                                            d="m 23.708463,290.33445 v 0.0333 a 0.85787385,0.85665136 0 0 1 0.640902,0.29166 1.1683107,1.1666458 0 0 1 0.193601,0.73165 c 0,0.38499 -0.106814,0.64833 -0.322116,0.79332 -0.215307,0.145 -0.574143,0.215 -1.078185,0.215 -0.819489,0 -1.437021,-0.015 -1.855946,-0.045 v -3.8616 q 0.570805,-0.045 1.669012,-0.045 0.824499,0 1.139942,0.21001 0.315442,0.20999 0.317113,0.79665 a 1.0247754,1.0233151 0 0 1 -0.166905,0.63332 0.73436676,0.73332028 0 0 1 -0.540761,0.24666 z m -1.233408,-0.33333 h 0.432281 a 0.39054958,0.38999304 0 0 0 0.280395,-0.0717 0.47400035,0.47332489 0 0 0 0.06675,-0.29667 0.42226087,0.42165914 0 0 0 -0.0701,-0.29166 0.435613,0.43499224 0 0 0 -0.288741,-0.0667 h -0.42059 z m 0,1.5783 h 0.448965 a 0.47233133,0.47165825 0 0 0 0.333806,-0.0833 0.54076096,0.53999037 0 0 0 0.07844,-0.34666 0.55411308,0.55332347 0 0 0 -0.07844,-0.35333 0.48401444,0.48332472 0 0 0 -0.333806,-0.0833 h -0.442285 z"/>
+                                    <path
+                                            id="path24"
+                                            style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.16678256"
+                                            d="M 28.490191,292.35441 H 27.33523 v -1.7733 a 3.7569534,3.7515997 0 0 1 0.06175,-0.6 h -0.04006 a 3.1026995,3.0982781 0 0 1 -0.235336,0.59333 l -0.946327,1.77997 h -1.168315 v -3.8616 h 1.154961 v 1.71164 a 4.1725382,4.1665923 0 0 1 -0.06176,0.62832 h 0.04006 a 3.2812841,3.2766082 0 0 1 0.247012,-0.59332 l 0.941324,-1.74664 H 28.4835 Z"/>
+                                    <polygon
+                                            id="polygon26"
+                                            style="fill:#ffffff;fill-rule:evenodd"
+                                            points="415.12,809.49 415.12,827.22 407.83,827.22 407.83,809.49 401.35,809.49 401.35,804.05 421.6,804.05 421.6,809.49 "
+                                            transform="matrix(0.16690153,0,0,0.16666369,-38.120212,154.48686)"/>
+                                    <path
+                                            id="path28"
+                                            style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.16678256"
+                                            d="m 33.837715,289.81779 h 0.333799 c 0.594171,0 1.001408,0.09 1.228399,0.27166 0.226983,0.18166 0.333798,0.51832 0.333798,1.01498 0,0.49666 -0.103477,0.83332 -0.310434,1.01332 -0.206955,0.17999 -0.552443,0.27999 -1.03479,0.27999 q -1.154954,0 -1.742452,-0.045 h -0.03337 v -3.85993 h 1.21671 v 1.33331 z m 0,1.73996 h 0.333799 c 0.146878,0 0.240338,-0.0317 0.283738,-0.095 a 0.81614848,0.81498546 0 0 0 0.06508,-0.40333 0.84952881,0.84831821 0 0 0 -0.06508,-0.40832 c -0.0434,-0.0667 -0.13686,-0.1 -0.283738,-0.1 h -0.333799 z"/>
+                                    <path
+                                            id="path8"
+                                            style="fill:none;fill-rule:evenodd;stroke:#232765;stroke-width:0.38903704px;stroke-linecap:round;stroke-linejoin:round"
+                                            d="M 26.165251,296.41933 H 6.6093991 a 5.8415536,5.8332293 0 0 1 -5.84155391,-5.83322 v 0 a 5.8415536,5.8332293 0 0 1 3.94722131,-5.51657"/>
+                                    <path
+                                            id="path10"
+                                            style="fill:none;fill-rule:evenodd;stroke:#232765;stroke-width:0.3892372px;stroke-linecap:round;stroke-linejoin:round"
+                                            d="M 6.6093991,284.75788 H 31.526129 a 5.8415536,5.8332293 0 0 1 5.841554,5.83323 v 0 a 5.8415536,5.8332293 0 0 1 -5.841554,5.83322"/>
+                                </g>
+                            </svg>
+
+
+                        @else
+
+
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                 xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="41mm" height="13mm"
+                                 viewBox="0 0 41 13"
+                                 version="1.1" id="svg410" inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+                                 sodipodi:docname="btnkk2.svg">
+                                <defs id="defs404">
+                                    <pattern y="0" x="0" height="6" width="6" patternUnits="userSpaceOnUse"
+                                             id="EMFhbasepattern"/>
+                                </defs>
+                                <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666"
+                                                    borderopacity="1.0" inkscape:pageopacity="0.0"
+                                                    inkscape:pageshadow="2" inkscape:zoom="4" inkscape:cx="56.446315"
+                                                    inkscape:cy="-5.1108573" inkscape:document-units="mm"
+                                                    inkscape:current-layer="layer1" showgrid="false"
+                                                    inkscape:window-width="1366" inkscape:window-height="705"
+                                                    inkscape:window-x="-8" inkscape:window-y="-8"
+                                                    inkscape:window-maximized="1" showguides="true"
+                                                    inkscape:guide-bbox="true"/>
+                                <metadata id="metadata407">
+                                    <rdf:RDF>
+                                        <cc:Work rdf:about="">
+                                            <dc:format>image/svg+xml</dc:format>
+                                            <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                            <dc:title></dc:title>
+                                        </cc:Work>
+                                    </rdf:RDF>
+                                </metadata>
+                                <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1"
+                                   transform="translate(0,-284)">
+                                    <path inkscape:connector-curvature="0"
+                                          d="M 34.084564,296.26396 H 6.8769341 a 6.3786385,5.7239369 0 0 1 -6.37863399,-5.72394 v 0 A 6.3786385,5.7239369 0 0 1 6.8769341,284.81608 H 34.084564 a 6.3786385,5.7239369 0 0 1 6.37864,5.72394 v 0 a 6.3786385,5.7239369 0 0 1 -6.37864,5.72394 z"
+                                          data-name="background-layer"
+                                          style="fill:#73aad5;fill-rule:evenodd;stroke-width:0.17264076"
+                                          id="path6"/>
+                                    <path inkscape:connector-curvature="0"
+                                          d="m 12.955554,292.78422 v -4.89288 c 0.576233,-0.0101 0,0 1.662187,-0.006 l 0.009,4.90081 z"
+                                          style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.22047947"
+                                          id="path18" sodipodi:nodetypes="ccccc"/>
+                                    <path inkscape:connector-curvature="0"
+                                          d="m 17.56427,289.73066 0.906769,0.008 c 0.338731,0.002 0.980283,0.002 1.47982,0.40955 0.227889,0.21988 0.454676,0.28609 0.454676,1.09369 0,0.48781 0,0.9548 -0.442995,1.27183 -0.296959,0.18372 -0.791877,0.27242 -1.487068,0.27242 -1.130268,0 -1.981987,-0.019 -2.559784,-0.057 v -4.89288 l 4.315447,0.008 v 0.98659 H 17.56427 Z m -0.0096,2.01664 h 0.619229 c 0.162477,0.0192 0.32686,-0.0185 0.460395,-0.10558 0.08905,-0.13102 0.163518,-0.29249 0.144522,-0.4459 0.01966,-0.15614 -0.05478,-0.30714 -0.144522,-0.44103 -0.134188,-0.0857 -0.298013,-0.1233 -0.460395,-0.10558 h -0.610015 z"
+                                          style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.22047947"
+                                          id="path22" sodipodi:nodetypes="cccccscccccccccccccc"/>
+                                    <path inkscape:connector-curvature="0"
+                                          d="m 21.696383,292.78615 -0.0019,-1.66426 0.01068,-1.63474 0.0056,-1.60323 h 4.492268 l -0.0055,0.98376 h -2.737948 v 0.87993 H 26.1975 v 0.94659 h -2.737917 v 1.07992 H 26.1975 l -2e-6,1.01203 z"
+                                          style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.21343441" id="path24"
+                                          sodipodi:nodetypes="ccccccccccccccc"/>
+                                    <path inkscape:connector-curvature="0"
+                                          d="M 29.181613,291.11266 H 29.642 c 0.819499,0 1.381175,-0.11367 1.694247,-0.34311 0.313064,-0.22945 0.460387,-0.65468 0.460387,-1.28198 0,-0.62731 -0.142721,-1.05254 -0.428161,-1.27988 -0.28544,-0.22735 -0.761948,-0.35366 -1.427217,-0.35366 q -1.592951,0 -2.403247,0.0568 h -0.04603 v 4.87532 h 1.678127 v -1.68404 z m 0,-2.19767 H 29.642 c 0.202578,0 0.331482,0.04 0.39134,0.11999 a 1.125659,1.0293744 0 0 1 0.08977,0.50942 1.1716982,1.0714757 0 0 1 -0.08977,0.51574 c -0.05986,0.0842 -0.188762,0.12631 -0.39134,0.12631 h -0.460387 z"
+                                          style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.22013102" id="path28"/>
+                                    <path inkscape:connector-curvature="0"
+                                          d="M 28.418019,296.30524 H 7.1634199 a 6.3489884,5.7827447 0 0 1 -6.34898876,-5.78275 v 0 a 6.3489884,5.7827447 0 0 1 4.29010226,-5.46882"
+                                          style="fill:none;fill-rule:evenodd;stroke:#232765;stroke-width:0.40382341px;stroke-linecap:round;stroke-linejoin:round"
+                                          id="path8"/>
+                                    <path
+                                            inkscape:connector-curvature="0"
+                                            d="M 7.1634199,284.74471 H 34.244577 a 6.3489884,5.7827447 0 0 1 6.348989,5.78274 v 0 a 6.3489884,5.7827447 0 0 1 -6.348989,5.78275"
+                                            style="fill:none;fill-rule:evenodd;stroke:#232765;stroke-width:0.40403122px;stroke-linecap:round;stroke-linejoin:round"
+                                            id="path10"/>
+                                    <path
+                                            inkscape:connector-curvature="0"
+                                            d="m 7.3092511,289.89767 c 0,0 -0.5707361,-1.344 -1.1931252,-1.70443 -0.4324392,-0.25043 -1.5219766,-0.1772 -1.5219766,-0.1772 l -0.047217,1.02891 c 0,0 0.450468,-0.0579 0.7025008,0.15313 0.3008512,0.25192 0.2826858,0.94435 0.8693322,1.1433 -0.6371283,0.26201 -0.9475629,0.98723 -0.9475629,0.98723 l -0.7485664,1.4405 1.6760733,0.0116 c 0,0 0.9540359,-1.8398 1.2111479,-1.86437 -0.00235,0.1027 -0.011006,1.86981 -0.011006,1.86981 l 1.489501,-0.005 0.028824,-1.85663 c 0.086194,-0.0664 1.1249631,1.70446 1.1817161,1.85573 0.2212937,-0.004 1.2687587,0.006 1.6677137,0.003 -0.06205,-0.13648 -0.24382,-0.51183 -0.539685,-1.07368 -0.123899,-0.23557 -0.510537,-1.19047 -1.1599927,-1.34799 0.3657957,-0.17075 0.5216567,-0.42308 0.7216967,-0.9641 0.210832,-0.37603 0.596047,-0.36036 0.829229,-0.35941 2.52e-4,-0.0828 -10e-4,-0.80427 -0.0022,-0.99274 -0.09447,3e-4 -0.525899,0.006 -0.605389,0.0125 -0.119686,0.01 -0.703445,1.5e-4 -1.0761537,0.2743 -0.327579,0.24094 -0.5602307,1.1718 -0.6936327,1.34555 -0.181542,0.23644 -0.2904584,0.1877 -0.3304025,0.20741 l -0.028328,-1.80657 -1.4727485,0.002 z"
+                                            style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.22258554"
+                                            id="path20"
+                                            sodipodi:nodetypes="csccscccccccccccccccssscccc"/>
+                                    <path
+                                            inkscape:connector-curvature="0"
+                                            d="m 35.372675,289.90571 -0.697247,-1.89257 -1.589847,-0.009 1.603003,3.39178 c 0,0 0.01516,0.17251 -0.265145,0.31936 -0.280301,0.14686 -0.910696,0.0305 -0.910696,0.0305 l -0.0051,0.9587 c 0,0 0.526468,0.0722 0.710312,0.0738 0,0 0.535694,0.0396 0.809796,-0.0589 0.274103,-0.0985 0.45806,-0.27469 0.571048,-0.38431 0.100556,-0.10961 0.306233,-0.58611 0.349552,-0.70737 l 1.586686,-3.6424 -1.491487,0.009 z"
+                                            style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.25762537"
+                                            id="path20-0"
+                                            sodipodi:nodetypes="cccczccszccccc"/>
+                                    <flowRoot
+                                            xml:space="preserve"
+                                            id="flowRoot4753"
+                                            style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+                                            transform="matrix(0.26458333,0,0,0.26458333,0,277)"><flowRegion
+                                                id="flowRegion4755">
+                                            <rect
+                                                    id="rect4757"
+                                                    width="65.760933"
+                                                    height="55.154327"
+                                                    x="4.9497476"
+                                                    y="117.30985"/>
+                                        </flowRegion>
+                                        <flowPara
+                                                id="flowPara4759"></flowPara></flowRoot>
+                                </g>
+                            </svg>
+
+
+
+
+
+                        @endif
                     </a>
 
 
-</div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div id="overlay"></div><!-- Подложка -->
+    @endif
+
+    <div id="modal_form2"><span id="modal_close"></span>
+        <div class="form-int"></div>
+    </div>
+    <div id="overlay"></div><!-- Подложка -->
+    <div id="modal_form3"><span id="modal_close"></span>
+        <div class="form-int"></div>
+    </div>
+    <div id="overlay"></div><!-- Подложка -->
 
 
 
-  </div>
 
-</div>
-<div id="overlay"></div><!-- Подложка -->
-@endif
+    <script src="{{asset('assets/js/code.js')}}"></script>
 
-<div id="modal_form2"><span id="modal_close"></span><div class="form-int"></div></div>
-<div id="overlay"></div><!-- Подложка -->
-<div id="modal_form3"><span id="modal_close"></span><div class="form-int"></div></div>
-<div id="overlay"></div><!-- Подложка -->
+    <script type="text/javascript">
+        $(document).ready(function () {
 
-  
+            /* Закрытие модального окна, тут делаем то же самое но в обратном порядке */
+            function clos_modal() { // ловим клик по крестику или подложке
+                $('#modal_form').animate({opacity: 0, top: '45%'}, 200, function () {
+                        $(this).css('display', 'none');
+                        $('#overlay').fadeOut(400);
+                    }
+                );
 
-
-   <script src="{{asset('assets/js/code.js')}}"></script>
-
-<script type="text/javascript">
-    $(document).ready(function () {
-
-                /* Закрытие модального окна, тут делаем то же самое но в обратном порядке */
-    function clos_modal(){ // ловим клик по крестику или подложке
-        $('#modal_form').animate({opacity: 0, top: '45%'}, 200, function(){ 
-                    $(this).css('display', 'none'); 
-                    $('#overlay').fadeOut(400); 
-                }
-            );
-        
-    };
+            };
 
 
-function show_modal2(){
-        $('#overlay').fadeIn(400, // сначала плавно показываем темную подложку
-            function(){ // после выполнения предъидущей анимации
-                $('#modal_form2') 
-                    .css('display', 'block') // убираем у модального окна display: none;
-                    .animate({opacity: 1, top: '50%'}, 200); // плавно прибавляем прозрачность одновременно со съезжанием вниз
-        });
-    };
+            function show_modal2() {
+                $('#overlay').fadeIn(400, // сначала плавно показываем темную подложку
+                    function () { // после выполнения предъидущей анимации
+                        $('#modal_form2')
+                            .css('display', 'block') // убираем у модального окна display: none;
+                            .animate({opacity: 1, top: '50%'}, 200); // плавно прибавляем прозрачность одновременно со съезжанием вниз
+                    });
+            };
 
- function show_modal3(){
-        $('#overlay').fadeIn(400, // сначала плавно показываем темную подложку
-            function(){ // после выполнения предъидущей анимации
-                $('#modal_form3') 
-                    .css('display', 'block') // убираем у модального окна display: none;
-                    .animate({opacity: 1, top: '50%'}, 200); // плавно прибавляем прозрачность одновременно со съезжанием вниз
-        });
-    };
+            function show_modal3() {
+                $('#overlay').fadeIn(400, // сначала плавно показываем темную подложку
+                    function () { // после выполнения предъидущей анимации
+                        $('#modal_form3')
+                            .css('display', 'block') // убираем у модального окна display: none;
+                            .animate({opacity: 1, top: '50%'}, 200); // плавно прибавляем прозрачность одновременно со съезжанием вниз
+                    });
+            };
 
 
-    
-  $("#sent").click(function(event){
-      event.preventDefault();
-        $('.header-last').html('<div id="preloader"></div>');
+            $("#sent").click(function (event) {
+                event.preventDefault();
+                $('.header-last').html('<div id="preloader"></div>');
 
-      let first_name = $("#first_name").val();
-      let last_name = $("#last_name").val();
-      let email = $("#email").val();
-      let phone = $("#phone").val();
-      let lang = "{!!$lang!!}";
-      let cite = $("select[name=cite]").val();
-      let shool = $("select[name=shool]").val();
-      let _token   = $('meta[name="csrf-token"]').attr('content');
+                let first_name = $("#first_name").val();
+                let last_name = $("#last_name").val();
+                let email = $("#email").val();
+                let phone = $("#phone").val();
+                let lang = "{!!$lang!!}";
+                let cite = $("select[name=cite]").val();
+                let shool = $("select[name=shool]").val();
+                let _token = $('meta[name="csrf-token"]').attr('content');
 // gor
 
-if(first_name.length!=0 && last_name.length!=0 && email.length!=0 && phone.length!=0 && cite.length!=0 && shool.length!=0){
+                if (first_name.length != 0 && last_name.length != 0 && email.length != 0 && phone.length != 0 && cite.length != 0 && shool.length != 0) {
 
-      $.ajax({
-        url: "{!!route('schoolreg',['lang'=>$lang])!!}",
-        type:"POST",
-        data:{first_name:first_name,last_name:last_name, email:email, phone:phone,cite:cite,shool:shool,_token:_token},
-        success:function(response){
-          console.log(response);
-               window.setTimeout(clos_modal, 1000);
-            $('#preloader').remove();
-          if(response.success) {
-               window.setTimeout(show_modal2, 2000);
-               $('#preloader').remove();
-          }else{
-            // console.log(response);
-               window.setTimeout(show_modal3, 2000);
-               $('#preloader').remove();
-          }
-        }
-       });
-  }
-  });
-
-
-
-
-  $('#gor').on('change',function(e) {
-        e.preventDefault();
-        $('.header-last').html('<div id="preloader"></div>');
-        var gor = $('#gor').val();
-        $.ajax({
-            url:"{!!route('schooll',['lang'=>$lang])!!}",
-            data:{"_token":$('meta[name="csrf-token"]').attr('content'),gor:gor},
-            type:'POST',
-            success: function(html) {
-                // console.log(html);
-
-              $('#preloader').remove();
-              $('#shool').find('option').remove().end().append(html['select']);
-            }
-
+                    $.ajax({
+                        url: "{!!route('schoolreg',['lang'=>$lang])!!}",
+                        type: "POST",
+                        data: {
+                            first_name: first_name,
+                            last_name: last_name,
+                            email: email,
+                            phone: phone,
+                            cite: cite,
+                            shool: shool,
+                            _token: _token
+                        },
+                        success: function (response) {
+                            console.log(response);
+                            window.setTimeout(clos_modal, 1000);
+                            $('#preloader').remove();
+                            if (response.success) {
+                                window.setTimeout(show_modal2, 2000);
+                                $('#preloader').remove();
+                            } else {
+                                // console.log(response);
+                                window.setTimeout(show_modal3, 2000);
+                                $('#preloader').remove();
+                            }
+                        }
+                    });
+                }
             });
-      });
 
-    });
 
-</script>
+            $('#gor').on('change', function (e) {
+                e.preventDefault();
+                $('.header-last').html('<div id="preloader"></div>');
+                var gor = $('#gor').val();
+                $.ajax({
+                    url: "{!!route('schooll',['lang'=>$lang])!!}",
+                    data: {"_token": $('meta[name="csrf-token"]').attr('content'), gor: gor},
+                    type: 'POST',
+                    success: function (html) {
+                        // console.log(html);
+
+                        $('#preloader').remove();
+                        $('#shool').find('option').remove().end().append(html['select']);
+                    }
+
+                });
+            });
+
+        });
+
+    </script>
 
 
 
