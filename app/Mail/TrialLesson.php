@@ -29,8 +29,19 @@ class TrialLesson extends Mailable implements ShouldQueue
      */
     public function build()
     {
-        return $this->from('info@salemhokei.kz')
-            ->with('data', $this->data[0])
-            ->view('app.pages.emails.schoolru');
+        if ($this->locale == 'kk'){
+            return $this->from(env('MAIL_FROM_ADDRESS'))
+                ->with('data', $this->data[0])
+                ->subject('Вы оставили заявку на пробное занятие!')
+                ->view('app.pages.emails.schoolru');
+
+        }else{
+
+            return $this->from(env('MAIL_FROM_ADDRESS'))
+                ->with('data', $this->data[0])
+                ->subject('Сіз сынақ сабағына өтініш қалдырдыңыз!')
+                ->view('app.pages.emails.schoolkk');
+
+            }
     }
 }

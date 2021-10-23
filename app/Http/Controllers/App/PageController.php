@@ -155,26 +155,27 @@ class PageController extends Controller
 
     public function reg_mail($email, $lang = 'ru')
     {
-        if ($lang == 'kk') {
-            $url = 'app.pages.emails.schoolkk';
-        } else {
-            $url = 'app.pages.emails.schoolru';
-        }
 
-        Mail::send($url, ['data' => 'SALEM HOKEI'], function ($m) use ($email) {
-            $m->from(env('MAIL_FROM_ADDRESS'), 'Salem Hokei');
-            $m->to($email, 'Receiver')->subject('Сообщение с сайта');
-        });
+        if ($lang == 'kk') {
+            Mail::to($email)->locale('kk')->later(now()->addMinutes(1), new TrialLesson(['Salem Hokei']));
+        } else {
+            Mail::to($email)->locale('ru')->later(now()->addMinutes(1), new TrialLesson(['Salem Hokei']));
+        }
 
         return redirect()->back()->with('success', 'message send!');
     }
 
 
-    public function sendmail()
+    public function sendmail($lang = 'ru')
     {
         $email = 'parmonov98@yandex.ru';
 
-        Mail::to($email)->queue(new TrialLesson(['Salem Hokei']));
+        if ($lang == 'kk') {
+            Mail::to($email)->locale('kk')->later(now()->addMinutes(1), new TrialLesson(['Salem Hokei']));
+        } else {
+            Mail::to($email)->locale('ru')->later(now()->addMinutes(1), new TrialLesson(['Salem Hokei']));
+        }
+
 
          dd('successfully sent1');
     }
