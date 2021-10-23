@@ -22,6 +22,7 @@
         background-image: url("/assets/img/schools/form-bg.svg");
         /*position: relative;*/
     }
+
     #modal_form::before {
         display: block;
         content: "";
@@ -32,6 +33,7 @@
         top: -10px;
         left: 0;
     }
+
     #modal_form::after {
         display: block;
         content: "";
@@ -42,10 +44,12 @@
         bottom: -10px;
         left: 0;
     }
-    .top-text{
+
+    .top-text {
         width: 100%;
     }
-    .top-text > svg{
+
+    .top-text > svg {
         width: 100%;
     }
 
@@ -146,8 +150,8 @@
     width: 21px;
     height: 21px;
     position: absolute;
-    top: -25px;
-    left: -25px;
+    top: -54px;
+    left: -44px;
     cursor: pointer;
     display: block;
     background-image: url(drawing.svg);
