@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\App;
 
 use App\Http\Controllers\Controller;
+use App\Mail\TrialLesson;
 use App\Models\Album;
 use App\Models\AlbumImage;
 use App\Models\Article;
@@ -27,7 +28,7 @@ class PageController extends Controller
     public function index(Request $request, $lang = "ru")
     {
 
-       
+
         $articles = Article::orderBy("published_at", "desc")
             ->where("is_published", "=", 1);
         $articles = $articles->take(5)->get();
@@ -66,6 +67,7 @@ class PageController extends Controller
             "lang" => $lang
         ]);
     }
+
     public function hockey(Request $request, $lang = "ru")
     {
         $textItems = Text::with('video')->where('page', 'hockey')->get();
@@ -113,59 +115,55 @@ class PageController extends Controller
     {
         $data = $request->except('_token');
         $this->validate($request, [
-            "first_name" => "required", "last_name"=> "required", 
-            "email"=> "required|email", "phone"=> "required", "avatar", 
-            "sex", "cite"=> "required", "shool"=> "required",       
+            "first_name" => "required", "last_name" => "required",
+            "email" => "required|email", "phone" => "required", "avatar",
+            "sex", "cite" => "required", "shool" => "required",
         ]);
 
-        if(Schoreg::where('email',$data['email'])->count()===0)
-         {
-         $item = new Schoreg;
-         $item->first_name = $data['first_name']; 
-         $item->last_name = $data['last_name'];
-         $item->email = $data['email'];$item->phone = $data['phone'];
-         $item->cite = $data['cite'];$item->shool = $data['shool']; $item->lang = $lang;
-         if($item->save()){
+        if (Schoreg::where('email', $data['email'])->count() === 0) {
+            $item = new Schoreg;
+            $item->first_name = $data['first_name'];
+            $item->last_name = $data['last_name'];
+            $item->email = $data['email'];
+            $item->phone = $data['phone'];
+            $item->cite = $data['cite'];
+            $item->shool = $data['shool'];
+            $item->lang = $lang;
+            if ($item->save()) {
 
-            $this->reg_mail($data['email'],$lang);
-
-            
-$scool = Section::where('id', $data['shool'])->where('satrud','!=','0')->where('email','!=','NULL')->first();
-if(isset($scool)){
-            $this->scool_mail($data['first_name'],$data['last_name'],$data['phone'],$data['email'],$scool->email );
-}
+                $this->reg_mail($data['email'], $lang);
 
 
-      
-
-            return response()->json(['success'=>'Ajax request submitted successfully']);
-         }else{
-            return response()->json(['error'=>'Ajax request submitted successfully']);
-         }
-        // dd($data );
+                $scool = Section::where('id', $data['shool'])->where('satrud', '!=', '0')->where('email', '!=', 'NULL')->first();
+                if (isset($scool)) {
+                    $this->scool_mail($data['first_name'], $data['last_name'], $data['phone'], $data['email'], $scool->email);
+                }
 
 
-         }else{
-            return response()->json(['error'=>'Oldindan mavjut']);
-         }
+                return response()->json(['success' => 'Ajax request submitted successfully']);
+            } else {
+                return response()->json(['error' => 'Ajax request submitted successfully']);
+            }
+            // dd($data );
+
+
+        } else {
+            return response()->json(['error' => 'Oldindan mavjut']);
+        }
     }
-
-
-
-
-
 
 
     public function reg_mail($email, $lang = 'ru')
     {
-        if($lang=='kk'){ $url = 'app.pages.emails.schoolkk'; 
-        }else{$url = 'app.pages.emails.schoolru';   }
-
-        // dd($email.' ' .$lang.' '.$url.' '.$namesent);
+        if ($lang == 'kk') {
+            $url = 'app.pages.emails.schoolkk';
+        } else {
+            $url = 'app.pages.emails.schoolru';
+        }
 
         Mail::send($url, ['data' => 'SALEM HOKEI'], function ($m) use ($email) {
-                $m->from(env('MAIL_FROM_ADDRESS'), 'Salem Hokei');
-                $m->to($email, 'Receiver')->subject('Сообщение с сайта');
+            $m->from(env('MAIL_FROM_ADDRESS'), 'Salem Hokei');
+            $m->to($email, 'Receiver')->subject('Сообщение с сайта');
         });
 
         return redirect()->back()->with('success', 'message send!');
@@ -174,39 +172,30 @@ if(isset($scool)){
 
     public function sendmail()
     {
-        $email = 'test@mail.com';
-        $request = 'Salem Hokei';
-        Mail::send('app.pages.emails.schoolru', ['data' => $request], function ($m) use ($email) {
-                $m->from(env('MAIL_FROM_ADDRESS'), 'Salem Hokei');
-                $m->to($email, 'Receiver')->subject('Сообщение с сайта');
-        });
+        $email = 'parmonov98@yandex.ru';
 
-        // dd('successfully sent');
+        Mail::to($email)->queue(new TrialLesson(['Salem Hokei']));
+
+         dd('successfully sent1');
     }
 
 
+    public function scool_mail($f_name, $l_name, $phone, $usmail, $email)
+    {
 
 
+        $request = ['site' => 'SALEM HOKEI', 'name' => $f_name . ' ' . $l_name, 'phone' => $phone, 'email' => $usmail];
 
 
-
-  public function scool_mail($f_name,$l_name,$phone,$usmail,$email)
-{
-
-              
-        $request = ['site'=>'SALEM HOKEI','name'=>$f_name.' '.$l_name,'phone'=>$phone,'email'=>$usmail];
-
-      
         Mail::send('app.pages.emails.test', ['data' => $request], function ($m) use ($email) {
-                $m->from(env('MAIL_FROM_ADDRESS'), 'Salem Hokei');
-                $m->to($email, 'Receiver')->subject('Сообщение с сайта');
+            $m->from(env('MAIL_FROM_ADDRESS'), 'Salem Hokei');
+            $m->to($email, 'Receiver')->subject('Сообщение с сайта');
         });
 
-} 
+    }
 
 
-
-public function shkola($id)
+    public function shkola($id)
     {
 
         if (empty($id)) {
@@ -223,20 +212,19 @@ public function shkola($id)
     public function schooll(Request $request, $lang = 'ru')
     {
         $data = $request->except('_token');
-     
-    $item = $this->shkola($data['gor']); 
+
+        $item = $this->shkola($data['gor']);
 
 
-   if($data['gor']=='' ||  $item->count()==0){
-          $s = '<option value="">----</option>';
-    }
-    else{
-             $s = '<option value="">-----</option>';
-        foreach ($item as $key => $value) {
-             $s .= '<option value="'.$value->id.'">'.$value['name_'.$lang].'</option>';
+        if ($data['gor'] == '' || $item->count() == 0) {
+            $s = '<option value="">----</option>';
+        } else {
+            $s = '<option value="">-----</option>';
+            foreach ($item as $key => $value) {
+                $s .= '<option value="' . $value->id . '">' . $value['name_' . $lang] . '</option>';
             }
         }
-        return ['select'=>$s];
+        return ['select' => $s];
     }
 
     public function school(Request $request, $lang = 'ru', $alias)
@@ -273,6 +261,7 @@ public function shkola($id)
 //            'textItems' => $textItems
         ]);
     }
+
     public function play(Request $request, $lang = "ru")
     {
         $textItems = Text::with('video')->where('page', 'play')->orderByDesc('id')->get();
@@ -406,7 +395,7 @@ public function shkola($id)
 //        return redirect()->back()->with('success', 'message send!');
     }
 
-    public function show(Request $request, $lang,  $alias)
+    public function show(Request $request, $lang, $alias)
     {
 //         dd($alias);
         $item = Page::whereAlias($alias)->whereIsPublished(true)->orderBy("id", "desc")->first();

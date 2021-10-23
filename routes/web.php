@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
 Route::group(["namespace" => "Admin"], function () {
     Route::post("/redactoruploadimage", "AjaxController@uploadPic");
     Route::post("/redactoruploadfile", "AjaxController@uploadFile");
@@ -234,6 +236,7 @@ Route::group(["namespace" => "Admin"], function () {
 
 Route::group(["middleware" => ["web"], "namespace" => "App"], function () {
 
+    Route::get("/sendmail", "PageController@sendmail");
     Route::get("/", "PageController@index");
     Route::post("/contact_mail", "PageController@contact_mail");
     Route::post("/record_to_school", "PageController@record_to_school");

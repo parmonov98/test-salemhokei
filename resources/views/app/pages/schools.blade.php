@@ -765,12 +765,25 @@
                             }
                         },
                         error: function (error) {
-                            console.log(error);
+
+
+                            if (error.responseJSON.errors){
+                                const errorItems = error.responseJSON.errors;
+                                console.log(errorItems);
+                                Object.entries(errorItems).forEach(function (item, inputName) {
+                                    $(`[name="${item[0]}"]`).css('borderBottomColor', 'red');
+                                    setTimeout(function () {
+                                        $(`[name="${item[0]}"]`).css('borderBottomColor', 'unset');
+                                    }, 5000)
+                                    console.log(inputName, item);
+                                });
+                            }
+
                             $('#preloader').remove();
-                            if (lang == 'ru')
-                                alert('Произошла ошибка! Обновите страницу');
-                            else
-                                alert('Қате орын алды! Бетті жаңартыңыз');
+                            // if (lang == 'ru')
+                            //     alert(`Произошла ошибка: ${error.message}`);
+                            // else
+                            //     alert(`Қате орын алды: ${error.message}`);
 
                         }
 
