@@ -736,9 +736,8 @@
                 let cite = $("select[name=cite]").val();
                 let shool = $("select[name=shool]").val();
                 let _token = $('meta[name="csrf-token"]').attr('content');
-// gor
 
-                if (first_name.length != 0 && last_name.length != 0 && email.length != 0 && phone.length != 0 && cite.length != 0 && shool.length != 0) {
+                if (first_name !== '' && last_name !== '' && email !== '' && phone !== '' && cite !== '' && shool !== '') {
 
                     $.ajax({
                         url: "{!!route('schoolreg',['lang'=>$lang])!!}",
@@ -764,8 +763,25 @@
                                 window.setTimeout(show_modal3, 2000);
                                 $('#preloader').remove();
                             }
+                        },
+                        error: function (error) {
+                            console.log(error);
+                            $('#preloader').remove();
+                            if (lang == 'ru')
+                                alert('Произошла ошибка! Обновите страницу');
+                            else
+                                alert('Қате орын алды! Бетті жаңартыңыз');
+
                         }
+
                     });
+                }else{
+                    if (lang == 'ru')
+                        alert('Все поля обязательны для заполнения! Пожалуйста, заполните все поля...');
+                    else
+                        alert('Барлық өрістер міндетті түрде толтырылады! Барлық өрістерді толтырыңыз ...');
+
+                    $('#preloader').remove();
                 }
             });
 
