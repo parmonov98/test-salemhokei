@@ -2,7 +2,7 @@
     #modal_form {
         width: 523px;
         height: 720px;
-        border-radius: 5px;
+        /*border-radius: 5px;*/
         background: #fff;
         position: fixed;
         top: 30%;
@@ -12,25 +12,57 @@
         display: none;
         opacity: 0;
         z-index: 5;
-        padding: 24px 34px;
-        background: #e5a821;
+        padding: 40px 50px;
+        background: #ffa62c;
         justify-content: center;
         background-repeat: no-repeat;
-        background-size: 85%;
-        background-position: 34px 3px;
+        background-size: contain;
+        background-position: center;
+        flex-direction: column;
+        background-image: url("/assets/img/schools/form-bg.svg");
+        /*position: relative;*/
+    }
+    #modal_form::before {
+        display: block;
+        content: "";
+        width: 100%;
+        position: absolute;
+        height: 10px;
+        background-color: #ffa62c;
+        top: -10px;
+        left: 0;
+    }
+    #modal_form::after {
+        display: block;
+        content: "";
+        width: 100%;
+        position: absolute;
+        height: 10px;
+        background-color: #ffa62c;
+        bottom: -10px;
+        left: 0;
+    }
+    .top-text{
+        width: 100%;
+    }
+    .top-text > svg{
+        width: 100%;
     }
 
     .form-int {
-        position: absolute;
-        bottom: 10px;
-        margin: 0 auto;
-        width: 94%;
-        padding: 15px 0;
+        /*position: absolute;*/
+        /*bottom: 10px;*/
+        /*margin: 0 auto;*/
+        /*width: 94%;*/
+        /*padding: 15px 0;*/
+        padding-right: 10px;
+        margin-top: 30px;
+        width: 100%;
     }
 
 
     .form-int .form-group {
-        padding: 0 20px;
+        /*padding: 0 20px;*/
     }
 
     .form-int input {
