@@ -69,6 +69,16 @@ Route::group(["namespace" => "Admin"], function () {
             Route::post("/role/add", "RoleController@save");
         });
 
+        Route::group(['prefix' => 'regions'], function () {
+            Route::get("/add", "RegionController@create")->name('regions.create');
+            Route::post("/add", "RegionController@store")->name('regions.store');
+//            Route::get("/notifications", "RegionController@notifications");
+            Route::get("/", "RegionController@index")->name('regions.index');
+            Route::get("/{region}", "RegionController@edit")->name('regions.edit');
+            Route::post("/{region}", "RegionController@update")->name('regions.update');
+            Route::delete("/{region}", "RegionController@destroy")->name('regions.delete');
+        });
+
         Route::group(["middleware" => "has.permission:section.create"], function () {
             Route::get("/section/add", "SectionController@add");
             Route::post("/section/add", "SectionController@save");

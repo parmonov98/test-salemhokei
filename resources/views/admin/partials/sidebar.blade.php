@@ -106,6 +106,15 @@
               @endcan
             </ul>
           </li>
+          <li><a><i aria-hidden="true" class="fa fa-graduation-cap"></i> Города <span
+                class="fa fa-chevron-down"></span></a>
+            <ul class="nav child_menu">
+                <li><a href="{{route('regions.create')}}"><i class="fa fa-plus-circle"></i>Добавить город</a>
+                </li>
+                  <li><a href="{{route('regions.index')}}">Список городов</a></li>
+
+            </ul>
+          </li>
           <li><a><i aria-hidden="true" class="fa fa-graduation-cap"></i> Школы <span
                 class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
