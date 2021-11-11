@@ -54,8 +54,9 @@ class RegionController extends Controller
      */
     public function store(Request $request)
     {
-
-//        dd($request->all());
+        $this->validate($request, [
+            "name_ru" => "required|min:3|max:255",
+        ]);
         $item = new Region;
         $item->name_ru = $request->name_ru;
         $item->name_kk = $request->name_kk;
@@ -102,7 +103,17 @@ class RegionController extends Controller
      */
     public function update(Request $request, Region $region)
     {
-        //
+        $this->validate($request, [
+            "name_ru" => "required|min:3|max:255",
+        ]);
+        $item = new Region;
+        $region->name_ru = $request->name_ru;
+        $region->name_kk = $request->name_kk;
+        $region->name_en = $request->name_en;
+
+
+        $region->save();
+        return redirect( route('regions.edit', $region->id))->with("status", "Данные успешно изменены");
     }
 
     /**

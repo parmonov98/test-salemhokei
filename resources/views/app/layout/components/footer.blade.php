@@ -4,13 +4,7 @@
             <div class="col-sm-6">
                 <p>{!! __("default.pages.footer.description") !!}
             </div>
-{{--            <div class="col-sm-6">--}}
-{{--                <p>--}}
-{{--                    {!! __("default.pages.footer.address") !!} <br>--}}
-{{--                    Тел: <a href="tel:8 (717-2) 60-50-41" title="8 (717-2) 60-50-41">8 (717-2) 60-50-41</a><br>--}}
 
-{{--                   </p>--}}
-{{--            </div>--}}
 
         </div>
         <div class="row row--multiline mt-5">
@@ -19,14 +13,7 @@
                 E-mail: <a href="mailto:info@salemhokei.kz" title="info@salemhokei.kz">info@salemhokei.kz</a>
             </div>
             <div class="col-sm-4 mt-4 footer-socials">
-{{--                <a href="#">--}}
-{{--                    <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                        <path d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24Z" fill="#FF0000"/>--}}
-{{--                        <path d="M36.265 18.0732C35.9706 16.9422 35.1031 16.0516 34.0016 15.7493C32.0054 15.2 24 15.2 24 15.2C24 15.2 15.9946 15.2 13.9983 15.7493C12.8967 16.0516 12.0292 16.9422 11.7348 18.0732C11.2 20.1231 11.2 24.4 11.2 24.4C11.2 24.4 11.2 28.6768 11.7348 30.7268C12.0292 31.8578 12.8967 32.7484 13.9983 33.0508C15.9946 33.6 24 33.6 24 33.6C24 33.6 32.0054 33.6 34.0016 33.0508C35.1031 32.7484 35.9706 31.8578 36.265 30.7268C36.8 28.6768 36.8 24.4 36.8 24.4C36.8 24.4 36.8 20.1231 36.265 18.0732Z" fill="white"/>--}}
-{{--                        <path d="M21.6 28.8V20.8L28 24.8001L21.6 28.8Z" fill="#FF0000"/>--}}
-{{--                    </svg>--}}
-{{--                </a>--}}
-                <a href="#">
+                <a href="https://www.instagram.com/salemhokei/?hl=ru">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                         <style type="text/css">
@@ -59,7 +46,7 @@
 </svg>
 
                 </a>
-                <a href="#">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.salem.salemhokei">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 512.086 512.086" style="enable-background:new 0 0 512.086 512.086;" xml:space="preserve">
 <path style="fill:#2196F3;" d="M281.963,245.846l-247.68,247.68c-11.84-11.2-18.24-26.56-18.24-43.2V61.846
@@ -103,7 +90,7 @@
 </svg>
 
                 </a>
-                <a href="#">
+                <a href="https://apps.apple.com/kz/app/salem-hokei/id1589610304">
                     <svg viewBox="0 0 69.45 69.45" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style>.cls-1{fill:url(#linear-gradient);}.cls-2{fill:#fff;}</style><linearGradient gradientUnits="userSpaceOnUse" id="linear-gradient" x1="34.72" x2="34.72" y2="69.45"><stop offset="0" stop-color="#78d2f9"/><stop offset="1" stop-color="#3458e9"/></linearGradient></defs><title/><g data-name="Layer 2" id="Layer_2"><g data-name="Layer 1" id="Layer_1-2"><circle class="cls-1" cx="34.72" cy="34.72" r="34.72"/><path class="cls-2" d="M34.65,20.16l1.12-1.93a2.52,2.52,0,0,1,4.37,2.51L29.35,39.41h7.8a3.45,3.45,0,0,1,2.85,5H17.13a2.52,2.52,0,1,1,0-5h6.41l8.21-14.23-2.56-4.45a2.52,2.52,0,1,1,4.36-2.51l1.1,1.94ZM25,47l-2.42,4.2a2.52,2.52,0,0,1-4.37-2.52L20,45.6A4.32,4.32,0,0,1,25,47Zm20.83-7.6h6.54a2.52,2.52,0,0,1,0,5H48.68l2.46,4.25a2.52,2.52,0,0,1-4.37,2.52q-6.19-10.75-9.29-16.1a7,7,0,0,1,.88-8.52q2.47,4.25,7.42,12.82Z"/></g></g></svg>
                 </a>
 

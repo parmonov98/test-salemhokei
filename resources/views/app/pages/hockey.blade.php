@@ -1101,7 +1101,7 @@
     <script src="{{asset('assets/js/video.js')}}"></script>
 
     <script>
-        var players = new VideoPlayer({'selector': '.video-player', autoplay: false});
+        var players = new VideoPlayer({'selector': '.video-player', autoplay: true});
         // console.log(players)
     </script>
 @endsection
